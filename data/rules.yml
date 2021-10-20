@@ -1,0 +1,40 @@
+version: "2.0"
+
+rules:
+
+- rule : fakultas
+  steps:
+  - intent: begin_fakultas
+  - action: utter_fakultas
+  
+- rule : ekonomi
+  steps:
+  - intent: begin_ekonomi
+  - action: utter_ekonomi
+  
+- rule : hukum
+  steps:
+  - intent: begin_hukum
+  - action: utter_hukum
+
+- rule : teknik
+  steps:
+  - intent: begin_teknik
+  - action: utter_teknik
+  
+- rule : kedokteran
+  steps:
+  - intent: begin_kedokteran
+  - action: utter_kedokteran
+  
+- rule : pertanian
+  steps:
+  - intent: begin_pertanian
+  - action: utter_pertanian
+
+- rule : keguruan
+  steps:
+  - intent: begin_keguruan
+  - action: utter_keguruan
+
+  

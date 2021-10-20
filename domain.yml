@@ -1,0 +1,609 @@
+version: "2.0"
+
+intents:
+  - salam
+  - formulir
+  - perjanjian_maba
+  - surat_pernyataan
+  - organisasi_sekolah
+  - organisasi_intra_sekolah
+  - organisasi_ekstra_sekolah
+  - prestasi_sekolah
+  - Bakat_hobi_kegemaran
+  - data_keluarga
+  - cariform
+  - tanyaform
+  - tanyahuruf
+  - tanyanama
+  - tanyanim
+  - tanyafakultas
+  - tanyajurusan
+  - tanyajk
+  - tanyaprogram
+  - tanyatempatlahir
+  - tanyatanggallahir
+  - tanyaalamat
+  - tanyattd
+  - tanyafoto
+  - questioner_calonmaba_1
+  - questioner_calonmaba_2
+  - questioner_calonmaba_3
+  - questioner_calonmaba_4
+  - questioner_calonmaba_5
+  - questioner_calonmaba_identitasdiri
+  - questioner_calonmaba_alasan
+  - questioner_calonmaba_gajiortu
+  - begin_fakultas
+  - begin_ekonomi
+  - begin_hukum
+  - begin_teknik
+  - begin_kedokteran
+  - begin_pertanian
+  - begin_keguruan
+  - diploma
+  - sarjana
+  - profesi
+  - magister
+  - setuju
+  - begin_keguruandanilmupendidikan
+  - keguruandanilmupendidikan_profesi
+  - keguruandanilmupendidikan_magister
+  - keguruandanilmupendidikan_doktor
+  - begin_ilmusosialdanilmupolitik
+  - ilmusosialdanilmupolitik_sarjana
+  - ilmusosialdanilmupolitik_magister
+  - begin_matematikadanilmupengetahuanalam
+  - matematikadanilmupengetahuanalam_sarjana
+  - matematikadanilmupengetahuanalam_magister
+  - matematikadanilmupengetahuanalam_doktor
+  - begin_ilmukomputer
+  - ilmukomputer_diplomatiga
+  - ilmukomputer_sarjana
+  - ilmukomputer_magister
+  - begin_kesehatanmasyarakat
+  - kesehatanmasyarakat_sarjana
+  - kesehatanmasyarakat_magister
+  - begin_pascasarjana
+  - pascasarjana_magister
+  - pascasarjana_doktor
+  - begin_kodeprogrampendidikan
+
+responses:
+  utter_salam:
+  - text: |
+      Sistem Form-Reg:03 Fakultas Universitas Sriwijaya Formulir Pernyataan perjanjian Mahasiswa
+      baru adalah sebagai berikut:
+      -Mengisi Formulir data Mahasiswa yang harus di lengkapi.
+      -Patuh dan menaati janji mahasiswa Universitas Sriwijaya.
+      -Menyalin Surat Pernyataan yang telah di siapkan. 
+
+  utter_Formulir:
+  - text: |
+      List Formulir yang harus di isi
+      -Tahun Ajaran Yang akan di mulai :....../........
+      -Nama                            :
+      -Nomor Peserta                   :
+      -Jurusan/Program Studi           :
+      -Fakultas                        :
+
+  utter_perjanjian_maba:
+  - text: |
+       Janji Mahasiswa Universitas Sriwijaya:
+       1. Menjadi Mahasiswa/i yang ta’at, berakhlak mulia, bermoral, berbudipekerti dan berkarakter
+       yang baik.
+       2. Belajar dengan tekun, jujur, patuh terhadap aturan yang tercantum dalam buku panduan
+       akademik dan kemahasiswaan Universitas Sriwijaya, serta tidak akan melakukan
+       perbuatan yang melanggar etika akademik seperti melakukan plagiat.
+       3. Berpakaian rapih dan sopan sesuai dengan kultur dan budaya Bangsa Indonesia.
+       4. Menghormati Civitas Akademika Universitas Sriwijaya dan menjaga nama baik Universitas
+       Sriwijaya.
+       5. Berprilaku sopan, tidak anarkis, dan tidak merokok di dalam lingkungan kampus.
+       6. Tidak terlibat kasus penyalahgunaan narkoba, dan berjanji selama mengikuti pendidikan
+       saya bersedia diperiksa secara klinis dan apabila ternyata hasilnya menunjukkan indikasi
+       saya sebagai pemakai narkoba, maka saya bersedia diberhentikan sebagai Mahasiswa
+       Universitas Sriwijaya sesuai ketentuan yang berlaku.
+       7. Menyanggupi untuk memenuhi semua persyaratan akademik yang diberlakukan kepada
+       saya, antara lain seperti nilai tes Bahasa Inggris
+       8. Memenuhi kewajiban membayar Uang Kuliah Tunggal (UKT) yang telah ditetapkan.
+       9. Menyadari sepenuhnya bahwa transportasi ke dan dari kampus Indralaya adalah bukan
+       tanggung jawab Universitas Sriwijaya untuk menyediakannya.
+
+  utter_surat_pernyataan:
+  - text: |
+       Apabila saya melanggar ketentuan-ketentuan di atas maka saya bersedia menerima
+       sanksi sesuai dengan ketentuan yang berlaku, termasuk menerima sanksi diberhentikan
+       sebagai Mahasiswa Universitas Sriwijaya.
+       
+  utter_organisasi_sekolah
+  - text : 
+    Dalam organisasi sekolah masing-masing individu akan bekerja sama satu sama lain untuk mencapai kepentingan bersama.
+    Bentuk-bentuk organisasi di sekolah :
+    1. OSIS
+    2. Organisasi Kelas
+    3. Gugus Depan Pramuka
+    4. Unit Kesehatan sekolah
+    5. Koperasi sekolah
+    6. Rohani Islam
+    Dan masih banyak lainnya organisasi di sekolah yang sangat bermanfaat.
+
+  utter_organisasi_intra_sekolah
+  - text : 
+    Organisasi intra sekolah atau yang sering disebut dengan OSIS adalah suatu organisasi yang berada di tingkat 
+    sekolah di Indonesia yang dimulai dari Sekolah Menengah yaitu Sekolah Menengah Pertama (SMP) dan Sekolah Menengah Atas (SMA). 
+    OSIS diurus oleh guru pembimbing dan dikelola oleh murid-murid yang terpilih untuk menjadi anggota OSIS. 
+    Biasanya organisasi ini memiliki seorang pembimbing dari guru yang dipilih oleh pihak sekolah.
+    Anggota OSIS adalah seluruh siswa yang berada pada satu sekolah tempat OSIS itu berada. 
+    Seluruh anggota OSIS berhak untuk memilih calonnya untuk kemudian menjadi pengurus OSIS.
+    Setiap organisasi selalu memiliki tujuan yang ingin dicapai, begitu pula dengan OSIS ada beberapa tujuan yang ingin dicapai, antara lain :
+    1. Meningkatkan generasi penerus yang beriman dan bertaqwa
+    2. Memahami, menghargai lingkungan hidup dan nilai-nilai moral dalam mengambil keputusan yang tepat
+    3. Membangun landasan kepribadian yang kuat dan menghargai HAM dalam kontek kemajuan budaya bangsa
+    4. Membangun, mengembangkan wawasan kebangsaan dan rasa cinta tanah air dalam era globalisasi
+    5. Memperdalam sikap sportif, jujur, disiplin, bertanggung jawab, dan kerja sama secara mandiri, berpikir logis dan demokratis
+    6. Meningkatkan pengetahuan dan keterampilan serta menghargai karya artistic, budaya dan intelektual
+    7. Meningkatkan kesehatan jasmani dan rohani memantapkan kehidupan bermasyarakat,berbangsa dan bernegara.
+
+  utter_organisasi_ekstra_sekolah
+  - text : Organisasi ekstra sekolahmerupakan organisasi yang bersumber dari luar sekolah yang memiliki koneksi 
+    dengan luar sekolah dan bersifat mengembangkan softskill para siswa. 
+    Organisasi ekstra sekolah atau kegiatan ekstrakurikuler menunjukan segala macam aktivitas di sekolah atau 
+    lembaga pendidikan yang dilaksanakan diluar jam pelajaran. 
+    Kegiatan ekstrakurikuler ditujukan agar siswa dapat mengem-bangkan kepribadian, bakat, dan kemampuannya di berbagai bidang di luar bidang akademik.
+    Tujuan organisasi ekstra sekolah agar siswa dapat melatih skill mereka di berbagai bidang. 
+    Misalnya saja ada organisasi ekstra di bidang bahasa, bidang bela diri, bidang olahraga, dan bidang lainnya.
+    Macam-macam organisasi ekstra sekolah :
+    1. Pramuka
+    2. Paskibra
+    3. PMR
+    4. Voly
+    5. Sepak Bola
+    6. Bulu Tangkis
+    7. Basket
+    8. Seni Tari
+    9. Seni Musik
+    10. Rohani Islam
+    Dan masih banyak organisasi ekstra sekolah yang bermanfaat dan tentunya akan mengembangkan softskill para siswa disekolah.
+
+  utter_prestasi_sekolah
+  - text : 
+    Prestasi sekolah sebagai penilaian hasil belajar dari proses kegiatan belajar mengajar yang dinyatakan dalam 
+    bentuk simbol, angka, huruf maupun kalimat yang dapat mencerminkan hasil yang sudah dicapai oleh setiap siswa 
+    dalam periode selama masih dalam bangku sekolah sehingga dapat membawa perubahan baik dari segi kognitif, afektif, 
+    dan psikomotorik yang dinyatakan dalam angka menurut kemampuan siswa dalam mengerjakan tes pelajaran (Sulchan, 1987 : 75). 
+    Prestasi sekolah yang didapat juga dipengaruhi oleh prestasi yang diraih oleh para siswanya. Prestasi yang diraih pun
+    tidak hanya prestasi akademik tetapi ada juga prestasi non akademik. Prestasi yang diraih pun juga berasal 
+    dari berbagai bidang baik dari bidang ilmu pengetahuan, bidang olahraga, bidang seni, maupun bidang lainya.
+    Meskipun prestasi tersebut berasal dari berbagai bidang tetap saja untuk mendapatkannya dibutuhkan sebuah perjuangan yang
+    sungguh-sungguh dalam meraihnya. Maka dari itu harus ada bentuk penghargaan yang diberi baik itu dalam bentuk
+    simbol, angka, huruf, maupun kalimat. 
+
+  utter_hobi
+  - text : 
+    Hobi adalah kegiatan rekreasi yang dilakukan pada waktu luang yang bermanfaat untuk menenangkan pikiran seseorang.
+    Hobi dilakukan sebagai kegemaran atau kesenangan pada waktu senggang dan bukan sebagai pekerjaan utama.
+    Tujuan hobi itu sendiri adalah untuk memenuhi keinginan dan mendapatkan kesenangan yang bisa menenangkan pikiran.
+    Hobi yang dapat dilakukan antara lain berkebun, fotografi, kaligrafi, melukis, menulis, menjahit, menggambar,  
+    memasak, traveling, dan masih banyak lagi hobi yang dapat dilakukan. Dari hobi inipun bisa menghasilkan uang.
+
+  utter_data_keluarga
+  - text : 
+    Data keluarga adalah data tentang susunan, hubungan, jumlah anggota keluarga, dan yang berhubungan dengan informasi tentang anggota keluarga. 
+    Dokumen tersebut sering disebut sebagai Kartu Keluarga atau yang sering disingkat dengan KK. Data keluarga dapat dilihat pada Kartu Keluarga (KK).
+    Kartu keluarga berisi data lengkap tentang identitas Kepala Keluarga dan anggota keluarganya.
+    Beberapa data yang tercantum dalam kartu keluarga, antara lain :
+    1. Nomor kartu
+    2. keluarga
+    3. Lambang negara Garuda Indonesia
+    4. Nama kepala keluarga
+    5. Alamat
+    6. Nama lengkap
+    7. NIK
+    8. Jenis kelamin
+    9. Tempat lahir
+    10. Tanggal lahir
+    11. Agama
+    12. Pendidikan
+    13. Jenis pekerjaan
+    14. Golongan darah
+    15. Status perkawinan
+    16. Tanggal perkawinan
+    17. Status hubungan dalam keluarga
+    18. Kewarganegaraan
+    19. Dokumen imigrasi (paspor/KITAP)
+    20. Nama orang tua (ayah/ibu)
+    21. Tanggal dikeluarkannya KK
+    22. Tanda tangan kepala keluarga
+    23. Tanda tangan digital Kepala Dinas Kependudukan dan Pencatatan Sipil. Tanda tangan ini menggunakan sertifikat elektronik yang diterbitkan oleh Balai Sertifikasi Elektronik (BSrE), BSSN.
+
+  utter_cariform:
+  - text: "Untuk form pembuatan KPM (KPM Sementara) bisa anda dapatkan pada Buku Panduan Akademik Halaman 68."
+
+  utter_tanyaform:
+  - text: | 
+      Untuk form pembuatan KPM berisikan data mahasiswa berupa : 
+      Nama,
+      Nim,
+      Fakultas/program,
+      Jurusan/program studi,
+      Jenis kelamin,
+      Program pendidikan,
+      Tempat lahir,
+      Tanggal lahir,
+      Alamat tinggal,
+      Pas foto ukuran 2x3,
+      dan Tanda tangan.
+      Anda ingin bertanya bagian yang mana?
+
+  utter_tanyahuruf:
+  - text: "Untuk form pembuatan KPM harus diisi menggunakan huruf cetak" 
+
+  utter_tanyanama:
+  - text: |
+      Pada bagian nama harus diisi dengan nama asli/nama lengkap mahasiswa yang bersangkutan, tanpa gelar akademik dan maksimal 30 huruf.
+      Jika nama lengkap melebihi 30 huruf, dapat disingkat.
+
+  utter_tanyanim:
+  - text: |
+      Pada bagian NIM tidak perlu diisi (dikosongkan).
+      NIM akan diisikan oleh petugas BAK (Biro Akademik dan Kemahasiswaan).
+
+  utter_tanyafakultas:
+  - text: "Pada bagian fakultas/program harus diisi dengan fakultas/program yang sesuai dengan mahasiswa yang bersangkutan." 
+
+  utter_tanyajurusan:
+  - text: "Pada bagian jurusan/program studi harus diisi dengan jurusan/program studi yang sesuai dengan mahasiswa yang bersangkutan."
+
+  utter_tanyajk:
+  - text: |
+      Pada bagian jenis kelamin harus diisi dengan jenis kelamin yang sesuai dengan mahasiswa yang berkaitan.
+      Jenis kelamin harus diisi dengan pilihan 'pria' atau 'wanita'. 
+
+  utter_tanyaprogram:
+  - text: |
+      Pada bagian program pendidikan harus diisi dengan program pendidikan yang sesuai dengan mahasiswa yang bersangkutan saat ini.
+      Pilihan untuk program pendidikan yaitu 'Doktor', 'Spesialis', 'Magister', 'Profesi', 'Sarjana' atau 'Diploma Tiga'.
+
+  utter_tanyatempatlahir:
+  - text: |
+      Pada bagian tempat lahir harus diisi dengan tempat lahir asli mahasiswa yang bersangkutan.
+      Untuk tempat lahir hanya diisi tempatnya saja, tidak perlu tanggal lahir.
+      Dan penulisan tempat lahir maksimal 17 huruf, jika lebih bisa disingkat.
+
+  utter_tanyatanggallahir:
+  - text: |
+      Pada bagian tanggal lahir harus diisi dengan tanggal lahir asli mahasiswa yang bersangkutan.
+      Untuk penulisan tanggal lahir harus mencakup tanggal, bulan dan tahun lahir (Tanggal/Bulan/Tahun).
+
+  utter_tanyaalamat:
+  - text: |
+      Pada bagian alamat tinggal harus diisi dengan alamat asli/alamat yang ditinggali sekarang dari mahasiswa yang bersangkutan.
+      Untuk penulisan alamat maksimal 50 huruf, jika lebih dari 50 huruf bisa disingkat.
+
+  utter_tanyattd:
+  - text: "Untuk tanda tangan harus diisi dengan tanda tangan asli mahasiswa itu sendiri, tidak boleh dipalsukan."
+
+  utter_tanyafoto:
+  - text: |
+      Untuk pas foto harus foto mahasiswa sendiri dari kepala sampai dada, dan untuk pakaian pada foto harus rapi dan sopan.
+      Untuk ukuran pas foto harus 2x3 (bebas berwarna/hitam putih).
+      
+  utter_questioner_calonmaba_1:
+  - text : "questioner calon mahasiswa baru diisi oleh para Calon Mahasiswa Baru"
+
+  utter_questioner_calonmaba_2:
+  - text : "questioner calon mahasiswa baru berguna untuk keperluan evaluasi diri dalam rangka meningkatkan kualitas penyelenggaraan pendidikan di Universitas Sriwijaya"
+
+  utter_questioner_calonmaba_3:
+  - text : "Data yang boleh tidak kita isi di questioner calon mahasiswa baru adalah nama pada bagian identitas responden"
+
+  utter_questioner_calonmaba_4:
+  - text : "Ya, diperbolehkan memilih lebih dari satu jawaban untuk menjawab alasan mengikuti pendidikan pada Universitas Sriwijaya"
+ 
+  utter_questioner_calonmaba_5:
+  - text : |
+     Data- data yang kita isi di questioner calon mahasiswa baru sebagai berikut
+     
+     A.IDENTITAS DIRI 
+        - Nama
+        - Umur 
+        - Jenis Kelamin
+        - Kota/Kabupaten asal SMU
+        - Kota/Kabupaten tempat kerja Orang tua/wali 
+        - Pendapatan orang tua/wali (lingkari salah satu)
+        - Diterima di Universitas Sriwijaya
+            a. Melalui jalur
+            b. Pada Fakultas
+            c. Jurusan
+            
+     B. Alasan Mengikuti pendidikan pada Universitas Sriwijaya (lingkari pada jawaban -jawaban yang saudara pilih, boleh memilih lebih dari satu jawaban)
+        a. Assesibilitas (lokasi kampus Universitas Sriwijaya relatif dekat dengan tempat asal keluarga saya)
+        b. Biaya pendidikan yang terjangkau kemampuan orang tua/wali.
+        c. Kualitas penyelenggaraan pendidikan yang baik.
+        d. Kualitas dosen/materi pengajaran yang baik.
+        e. Kesuksesan/keberhasilan para alumni Universitas Sriwijaya.
+        f. Kondisi kampus/tempat/sarana pendidikan yang nyaman/baik.
+        g. Universitas Sriwijaya sebagai perguruan tinggi negeri yang telah dikenal
+        h. Disuruh oleh orang tua/wali
+        i. Diajak teman
+        j. Kemauan sendiri
+        k. Saran dari sekolah/guru
+        l. Saran teman/kakak kelas
+        m. Terpaksa
+        n. Lain-lain, sebutkan ………… "
+
+  utter_questioner_calonmaba_identitasdiri:
+  - text : |
+     Identitas Diri : 
+     - Nama
+     - Umur 
+     - Jenis Kelamin
+     - Kota/Kabupaten asal SMU
+     - Kota/Kabupaten tempat kerja Orang tua/wali 
+     - Pendapatan orang tua/wali (lingkari salah satu)
+     - Diterima di Universitas Sriwijaya
+        a. Melalui jalur
+        b. Pada Fakultas
+        c. Jurusan 
+
+  utter_questioner_calonmaba_alasan:
+  - text : |
+     Alasan Mengikuti pendidikan pada Universitas Sriwijaya (lingkari pada jawaban -jawaban yang saudara pilih, boleh memilih lebih dari satu jawaban)
+     a. Assesibilitas (lokasi kampus Universitas Sriwijaya relatif dekat dengan tempat asal keluarga saya)
+     b. Biaya pendidikan yang terjangkau kemampuan orang tua/wali.
+     c. Kualitas penyelenggaraan pendidikan yang baik.
+     d. Kualitas dosen/materi pengajaran yang baik.
+     e. Kesuksesan/keberhasilan para alumni Universitas Sriwijaya.
+     f. Kondisi kampus/tempat/sarana pendidikan yang nyaman/baik.
+     g. Universitas Sriwijaya sebagai perguruan tinggi negeri yang telah dikenal
+     h. Disuruh oleh orang tua/wali
+     i. Diajak teman
+     j. Kemauan sendiri
+     k. Saran dari sekolah/guru
+     l. Saran teman/kakak kelas
+     m. Terpaksa
+
+  utter_questioner_calonmaba_gajiirtu:
+  - text : |
+     Ada beberapa ilihan penghasilan orang tua yaitu : 
+     a. < 1 juta rupiah /bulan
+     b. 1 – 2 juta rupiah /bulan
+     c. 2 – 4 juta rupiah /bulan
+     d. 4 – 6 juta rupiah /bulan
+     e. > 6 juta rupiah /bulan "
+    
+  utter_fakultas:
+  - text: |
+     Sistem Pengkodean NIM pada Fakultas-Fakultas di Universitas Sriwijaya adalah sebagai berikut : 
+     01 - Fakultas Ekonomi
+     02 - Fakultas Hukum
+     03 - Fakultas Teknik
+     04 - Fakultas Kedokteran
+     05 - Fakultas Pertanian
+     06 - Fakultas Keguruan dan Ilmu Pendidikan
+     07 - Fakultas Ilmu Sosial dan Ilmu Politik
+     08 - Fakultas Matematika dan Ilmu Pengetahuan Alam
+     09 - Fakultas Ilmu Komputer
+     10 - Fakultas Kesehatan Masyarakat
+     20 - Pascasarjana
+     Anda ingin di listkan Fakultas mana?
+           
+  utter_ekonomi:
+  - text: |
+     Sistem Pengkodean NIM pada Fakultas Ekonomi Universitas Sriwijaya adalah sebagai berikut : 
+     Kode Fakultas adalah 01, dan kode jurusan untuk Diploma Tiga adalah 01-02 
+     Sarjana/Profesi adalah 01-04, Magister adalah 01-03, dan untuk Doktor adalah 01-02
+     Anda ingin di listkan nomor kode jurusan untuk tingkat mana?
+  
+  utter_ekonomi_sarjana:
+  - text : |
+     List Kode Jurusan Fakultas Ekonomi Universitas Sriwijaya untuk tingkat D3/S1/Profesi : 
+     Diploma Tiga
+     01 - Akutansi
+     02 - Kesekretariatan
+     Sarjana
+     01 - Manajemen
+     02 - Ekonomi Pembangunan
+     03 - Akutansi
+     Profesi
+     04 - Pendidikan Profesi Akutansi
+  
+  utter_ekonomi_magister:
+  - text : |
+     List Kode Jurusan Fakultas Ekonomi Universitas Sriwijaya untuk tingkat Magister/Doktor : 
+     Magister
+     01 - Magister Manajemen
+     02 - Ilmu Ekonomi
+     03 - Ilmu Manajemen
+     Doktor
+     01 - Ilmu Ekonomi
+     02 - Ilmu Manajemen
+     
+  utter_hukum:
+  - text: |
+     Sistem Pengkodean NIM pada Fakultas Hukum Universitas Sriwijaya adalah sebagai berikut : 
+     Kode Fakultas adalah 02, dan kode jurusan untuk Sarjana hanya satu yaitu 01
+     Magister adalah 01-02, dan untuk Doktor juga hanya satu yaitu 01
+     Apakah anda ingin melihat list nomor kode jurusan?
+     
+  utter_hukum_list:
+  - text: |
+     List Kode Jurusan Fakultas Hukum Universitas Sriwijaya:
+     Sarjana
+     01 - Ilmu Hukum
+     Magister
+     01 - Ilmu Hukum
+     02 - Kenotariatan
+     Doktor
+     01 - Ilmu Hukum
+     
+  utter_teknik:
+  - text: |
+     Sistem Pengkodean NIM pada Fakultas Teknik Universitas Sriwijaya adalah sebagai berikut : 
+     Kode Fakultas adalah 03, dan kode jurusan untuk Sarjana adalah 01-07
+     Magister adalah 01-04, dan untuk Doktor juga hanya satu yaitu 01
+     Anda ingin di listkan nomor kode jurusan untuk tingkat mana?
+  
+  utter_teknik_sarjana:
+  - text : |
+     List Kode Jurusan Fakultas Teknik Universitas Sriwijaya untuk tingkat S1 : 
+     01 - Teknik Sipil
+     02 - Teknik Pertambangan
+     03 - Teknik Kimia
+     04 - Teknik Elektro
+     05 - Teknik Mesin
+     06 - Arsitektur
+     07 - Teknik Geologi
+  
+  utter_teknik_magister:
+  - text : |
+     List Kode Jurusan Fakultas Teknik Universitas Sriwijaya untuk tingkat Magister/Doktor : 
+     Magister
+     01 - Teknik Kimia
+     02 - Teknik Sipil
+     03 - Teknik Mesin
+     04 - Teknik Pertambangan
+     Doktor
+     01 - Doktor Ilmu Teknik
+     
+  utter_kedokteran:
+  - text: |
+     Sistem Perkodean NIM pada Fakultas Kedokteran Universitas Sriwijaya adalah sebagai berikut:
+     Kode fakultas adalah 04, dan kode jurusan untuk Sarjana/Profesi adalah 01-04, 
+     Spesialis-1/Magister adalah 01-12, dan untuk Spesialis-2 hanya ada 01.
+     Anda ingin melihat list nomor kode jurusan untuk tingkat mana?
+     
+  utter_kedokteran_sarjana:
+  - text: |
+     List Kode Jurusan Fakultas Kedokteran Universitas Sriwijaya untuk tingkat Sarjana/Profesi :
+     Sarjana
+     01 - Pendidikan Dokter
+     02 - Ilmu Keperawatan
+     03 - Pendidikan Dokter Gigi
+     04 - Psikologi
+     Profesi
+     05 - Kedokteran Umum(Asal Kampus Indralaya)
+     06 - Keperawatan
+     07 - Kedokteran Gigi
+     08 - Kedokteran Umum(Asal Kampus Palembang)
+     
+  utter_kedokteran_magister:
+  - text: |
+     List Kode Jurusan Fakultas Kedokteran Universitas Sriwijaya untuk tingkat Spesialis/Magister :
+     Spesialis-1
+     01 - Ilmu Bedah
+     02 - Ilmu Kesehatan Anak
+     03 - Ilmu Penyakit Mata
+     04 - Ilmu Penyakit Dalam
+     05 - Ilmu Obstetri dan Genekologi
+     06 - Ilmu Patologi Anatomi
+     07 - Neurologi
+     08 - Dermatologi dan Venatorologi
+     09 - T H T-KL
+     10 - Anestesi dan Reanimasi
+     11 - Ortopedi dan Traumatologi
+     Magister
+     12 - Ilmu Biomedik
+     Spesialis-2
+     01 - Ilmu Penyakit Dalam
+    
+  utter_pertanian:
+  - text: |
+     Sistem Perkodean NIM pada Fakultas Pertanian Universitas Sriwijaya adalah sebagai berikut:
+     Kode fakultas adalah 05, dan kode jurusan untuk Sarjana adalah 01-07, 
+     Magister adalah 01-02, dan untuk Doktor hanya ada 01.
+     Apakah anda ingin melihat list nomor kode jurusan?
+  
+  utter_pertanian_list:
+  - text: |
+     List Kode Jurusan Fakultas Pertanian Universitas Sriwijaya :
+     Sarjana
+     01 - Agribisnis
+     02 - Teknik Pertanian
+     03 - Teknnologi Hasil Pertanian
+     04 - Nutrisi & Makanan Ternak
+     05 - Budidaya Perairan
+     06 - Teknologi Hasil Perikanan
+     07 - Agroekoteknologi
+     Magister
+     01 - Ilmu Tanaman
+     02 - Agribisnis
+     Doktor
+     01 - Ilmu Pertanian
+
+  utter_keguruan:
+  - text: |
+     Sistem Perkodean NIM pada Fakultas Keguruan dan Ilmu Pendidikan Universitas Sriwijaya adalah sebagai berikut:
+     Kode fakultas adalah 06, dan kode jurusan untuk Sarjana/Profesi adalah 01-30, 
+     Magister adalah 01-05, dan untuk Doktor hanya ada 01.
+     Anda ingin melihat list nomor kode jurusan untuk tingkat mana?
+     
+  utter_keguruan_sarjana:
+  - text: |
+     List Kode Jurusan Fakultas Keguruan Universitas Sriwijaya tingkat Sarjana :
+     Sarjana
+     01 - Pendidikan Bahasa Inggris
+     02 - Pendidikan Bahasa Indonesia
+     03 - Pendidikan Ekonomi
+     04 - Pendidikan Sejarah
+     05 - Pendidikan Pancasila dan Kewarganegaraan
+     06 - Pendidikan Jasmani dan Kesehatan
+     07 - Bimbingan & Konseling
+     08 - Pendidikan Matematika
+     09 - Pendidikan Biologi
+     10 - Pendidikan Kimia
+     11 - Pendidikan Fisika
+     12 - Pendidikan Teknik Mesin
+     13 - Pendidikan Guru Sekolah Dasar
+     14 - Pendidikan Guru PAUD
+     15 - Pendidikan Luar Sekolah
+     
+  utter_keguruan_profesi:
+  - text: |
+     List Kode Jurusan Fakultas Keguruan Universitas Sriwijaya tingkat Profesi :
+     Profesi
+     16 - Pendidikan Bahasa Inggris
+     17 - Pendidikan Bahasa Indonesia
+     18 - Pendidikan Ekonomi
+     19 - Pendidikan Sejarah
+     20 - Pendidikan Pancasila dan Kewarganegaraan
+     21 - Pendidikan Jasmani dan Kesehatan
+     22 - Bimbingan & Konseling
+     23 - Pendidikan Matematika
+     24 - Pendidikan Biologi
+     25 - Pendidikan Kimia
+     26 - Pendidikan Fisika
+     27 - Pendidikan Teknik Mesin
+     28 - Pendidikan Guru Sekolah Dasar
+     29 - Pendidikan Guru PAUD
+     30 - Pendidikan Luar Sekolah
+     
+  utter_keguruan_magister:
+  - text: |
+     List Kode Jurusan Fakultas Keguruan Universitas Sriwijaya tingkat Magister/Doktor :
+     Magister
+     01 - Pendidikan Bahasa
+     02 - Pendidikan Matematika
+     03 - Teknologi Pendidikan
+     04 - Pendidikan Olahraga
+     05 - Pendidikan Fisika
+     Doktor
+     01 - Pendidikan Matematika
+ 
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+  
+  utter_introduction:
+  - text: "Hai, Saya adalah bot pribadi Farras menggunakan Rasa"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
