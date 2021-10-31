@@ -22,16 +22,17 @@ nlu:
     - sampai jumpa
     - terima kasih
 
-- intent: setuju
+- intent : setuju
   examples: |
-    - iya
-    - y
-    - memang
-    - betul
+    - ya
+    - oke
+    - silahkan
+    - gas kak
+    - tolong di list
     - boleh
-    - boleh juga
-    - tentu
-    - tentu saja
+    - yoi
+    - iya
+    - sip
 
 - intent: menolak
   examples: |
@@ -44,89 +45,6 @@ nlu:
     - tidak juga
     - tidak seperti itu
     - jangan
-    
-- intent: greet
-  examples: |
-    - hey
-    - hello
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
-
-- intent: goodbye
-  examples: |
-    - good afternoon
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
-
-- intent: affirm
-  examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
-
-- intent: deny
-  examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
-
-- intent: mood_great
-  examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
-
-- intent: mood_unhappy
-  examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
 
 - intent: bot_challenge
   examples: |
@@ -135,7 +53,7 @@ nlu:
     - am I talking to a bot?
     - am I talking to a human?
 
-- intent : formulir
+- intent : ask/formulir
   examples: |
     - apa saja formulir yang perlu di lengkapi ya kak ?
     - form yang di isi apa saja ya min
@@ -148,7 +66,7 @@ nlu:
     - ada formnya yang harus di isi
     - isi formulirnya apa saja 
   
-- intent : perjanjian_maba
+- intent : ask/perjanjian_maba
   examples : |
     - isi perjanjiannya apa saja ya min?
     - bunyi perjanjiannya apa saja kak?
@@ -161,7 +79,7 @@ nlu:
     - apa saja isi janji mahasiswa nya?
     - perincian janji mahasiswanya apa?
 
-- intent : surat_pernyataan
+- intent : ask/surat_pernyataan
   examples : |
     - apa isi surat pernyataanya 
     - peryataan nya isinya apa ya
@@ -172,7 +90,7 @@ nlu:
     - isi surat pernyataan
     - isi konten surat pernyataan
     
-- intent : organisasi_sekolah
+- intent : ask/organisasi_sekolah
   examples : |
     - Organisasi sekolah
     - Organisasi sekolah adalah 
@@ -196,7 +114,7 @@ nlu:
     - Sebutkan organisasi di sekolah
     - Jenis organisasi di sekolah
 
-- intent : organisasi_intra_sekolah
+- intent : ask/organisasi_intra_sekolah
   examples : |
     - Organisasi intra sekolah
     - Organisasi intra sekolah adalah
@@ -210,7 +128,7 @@ nlu:
     - Sebutkan tujuan organisasi intra sekolah
     - Lihat organisasi intra sekolah
 
-- intent : organisasi_ekstra_sekolah
+- intent : ask/organisasi_ekstra_sekolah
   examples : |
     - Organisasi ekstra sekolah
     - Organisasi ekstra sekolah adalah
@@ -227,7 +145,7 @@ nlu:
     - Lihat organisasi ekstra sekolah
     - Lihat berbagai macam organisasi ekstra sekolah
 
-- intent : prestasi_sekolah
+- intent : ask/prestasi_sekolah
   examples : |
     - Prestasi di sekolah
     - Prestasi di sekolah apa saja
@@ -240,7 +158,7 @@ nlu:
     - Apa saja tingkatan prestasi di sekolah
     - Prestasi sekolah yang bisa diraih
 
-- intent : hobi
+- intent : ask/hobi
   examples : |
     - Hobi
     - Hobi apa saja yang bisa dilakukan
@@ -258,7 +176,7 @@ nlu:
     - Bebagai macam hobi
     - Macam-macam hobi
 
-- intent : data_keluarga
+- intent : ask/data_keluarga
   examples : |
     - Data keluarga
     - Data keluarga ada dimana
@@ -268,7 +186,7 @@ nlu:
     - Isi data keluarga
     - Lihat data keluarga
     
-- intent: cariform
+- intent: ask/cariform
   examples: |
     - Dimana saya bisa mendapatkan form pembuatan KPM?
     - Cara dapetin form pembuatan KPM gimana?
@@ -277,7 +195,7 @@ nlu:
     - Saya ingin bertanya mengenai cara mendapatkan form pembuatan KPM
     - Agar bisa dapetin form pembuatan KPM gimana ya?
 
-- intent: tanyaform
+- intent: ask/tanyaform
   examples: |
     - Apa saja isi dari form tersebut?
     - Apa saja yang dibutuhkan untuk mengisi formnya?
@@ -287,7 +205,7 @@ nlu:
     - Bisa dikasih tau apa saja isi formnya?
     - Form pembuatan KPM isinya apa aja ya?
 
-- intent: tanyahuruf
+- intent: ask/tanyahuruf
   examples: |
     - Cara ngisi formnya gimana?
     - Kalo ngisi formnya pake huruf kapital semua gimana?
@@ -297,7 +215,7 @@ nlu:
     - Untuk pengisian form ada caranya ngga?
     - Apakah ada aturan untuk cara pengisian form?
 
-- intent: tanyanama
+- intent: ask/tanyanama
   examples : |
     - Untuk bagian nama pada form ditulis apa?
     - Kalo misal isi namanya lebih dari 30 huruf gimana?
@@ -308,7 +226,7 @@ nlu:
     - Nama ditulis pakai nama kita sendiri ya?
     - Apakah nama pada form tersebut menggunakan nama kita sendiri?
 
-- intent: tanyanim
+- intent: ask/tanyanim
   examples : | 
     - Untuk bagian NIM pada form ditulis apa?
     - NIM pada formnya diisi apa ya?
@@ -319,7 +237,7 @@ nlu:
     - Boleh ngga kalo NIMnya dikosongkan?
     - Ada aturannya ngga untuk pengisian NIM pada form tersebut?
 
-- intent: tanyafakultas
+- intent: ask/tanyafakultas
   examples : |
     - Untuk bagian fakultas/program pada form ditulis apa?
     - Kalo ngisinya pakai fakultas lain bisa ngga?
@@ -328,7 +246,7 @@ nlu:
     - Fakultas/program pada form ditulis apa ya?
     - Apakah fakultas/program diisi sesuai dengan fakultas saya?
 
-- intent: tanyajurusan
+- intent: ask/tanyajurusan
   examples : |
     - Untuk bagian jurusan/program studi pada form ditulis apa?
     - Bisa ngga kalo ngisi jurusannya ngga sesuai sama jurusan saya?
@@ -337,7 +255,7 @@ nlu:
     - Jurusan pada form diisi sesuai jurusan saya ya?
     - Untuk jurusan/program studi diisi apa?
 
-- intent: tanyajk
+- intent: ask/tanyajk
   examples : |
     - Untuk bagian jenis kelamin pada form ditulis apa?
     - Kalo memalsukan jenis kelamin gimana?
@@ -347,7 +265,7 @@ nlu:
     - Jenis kelamin diisi apa ya?
     - Boleh tau apakah ada cara penulisan jenis kelamin?
 
-- intent: tanyaprogram
+- intent: ask/tanyaprogram
   examples : |
     - Untuk bagian program pendidikan pada form ditulis apa?
     - Jika saya mengisi program pendidikan tidak sesuai dengan milik saya bisa ngga?
@@ -356,7 +274,7 @@ nlu:
     - Maksud dari program pendidikan apa ya?
     - Apakah program pendidikan harus diisi sesuai dengan program pendidikan saya?
 
-- intent: tanyatempatlahir
+- intent: ask/tanyatempatlahir
   examples : |
     - Untuk bagian Tempat lahir pada form ditulis apa?
     - Bisa tidak saya mengisi dengan tempat lahir palsu?
@@ -366,7 +284,7 @@ nlu:
     - Ada ngga aturan untuk penulisan tempat lahir?
     - Tempat lahir pada form diisi apa ya?
 
-- intent: tanyatanggallahir
+- intent: ask/tanyatanggallahir
   examples : |
     - Untuk bagian Tanggal lahir pada form ditulis apa?
     - Apakah ada aturan untuk penulisan tanggal lahir pada form?
@@ -377,7 +295,7 @@ nlu:
     - Untuk penulisan tanggal lahir gimana?
     - Ada format penulisan untuk tanggal lahir kah?
 
-- intent: tanyaalamat
+- intent: ask/tanyaalamat
   examples : |
     - Untuk bagian Alamat tinggal pada form ditulis apa?
     - Apakah ada aturan untuk penulisan alamat tinggal pada form?
@@ -386,7 +304,7 @@ nlu:
     - Jika saya pindah rumah, alamat mana yang harus diisi?
     - Alamat tinggal harus diisi dengan alamat yang saya tinggali sekarang ya?
 
-- intent: tanyafoto
+- intent: ask/tanyafoto
   examples : |
     - Apakah foto yang digunakan harus foto kemeja putih?
     - Berapa ukuran foto yang digunakan?
@@ -396,7 +314,7 @@ nlu:
     - Ada aturan tertentu ngga untuk foto?
     - Untuk foto bagaimana ya?
 
-- intent: tanyattd
+- intent: ask/tanyattd
   examples : |
     - Apakah tanda tangan harus diisi oleh tanda tangan sendiri?
     - Bagaimana kalo tanda tangannya saya palsukan?
@@ -405,35 +323,31 @@ nlu:
     - Untuk tanda tangan bagaimana ya?
     - Apakah ada aturan untuk tanda tangan?
     
-- intent: questioner_calonmaba_1
+- intent: ask/questioner_calonmaba_1
   examples : |
     - siapa yang akan mengisi questioner calon mahasiswa baru?
     - Kepada siapa questioner calon mahasiswa baru ditujukan?
     - questioner calon mahasiswa baru diisi oleh siapa?
 
-
-- intent: questioner_calonmaba_2
+- intent: ask/questioner_calonmaba_2
   examples : |
     - Apa tujuan dari mengisi questioner calon mahasiswa baru?
     - Untuk apa questioner itu diisi?
     - Berfungsi untuk apa questioner calon mahasiswa baru?
 
-
-- intent: questioner_calonmaba_3
+- intent: ask/questioner_calonmaba_3
   examples : |
     - data apa yang boleh tidak kita isi pada questioner calon mahasiswa baru?
     - Apa saja data yang boleh tidak idak kita isi pada questioner calon mahasiswa baru?
     - tampilkan data yang boleh tidak kita isi di questioner calon mahasiswa baru?
 
-
-- intent: questioner_calonmaba_4
+- intent: ask/questioner_calonmaba_4
   examples : |
     - apakah kita boleh memilih lebih dari satu jawaban untuk menjawab alasan mengikuti pendidikan pada Universitas Sriwijaya?
     - Benarkah kita bisa memilih lebih dari satu jawaban untuk menjawab alasan mengikuti pendidikan pada Universitas Sriwijaya?
     - Jawaban untuk alasan mengikuti pendidikan pada Universitas Sriwijaya boleh diisi lebih dari satu jawaban, apakah benar?
 
-
-- intent: questioner_calonmaba_5
+- intent: ask/questioner_calonmaba_5
   examples : |
     - Data apa saja yang perlu kita isi di questioner calon mahasiswa baru?
     - Macam-macam data untuk questioner calon mahasiswa baru?
@@ -444,8 +358,7 @@ nlu:
     - ada data apa saja yang dibutuhkan untuk questioner calon mahasiswa baru?
     - tampilkan data apa saja untuk mengisi questioner calon mahasiswa baru?
 
-
-- intent: questioner_calonmaba_identitasdiri
+- intent: ask/questioner_calonmaba_identitasdiri
   examples : |
     - Yang identitas diri saja
     - Tentang identitas diri
@@ -456,8 +369,7 @@ nlu:
     - yang termasuk identitas diri apa saja
     - Data identitas diri
 
-
-- intent: questioner_calonmaba_alasan
+- intent: ask/questioner_calonmaba_alasan
   examples : |
     - Yang alasan saja
     - Tentang alasan masuk unsri
@@ -469,7 +381,7 @@ nlu:
     - yang termasuk alasan masuk unsri apa saja
     - Data alasan masuk unsri 
 
-- intent: questioner_calonmaba_gajiortu
+- intent: ask/questioner_calonmaba_gajiortu
   examples : |
     - pilihan pendapatan orang tua
     - range pendapatan orang tua
@@ -477,7 +389,7 @@ nlu:
     - Plihan gaji orang tua
     - tampilkan pendapatan orang tua
     
-- intent: begin_fakultas
+- intent: ask/begin_fakultas
   examples: |
     - Halo apakah saya bisa bertanya tentang sistem pengkodean NIM Fakultas di Universitas Sriwijaya ?
     - apa saja sistem pengkodean NIM Fakultas di Universitas Sriwijaya ?
@@ -486,7 +398,7 @@ nlu:
     - Tolong jelaskan sistem pengkodean NIM Fakultas di Universitas Sriwijaya ?
     - Mau tau dong sistem pengkodean NIM Fakultas di Universitas Sriwijaya ?
     
-- intent: begin_ekonomi
+- intent: ask/begin_ekonomi
   examples: |
     - Halo apakah saya bisa bertanya tentang sistem pengkodean NIM Fakultas ekonomi ?
     - apa saja sistem pengkodean NIM Fakultas ekonomi ?
@@ -495,7 +407,7 @@ nlu:
     - Tolong jelaskan sistem pengkodean NIM Fakultas ekonomi ?
     - Mau tau dong sistem pengkodean NIM Fakultas ekonomi?
 
-- intent: begin_hukum
+- intent: ask/begin_hukum
   examples: |
     - Halo apakah saya bisa bertanya tentang sistem pengkodean NIM Fakultas hukum ?
     - apa saja sistem pengkodean NIM Fakultas hukum ?
@@ -504,7 +416,7 @@ nlu:
     - Tolong jelaskan sistem pengkodean NIM Fakultas hukum ?
     - Mau tau dong sistem pengkodean NIM Fakultas hukum?
     
-- intent: begin_teknik
+- intent: ask/begin_teknik
   examples: |
     - Halo apakah saya bisa bertanya tentang sistem pengkodean NIM Fakultas teknik ?
     - apa saja sistem pengkodean NIM Fakultas teknik ?
@@ -513,7 +425,7 @@ nlu:
     - Tolong jelaskan sistem pengkodean NIM Fakultas teknik ?
     - Mau tau dong sistem pengkodean NIM Fakultas teknik ?
     
-- intent : begin_kedokteran
+- intent : ask/begin_kedokteran
   examples : |
     - Halo, apakah saya bisa bertanya tentang sistem perkodean NIM fakultas kedokteran?
     - apa saja ya sistem perkodean NIM yang ada di fakultas kedokteran?
@@ -526,7 +438,7 @@ nlu:
     - kak pengen tahu dong soal penjelasan nim yang ada di kedokteran
     - boleh diberitahu soal sistem nim yang ada di kedokteran?
 
-- intent : begin_pertanian
+- intent : ask/begin_pertanian
   examples : |
     - Halo, apakah saya bisa bertanya tentang sistem perkodean NIM fakultas pertanian?
     - apa saja ya sistem perkodean NIM yang ada di fakultas pertanian?
@@ -539,7 +451,7 @@ nlu:
     - kak pengen tahu dong soal penjelasan nim yang ada di pertanian
     - boleh diberitahu soal sistem nim yang ada di pertanian?
     
-- intent : begin_keguruan
+- intent : ask/begin_keguruan
   examples: |
     - Halo, apakah saya bisa bertanya tentang sistem perkodean NIM fakultas keguruan?
     - apa saja ya sistem perkodean NIM yang ada di fakultas keguruan?
@@ -551,20 +463,8 @@ nlu:
     - bagaimana sistem perkodean nim yang ada di fkip?
     - kak pengen tahu dong soal penjelasan nim yang ada di fkip
     - boleh diberitahu soal sistem nim yang ada di fkip?
-
-- intent : setuju
-  examples: |
-    - ya
-    - oke
-    - silahkan
-    - gas kak
-    - tolong di list
-    - boleh
-    - yoi
-    - iya
-    - sip
     
-- intent: diploma
+- intent: ask/diploma
   examples: |
     - diploma
     - diploma saja saja
@@ -575,7 +475,7 @@ nlu:
     - boleh lihat yang d3
     - bagian d3
     
-- intent : sarjana
+- intent : ask/sarjana
   examples : |
     - sarjana
     - sarjana kak
@@ -588,7 +488,7 @@ nlu:
     - boleh kasihtahu yang untuk s1
     - untuk yang s1 kak?
     
-- intent : magister
+- intent : ask/magister
   examples : |
     - spesialis 
     - spesialis kak
@@ -616,7 +516,7 @@ nlu:
     - boleh kasihtahu yang untuk doktor
     - untuk yang doktor kak?
      
-- intent : profesi
+- intent : ask/profesi
   examples: |
     - profesi
     - profesi kak
@@ -629,7 +529,7 @@ nlu:
     - boleh kasihtahu yang untuk profesi
     - untuk yang profesi kak?
     
-- intent: begin_keguruandanilmupendidikan
+- intent: ask/begin_keguruandanilmupendidikan
   examples: |
     - Halo apakah saya bisa bertanya tentang sistem pengkodean NIM Fakultas Keguruan dan Ilmu Pendidikan?
     - Apa saja sistem pengkodean NIM Fakultas Keguruan dan Ilmu Pendidikan?
@@ -640,7 +540,7 @@ nlu:
     - Izin bertanya siapa yang bisa menjelaskan kepada saya tentang sistem pengkodean NIM Fakultas Keguruan dan Ilmu Pendidikan?
     - Bagaimana cara sistem pengkodean NIM Fakultas Keguruan dan Ilmu Pendidikan?
     
-- intent: keguruandanilmupendidikan_profesi
+- intent: ask/keguruandanilmupendidikan_profesi
   examples: |
     - sarjana
     - sarjana kak
@@ -653,7 +553,7 @@ nlu:
     - bagian s1
     - izin melihat yang s1 dong
     
-- intent: keguruandanilmupendidikan_magister
+- intent: ask/keguruandanilmupendidikan_magister
   examples: |
     - magister
     - magister kak
@@ -666,7 +566,7 @@ nlu:
     - bagian s2
     - izin melihat yang s2 dong
     
-- intent: keguruandanilmupendidikan_doktor
+- intent: ask/keguruandanilmupendidikan_doktor
   examples: |
     - doktor
     - doktor kak
@@ -679,7 +579,7 @@ nlu:
     - bagian s3
     - izin melihat yang s3 dong
     
-- intent: begin_ilmusosialdanilmupolitik
+- intent: ask/begin_ilmusosialdanilmupolitik
   examples: |
     - Halo apakah saya bisa bertanya tentang sistem pengkodean NIM Fakultas Ilmu Sosial dan Ilmu Politik?
     - Apa saja sistem pengkodean NIM Fakultas Ilmu Sosial dan Ilmu Politik?
@@ -690,7 +590,7 @@ nlu:
     - Izin bertanya siapa yang bisa menjelaskan kepada saya tentang sistem pengkodean NIM Fakultas Ilmu Sosial dan Ilmu Politik?
     - Bagaimana cara sistem pengkodean NIM Fakultas Ilmu Sosial dan Ilmu Politik?
     
-- intent: ilmusosialdanilmupolitik_sarjana
+- intent: ask/ilmusosialdanilmupolitik_sarjana
   examples: |
     - sarjana
     - sarjana kak
@@ -703,7 +603,7 @@ nlu:
     - bagian s1
     - izin melihat yang s1 dong
     
-- intent: ilmusosialdanilmupolitik_magister
+- intent: ask/ilmusosialdanilmupolitik_magister
   examples: |
     - magister
     - magister kak
@@ -716,7 +616,7 @@ nlu:
     - bagian s2
     - izin melihat yang s2 dong
     
-- intent: begin_matematikadanilmupengetahuanalam
+- intent: ask/begin_matematikadanilmupengetahuanalam
   examples: |
     - Halo apakah saya bisa bertanya tentang sistem pengkodean NIM Fakultas Matematika dan Ilmu Pengetahuan Alam?
     - Apa saja sistem pengkodean NIM Fakultas Matematika dan Ilmu Pengetahuan Alam?
@@ -727,7 +627,7 @@ nlu:
     - Izin bertanya siapa yang bisa menjelaskan kepada saya tentang sistem pengkodean NIM Fakultas Matematika dan Ilmu Pengetahuan Alam?
     - Bagaimana cara sistem pengkodean NIM Fakultas Matematika dan Ilmu Pengetahuan Alam?
     
-- intent: matematikadanilmupengetahuanalam_sarjana
+- intent: ask/matematikadanilmupengetahuanalam_sarjana
   examples: |
     - sarjana
     - sarjana kak
@@ -740,7 +640,7 @@ nlu:
     - bagian s1
     - izin melihat yang s1 dong
     
-- intent: matematikadanilmupengetahuanalam_magister
+- intent: ask/matematikadanilmupengetahuanalam_magister
   examples: |
     - magister
     - magister kak
@@ -753,7 +653,7 @@ nlu:
     - bagian s2
     - izin melihat yang s2 dong
     
-- intent: matematikadanilmupengetahuanalam_doktor
+- intent: ask/matematikadanilmupengetahuanalam_doktor
   examples: |
     - doktor
     - doktor kak
@@ -766,7 +666,7 @@ nlu:
     - bagian s3
     - izin melihat yang s3 dong
     
-- intent: begin_ilmukomputer
+- intent: ask/begin_ilmukomputer
   examples: |
     - Halo apakah saya bisa bertanya tentang sistem pengkodean NIM Fakultas Ilmu Komputer?
     - Apa saja sistem pengkodean NIM Fakultas Ilmu Komputer?
@@ -777,7 +677,7 @@ nlu:
     - Izin bertanya siapa yang bisa menjelaskan kepada saya tentang sistem pengkodean NIM Fakultas Ilmu Komputer?
     - Bagaimana cara sistem pengkodean NIM Fakultas Ilmu Komputer?
     
-- intent: ilmukomputer_diplomatiga
+- intent: ask/ilmukomputer_diplomatiga
   examples: |
     - diploma
     - diploma kak
@@ -790,7 +690,7 @@ nlu:
     - bagian d3
     - izin melihat yang d3 dong
     
-- intent: ilmukomputer_sarjana
+- intent: ask/ilmukomputer_sarjana
   examples: |
     - sarjana
     - sarjana kak
@@ -803,7 +703,7 @@ nlu:
     - bagian s1
     - izin melihat yang s1 dong
     
-- intent: ilmukomputer_magister
+- intent: ask/ilmukomputer_magister
   examples: |
     - magister
     - magister kak
@@ -816,7 +716,7 @@ nlu:
     - bagian s2
     - izin melihat yang s2 dong
     
-- intent: begin_kesehatanmasyarakat
+- intent: ask/begin_kesehatanmasyarakat
   examples: |
     - Halo apakah saya bisa bertanya tentang sistem pengkodean NIM Fakultas Kesehatan Masyarakat?
     - Apa saja sistem pengkodean NIM Fakultas Kesehatan Masyarakat?
@@ -827,7 +727,7 @@ nlu:
     - Izin bertanya siapa yang bisa menjelaskan kepada saya tentang sistem pengkodean NIM Fakultas Kesehatan Masyarakat?
     - Bagaimana cara sistem pengkodean NIM Fakultas Kesehatan Masyarakat?
     
-- intent: kesehatanmasyarakat_sarjana
+- intent: ask/kesehatanmasyarakat_sarjana
   examples: |
     - sarjana
     - sarjana kak
@@ -840,7 +740,7 @@ nlu:
     - bagian s1
     - izin melihat yang s1 dong
     
-- intent: kesehatanmasyarakat_magister
+- intent: ask/kesehatanmasyarakat_magister
   examples: |
     - magister
     - magister kak
@@ -853,7 +753,7 @@ nlu:
     - bagian s2
     - izin melihat yang s2 dong
     
-- intent: begin_pascasarjana
+- intent: ask/begin_pascasarjana
   examples: |
     - Halo apakah saya bisa bertanya tentang sistem pengkodean NIM Program Pascasarjana?
     - Apa saja sistem pengkodean NIM Program Pascasarjana?
@@ -864,7 +764,7 @@ nlu:
     - Izin bertanya siapa yang bisa menjelaskan kepada saya tentang sistem pengkodean NIM Program Pascasarjana?
     - Bagaimana cara sistem pengkodean NIM Program Pascasarjana?
     
-- intent: pascasarjana_magister
+- intent: ask/pascasarjana_magister
   examples: |
     - magister
     - magister kak
@@ -877,7 +777,7 @@ nlu:
     - bagian s2
     - izin melihat yang s2 dong
     
-- intent: pascasarjana_doktor
+- intent: ask/pascasarjana_doktor
   examples: |
     - doktor
     - doktor kak
@@ -890,7 +790,7 @@ nlu:
     - bagian s3
     - izin melihat yang s3 dong
     
-- intent: begin_kodeprogrampendidikan
+- intent: ask/begin_kodeprogrampendidikan
   examples: |
     - Halo apakah saya bisa bertanya tentang sistem pengkodean NIM Program Pendidikan di Universitas Sriwijaya?
     - Apa saja sistem pengkodean NIM Program Pendidikan di Universitas Sriwijaya?

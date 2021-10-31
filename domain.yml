@@ -9,151 +9,279 @@ intents:
     use_entities: true
 - penutup:
     use_entities: true
-- formulir:
-    use_entities: true
-- perjanjian_maba:
-    use_entities: true
-- surat_pernyataan:
-    use_entities: true
-- organisasi_sekolah:
-    use_entities: true
-- organisasi_intra_sekolah:
-    use_entities: true
-- organisasi_ekstra_sekolah:
-    use_entities: true
-- prestasi_sekolah:
-    use_entities: true
-- hobi:
-    use_entities: true
-- data_keluarga:
-    use_entities: true
-- cariform:
-    use_entities: true
-- tanyaform:
-    use_entities: true
-- tanyahuruf:
-    use_entities: true
-- tanyanama:
-    use_entities: true
-- tanyanim:
-    use_entities: true
-- tanyafakultas:
-    use_entities: true
-- tanyajurusan:
-    use_entities: true
-- tanyajk:
-    use_entities: true
-- tanyaprogram:
-    use_entities: true
-- tanyatempatlahir:
-    use_entities: true
-- tanyatanggallahir:
-    use_entities: true
-- tanyaalamat:
-    use_entities: true
-- tanyattd:
-    use_entities: true
-- tanyafoto:
-    use_entities: true
-- questioner_calonmaba_1:
-    use_entities: true
-- questioner_calonmaba_2:
-    use_entities: true
-- questioner_calonmaba_3:
-    use_entities: true
-- questioner_calonmaba_4:
-    use_entities: true
-- questioner_calonmaba_5:
-    use_entities: true
-- questioner_calonmaba_identitasdiri:
-    use_entities: true
-- questioner_calonmaba_alasan:
-    use_entities: true
-- questioner_calonmaba_gajiortu:
-    use_entities: true
-- begin_fakultas:
-    use_entities: true
-- begin_ekonomi:
-    use_entities: true
-- begin_hukum:
-    use_entities: true
-- begin_teknik:
-    use_entities: true
-- begin_kedokteran:
-    use_entities: true
-- begin_pertanian:
-    use_entities: true
-- begin_keguruan:
-    use_entities: true
-- diploma:
-    use_entities: true
-- sarjana:
-    use_entities: true
-- profesi:
-    use_entities: true
-- magister:
-    use_entities: true
 - setuju:
-    use_entities: true
-- begin_keguruandanilmupendidikan:
-    use_entities: true
-- keguruandanilmupendidikan_profesi:
-    use_entities: true
-- keguruandanilmupendidikan_magister:
-    use_entities: true
-- keguruandanilmupendidikan_doktor:
-    use_entities: true
-- begin_ilmusosialdanilmupolitik:
-    use_entities: true
-- ilmusosialdanilmupolitik_sarjana:
-    use_entities: true
-- ilmusosialdanilmupolitik_magister:
-    use_entities: true
-- begin_matematikadanilmupengetahuanalam:
-    use_entities: true
-- matematikadanilmupengetahuanalam_sarjana:
-    use_entities: true
-- matematikadanilmupengetahuanalam_magister:
-    use_entities: true
-- matematikadanilmupengetahuanalam_doktor:
-    use_entities: true
-- begin_ilmukomputer:
-    use_entities: true
-- ilmukomputer_diplomatiga:
-    use_entities: true
-- ilmukomputer_sarjana:
-    use_entities: true
-- ilmukomputer_magister:
-    use_entities: true
-- begin_kesehatanmasyarakat:
-    use_entities: true
-- kesehatanmasyarakat_sarjana:
-    use_entities: true
-- kesehatanmasyarakat_magister:
-    use_entities: true
-- begin_pascasarjana:
-    use_entities: true
-- pascasarjana_magister:
-    use_entities: true
-- pascasarjana_doktor:
-    use_entities: true
-- begin_kodeprogrampendidikan:
     use_entities: true
 - menolak:
     use_entities: true
 - bot_challenge:
     use_entities: true
-- affirm:
+- ask/formulir:
+    use_entities: true
+- ask/perjanjian_maba:
+    use_entities: true
+- ask/surat_pernyataan:
+    use_entities: true
+- ask/organisasi_sekolah:
+    use_entities: true
+- ask/organisasi_intra_sekolah:
+    use_entities: true
+- ask/organisasi_ekstra_sekolah:
+    use_entities: true
+- ask/prestasi_sekolah:
+    use_entities: true
+- ask/hobi:
+    use_entities: true
+- ask/data_keluarga:
+    use_entities: true
+- ask/cariform:
+    use_entities: true
+- ask/tanyaform:
+    use_entities: true
+- ask/tanyahuruf:
+    use_entities: true
+- ask/tanyanama:
+    use_entities: true
+- ask/tanyanim:
+    use_entities: true
+- ask/tanyafakultas:
+    use_entities: true
+- ask/tanyajurusan:
+    use_entities: true
+- ask/tanyajk:
+    use_entities: true
+- ask/tanyaprogram:
+    use_entities: true
+- ask/tanyatempatlahir:
+    use_entities: true
+- ask/tanyatanggallahir:
+    use_entities: true
+- ask/tanyaalamat:
+    use_entities: true
+- ask/tanyattd:
+    use_entities: true
+- ask/tanyafoto:
+    use_entities: true
+- ask/questioner_calonmaba_1:
+    use_entities: true
+- ask/questioner_calonmaba_2:
+    use_entities: true
+- ask/questioner_calonmaba_3:
+    use_entities: true
+- ask/questioner_calonmaba_4:
+    use_entities: true
+- ask/questioner_calonmaba_5:
+    use_entities: true
+- ask/questioner_calonmaba_identitasdiri:
+    use_entities: true
+- ask/questioner_calonmaba_alasan:
+    use_entities: true
+- ask/questioner_calonmaba_gajiortu:
+    use_entities: true
+- ask/begin_fakultas:
+    use_entities: true
+- ask/begin_ekonomi:
+    use_entities: true
+- ask/begin_hukum:
+    use_entities: true
+- ask/begin_teknik:
+    use_entities: true
+- ask/begin_kedokteran:
+    use_entities: true
+- ask/begin_pertanian:
+    use_entities: true
+- ask/begin_keguruan:
+    use_entities: true
+- ask/diploma:
+    use_entities: true
+- ask/sarjana:
+    use_entities: true
+- ask/profesi:
+    use_entities: true
+- ask/magister:
+    use_entities: true
+- ask/begin_keguruandanilmupendidikan:
+    use_entities: true
+- ask/keguruandanilmupendidikan_profesi:
+    use_entities: true
+- ask/keguruandanilmupendidikan_magister:
+    use_entities: true
+- ask/keguruandanilmupendidikan_doktor:
+    use_entities: true
+- ask/begin_ilmusosialdanilmupolitik:
+    use_entities: true
+- ask/ilmusosialdanilmupolitik_sarjana:
+    use_entities: true
+- ask/ilmusosialdanilmupolitik_magister:
+    use_entities: true
+- ask/begin_matematikadanilmupengetahuanalam:
+    use_entities: true
+- ask/matematikadanilmupengetahuanalam_sarjana:
+    use_entities: true
+- ask/matematikadanilmupengetahuanalam_magister:
+    use_entities: true
+- ask/matematikadanilmupengetahuanalam_doktor:
+    use_entities: true
+- ask/begin_ilmukomputer:
+    use_entities: true
+- ask/ilmukomputer_diplomatiga:
+    use_entities: true
+- ask/ilmukomputer_sarjana:
+    use_entities: true
+- ask/ilmukomputer_magister:
+    use_entities: true
+- ask/begin_kesehatanmasyarakat:
+    use_entities: true
+- ask/kesehatanmasyarakat_sarjana:
+    use_entities: true
+- ask/kesehatanmasyarakat_magister:
+    use_entities: true
+- ask/begin_pascasarjana:
+    use_entities: true
+- ask/pascasarjana_magister:
+    use_entities: true
+- ask/pascasarjana_doktor:
+    use_entities: true
+- ask/begin_kodeprogrampendidikan:
+    use_entities: true
+- tanyajk:
+    use_entities: true
+- begin_kedokteran:
+    use_entities: true
+- magister:
+    use_entities: true
+- keguruandanilmupendidikan_doktor:
+    use_entities: true
+- tanyaalamat:
+    use_entities: true
+- ilmusosialdanilmupolitik_magister:
+    use_entities: true
+- begin_ilmusosialdanilmupolitik:
+    use_entities: true
+- tanyanim:
+    use_entities: true
+- diploma:
+    use_entities: true
+- tanyaprogram:
+    use_entities: true
+- ilmukomputer_diplomatiga:
+    use_entities: true
+- matematikadanilmupengetahuanalam_sarjana:
+    use_entities: true
+- organisasi_ekstra_sekolah:
+    use_entities: true
+- begin_pascasarjana:
+    use_entities: true
+- questioner_calonmaba_5:
+    use_entities: true
+- questioner_calonmaba_alasan:
+    use_entities: true
+- begin_hukum:
+    use_entities: true
+- tanyanama:
+    use_entities: true
+- questioner_calonmaba_identitasdiri:
+    use_entities: true
+- questioner_calonmaba_gajiortu:
+    use_entities: true
+- sarjana:
+    use_entities: true
+- keguruandanilmupendidikan_profesi:
+    use_entities: true
+- perjanjian_maba:
+    use_entities: true
+- hobi:
+    use_entities: true
+- begin_pertanian:
+    use_entities: true
+- tanyafakultas:
+    use_entities: true
+- begin_fakultas:
+    use_entities: true
+- tanyattd:
+    use_entities: true
+- tanyaform:
+    use_entities: true
+- ilmukomputer_sarjana:
+    use_entities: true
+- tanyahuruf:
+    use_entities: true
+- data_keluarga:
+    use_entities: true
+- begin_matematikadanilmupengetahuanalam:
+    use_entities: true
+- pascasarjana_magister:
+    use_entities: true
+- keguruandanilmupendidikan_magister:
+    use_entities: true
+- ilmukomputer_magister:
+    use_entities: true
+- formulir:
+    use_entities: true
+- organisasi_intra_sekolah:
+    use_entities: true
+- prestasi_sekolah:
+    use_entities: true
+- begin_ekonomi:
+    use_entities: true
+- begin_kesehatanmasyarakat:
+    use_entities: true
+- tanyatanggallahir:
+    use_entities: true
+- begin_keguruan:
+    use_entities: true
+- begin_teknik:
+    use_entities: true
+- surat_pernyataan:
+    use_entities: true
+- matematikadanilmupengetahuanalam_doktor:
+    use_entities: true
+- kesehatanmasyarakat_sarjana:
+    use_entities: true
+- begin_keguruandanilmupendidikan:
+    use_entities: true
+- begin_kodeprogrampendidikan:
+    use_entities: true
+- matematikadanilmupengetahuanalam_magister:
+    use_entities: true
+- pascasarjana_doktor:
+    use_entities: true
+- ilmusosialdanilmupolitik_sarjana:
+    use_entities: true
+- cariform:
+    use_entities: true
+- tanyafoto:
+    use_entities: true
+- kesehatanmasyarakat_magister:
+    use_entities: true
+- organisasi_sekolah:
+    use_entities: true
+- begin_ilmukomputer:
+    use_entities: true
+- tanyajurusan:
+    use_entities: true
+- tanyatempatlahir:
+    use_entities: true
+- profesi:
+    use_entities: true
+- greet:
+    use_entities: true
+- questioner_calonmaba_2:
     use_entities: true
 - mood_unhappy:
     use_entities: true
-- deny:
+- questioner_calonmaba_1:
     use_entities: true
-- greet:
+- questioner_calonmaba_3:
+    use_entities: true
+- affirm:
+    use_entities: true
+- questioner_calonmaba_4:
     use_entities: true
 - mood_great:
     use_entities: true
 - goodbye:
+    use_entities: true
+- deny:
     use_entities: true
 entities: []
 slots: {}
@@ -165,7 +293,7 @@ responses:
       -Mengisi Formulir data Mahasiswa yang harus di lengkapi.
       -Patuh dan menaati janji mahasiswa Universitas Sriwijaya.
       -Menyalin Surat Pernyataan yang telah di siapkan. 
-  utter_Formulir:
+  utter_ask/Formulir:
   - text: |
       List Formulir yang harus di isi
       -Tahun Ajaran Yang akan di mulai :....../........
@@ -173,7 +301,7 @@ responses:
       -Nomor Peserta                   :
       -Jurusan/Program Studi           :
       -Fakultas                        :
-  utter_perjanjian_maba:
+  utter_ask/perjanjian_maba:
   - text: |
       Janji Mahasiswa Universitas Sriwijaya:
       1. Menjadi Mahasiswa/i yang ta’at, berakhlak mulia, bermoral, berbudipekerti dan berkarakter
@@ -194,13 +322,13 @@ responses:
       8. Memenuhi kewajiban membayar Uang Kuliah Tunggal (UKT) yang telah ditetapkan.
       9. Menyadari sepenuhnya bahwa transportasi ke dan dari kampus Indralaya adalah bukan
       tanggung jawab Universitas Sriwijaya untuk menyediakannya.
-  utter_surat_pernyataan:
+  utter_ask/surat_pernyataan:
   - text: |
       Apabila saya melanggar ketentuan-ketentuan di atas maka saya bersedia menerima
       sanksi sesuai dengan ketentuan yang berlaku, termasuk menerima sanksi diberhentikan
       sebagai Mahasiswa Universitas Sriwijaya.
        
-  utter_organisasi_sekolah:
+  utter_ask/organisasi_sekolah:
   - text: |
       Dalam organisasi sekolah masing-masing individu akan bekerja sama satu sama lain untuk mencapai kepentingan bersama.
       Bentuk-bentuk organisasi di sekolah :
@@ -211,7 +339,7 @@ responses:
       5. Koperasi sekolah
       6. Rohani Islam
       Dan masih banyak lainnya organisasi di sekolah yang sangat bermanfaat.
-  utter_organisasi_intra_sekolah:
+  utter_ask/organisasi_intra_sekolah:
   - text: |
       Organisasi intra sekolah atau yang sering disebut dengan OSIS adalah suatu organisasi yang berada di tingkat 
       sekolah di Indonesia yang dimulai dari Sekolah Menengah yaitu Sekolah Menengah Pertama (SMP) dan Sekolah Menengah Atas (SMA). 
@@ -227,7 +355,7 @@ responses:
       5. Memperdalam sikap sportif, jujur, disiplin, bertanggung jawab, dan kerja sama secara mandiri, berpikir logis dan demokratis
       6. Meningkatkan pengetahuan dan keterampilan serta menghargai karya artistic, budaya dan intelektual
       7. Meningkatkan kesehatan jasmani dan rohani memantapkan kehidupan bermasyarakat,berbangsa dan bernegara.
-  utter_organisasi_ekstra_sekolah:
+  utter_ask/organisasi_ekstra_sekolah:
   - text: |
       Organisasi ekstra sekolahmerupakan organisasi yang bersumber dari luar sekolah yang memiliki koneksi 
       dengan luar sekolah dan bersifat mengembangkan softskill para siswa. 
@@ -248,7 +376,7 @@ responses:
       9. Seni Musik
       10. Rohani Islam
       Dan masih banyak organisasi ekstra sekolah yang bermanfaat dan tentunya akan mengembangkan softskill para siswa disekolah.
-  utter_prestasi_sekolah:
+  utter_ask/prestasi_sekolah:
   - text: |
       Prestasi sekolah sebagai penilaian hasil belajar dari proses kegiatan belajar mengajar yang dinyatakan dalam 
       bentuk simbol, angka, huruf maupun kalimat yang dapat mencerminkan hasil yang sudah dicapai oleh setiap siswa 
@@ -260,14 +388,14 @@ responses:
       Meskipun prestasi tersebut berasal dari berbagai bidang tetap saja untuk mendapatkannya dibutuhkan sebuah perjuangan yang
       sungguh-sungguh dalam meraihnya. Maka dari itu harus ada bentuk penghargaan yang diberi baik itu dalam bentuk
       simbol, angka, huruf, maupun kalimat. 
-  utter_hobi:
+  utter_ask/hobi:
   - text: |
       Hobi adalah kegiatan rekreasi yang dilakukan pada waktu luang yang bermanfaat untuk menenangkan pikiran seseorang.
       Hobi dilakukan sebagai kegemaran atau kesenangan pada waktu senggang dan bukan sebagai pekerjaan utama.
       Tujuan hobi itu sendiri adalah untuk memenuhi keinginan dan mendapatkan kesenangan yang bisa menenangkan pikiran.
       Hobi yang dapat dilakukan antara lain berkebun, fotografi, kaligrafi, melukis, menulis, menjahit, menggambar,  
       memasak, traveling, dan masih banyak lagi hobi yang dapat dilakukan. Dari hobi inipun bisa menghasilkan uang.
-  utter_data_keluarga:
+  utter_ask/data_keluarga:
   - text: |
       Data keluarga adalah data tentang susunan, hubungan, jumlah anggota keluarga, dan yang berhubungan dengan informasi tentang anggota keluarga. 
       Dokumen tersebut sering disebut sebagai Kartu Keluarga atau yang sering disingkat dengan KK. Data keluarga dapat dilihat pada Kartu Keluarga (KK).
@@ -296,9 +424,9 @@ responses:
       21. Tanggal dikeluarkannya KK
       22. Tanda tangan kepala keluarga
       23. Tanda tangan digital Kepala Dinas Kependudukan dan Pencatatan Sipil. Tanda tangan ini menggunakan sertifikat elektronik yang diterbitkan oleh Balai Sertifikasi Elektronik (BSrE), BSSN.
-  utter_cariform:
+  utter_ask/cariform:
   - text: Untuk form pembuatan KPM (KPM Sementara) bisa anda dapatkan pada Buku Panduan Akademik Halaman 68.
-  utter_tanyaform:
+  utter_ask/tanyaform:
   - text: |
       Untuk form pembuatan KPM berisikan data mahasiswa berupa : 
       - Nama
@@ -313,56 +441,56 @@ responses:
       - Pas foto ukuran 2x3
       - dan Tanda tangan
       Anda ingin bertanya bagian yang mana?
-  utter_tanyahuruf:
+  utter_ask/tanyahuruf:
   - text: Untuk form pembuatan KPM harus diisi menggunakan huruf cetak
-  utter_tanyanama:
+  utter_ask/tanyanama:
   - text: |
       Pada bagian nama harus diisi dengan nama asli/nama lengkap mahasiswa yang bersangkutan, tanpa gelar akademik dan maksimal 30 huruf.
       Jika nama lengkap melebihi 30 huruf, dapat disingkat.
-  utter_tanyanim:
+  utter_ask/tanyanim:
   - text: |
       Pada bagian NIM tidak perlu diisi (dikosongkan).
       NIM akan diisikan oleh petugas BAK (Biro Akademik dan Kemahasiswaan).
-  utter_tanyafakultas:
+  utter_ask/tanyafakultas:
   - text: Pada bagian fakultas/program harus diisi dengan fakultas/program yang sesuai dengan mahasiswa yang bersangkutan.
-  utter_tanyajurusan:
+  utter_ask/tanyajurusan:
   - text: Pada bagian jurusan/program studi harus diisi dengan jurusan/program studi yang sesuai dengan mahasiswa yang bersangkutan.
-  utter_tanyajk:
+  utter_ask/tanyajk:
   - text: |
       Pada bagian jenis kelamin harus diisi dengan jenis kelamin yang sesuai dengan mahasiswa yang berkaitan.
       Jenis kelamin harus diisi dengan pilihan 'pria' atau 'wanita'. 
-  utter_tanyaprogram:
+  utter_ask/tanyaprogram:
   - text: |
       Pada bagian program pendidikan harus diisi dengan program pendidikan yang sesuai dengan mahasiswa yang bersangkutan saat ini.
       Pilihan untuk program pendidikan yaitu 'Doktor', 'Spesialis', 'Magister', 'Profesi', 'Sarjana' atau 'Diploma Tiga'.
-  utter_tanyatempatlahir:
+  utter_ask/tanyatempatlahir:
   - text: |
       Pada bagian tempat lahir harus diisi dengan tempat lahir asli mahasiswa yang bersangkutan.
       Untuk tempat lahir hanya diisi tempatnya saja, tidak perlu tanggal lahir.
       Dan penulisan tempat lahir maksimal 17 huruf, jika lebih bisa disingkat.
-  utter_tanyatanggallahir:
+  utter_ask/tanyatanggallahir:
   - text: |
       Pada bagian tanggal lahir harus diisi dengan tanggal lahir asli mahasiswa yang bersangkutan.
       Untuk penulisan tanggal lahir harus mencakup tanggal, bulan dan tahun lahir (Tanggal/Bulan/Tahun).
-  utter_tanyaalamat:
+  utter_ask/tanyaalamat:
   - text: |
       Pada bagian alamat tinggal harus diisi dengan alamat asli/alamat yang ditinggali sekarang dari mahasiswa yang bersangkutan.
       Untuk penulisan alamat maksimal 50 huruf, jika lebih dari 50 huruf bisa disingkat.
-  utter_tanyattd:
+  utter_ask/tanyattd:
   - text: Untuk tanda tangan harus diisi dengan tanda tangan asli mahasiswa itu sendiri, tidak boleh dipalsukan.
-  utter_tanyafoto:
+  utter_ask/tanyafoto:
   - text: |
       Untuk pas foto harus foto mahasiswa sendiri dari kepala sampai dada, dan untuk pakaian pada foto harus rapi dan sopan.
       Untuk ukuran pas foto harus 2x3 (bebas berwarna/hitam putih).
-  utter_questioner_calonmaba_1:
+  utter_ask/questioner_calonmaba_1:
   - text: questioner calon mahasiswa baru diisi oleh para Calon Mahasiswa Baru
-  utter_questioner_calonmaba_2:
+  utter_ask/questioner_calonmaba_2:
   - text: questioner calon mahasiswa baru berguna untuk keperluan evaluasi diri dalam rangka meningkatkan kualitas penyelenggaraan pendidikan di Universitas Sriwijaya
-  utter_questioner_calonmaba_3:
+  utter_ask/questioner_calonmaba_3:
   - text: Data yang boleh tidak kita isi di questioner calon mahasiswa baru adalah nama pada bagian identitas responden
-  utter_questioner_calonmaba_4:
+  utter_ask/questioner_calonmaba_4:
   - text: Ya, diperbolehkan memilih lebih dari satu jawaban untuk menjawab alasan mengikuti pendidikan pada Universitas Sriwijaya
-  utter_questioner_calonmaba_5:
+  utter_ask/questioner_calonmaba_5:
   - text: |
       Data- data yang kita isi di questioner calon mahasiswa baru sebagai berikut
 
@@ -393,7 +521,7 @@ responses:
          l. Saran teman/kakak kelas
          m. Terpaksa
          n. Lain-lain, sebutkan ………… "
-  utter_questioner_calonmaba_identitasdiri:
+  utter_ask/questioner_calonmaba_identitasdiri:
   - text: |
       Identitas Diri : 
       - Nama
@@ -406,7 +534,7 @@ responses:
          a. Melalui jalur
          b. Pada Fakultas
          c. Jurusan 
-  utter_questioner_calonmaba_alasan:
+  utter_ask/questioner_calonmaba_alasan:
   - text: |
       Alasan Mengikuti pendidikan pada Universitas Sriwijaya (lingkari pada jawaban -jawaban yang saudara pilih, boleh memilih lebih dari satu jawaban)
       a. Assesibilitas (lokasi kampus Universitas Sriwijaya relatif dekat dengan tempat asal keluarga saya)
@@ -422,7 +550,7 @@ responses:
       k. Saran dari sekolah/guru
       l. Saran teman/kakak kelas
       m. Terpaksa
-  utter_questioner_calonmaba_gajiirtu:
+  utter_ask/questioner_calonmaba_gajiirtu:
   - text: |
       Ada beberapa ilihan penghasilan orang tua yaitu : 
       a. < 1 juta rupiah /bulan
@@ -430,7 +558,7 @@ responses:
       c. 2 – 4 juta rupiah /bulan
       d. 4 – 6 juta rupiah /bulan
       e. > 6 juta rupiah /bulan "
-  utter_fakultas:
+  utter_ask/fakultas:
   - text: |
       Sistem Pengkodean NIM pada Fakultas-Fakultas di Universitas Sriwijaya adalah sebagai berikut : 
       01 - Fakultas Ekonomi
@@ -446,13 +574,13 @@ responses:
       20 - Pascasarjana
       Anda ingin di listkan Fakultas mana?
             
-  utter_ekonomi:
+  utter_ask/ekonomi:
   - text: |
       Sistem Pengkodean NIM pada Fakultas Ekonomi Universitas Sriwijaya adalah sebagai berikut : 
       Kode Fakultas adalah 01, dan kode jurusan untuk Diploma Tiga adalah 01-02 
       Sarjana/Profesi adalah 01-04, Magister adalah 01-03, dan untuk Doktor adalah 01-02
       Anda ingin di listkan nomor kode jurusan untuk tingkat mana?
-  utter_ekonomi_sarjana:
+  utter_ask/ekonomi_sarjana:
   - text: |
       List Kode Jurusan Fakultas Ekonomi Universitas Sriwijaya untuk tingkat D3/S1/Profesi : 
       Diploma Tiga
@@ -464,7 +592,7 @@ responses:
       03 - Akutansi
       Profesi
       04 - Pendidikan Profesi Akutansi
-  utter_ekonomi_magister:
+  utter_ask/ekonomi_magister:
   - text: |
       List Kode Jurusan Fakultas Ekonomi Universitas Sriwijaya untuk tingkat Magister/Doktor : 
       Magister
@@ -474,13 +602,13 @@ responses:
       Doktor
       01 - Ilmu Ekonomi
       02 - Ilmu Manajemen
-  utter_hukum:
+  utter_ask/hukum:
   - text: |
       Sistem Pengkodean NIM pada Fakultas Hukum Universitas Sriwijaya adalah sebagai berikut : 
       Kode Fakultas adalah 02, dan kode jurusan untuk Sarjana hanya satu yaitu 01
       Magister adalah 01-02, dan untuk Doktor juga hanya satu yaitu 01
       Apakah anda ingin melihat list nomor kode jurusan?
-  utter_hukum_list:
+  utter_ask/hukum_list:
   - text: |
       List Kode Jurusan Fakultas Hukum Universitas Sriwijaya:
       Sarjana
@@ -490,13 +618,13 @@ responses:
       02 - Kenotariatan
       Doktor
       01 - Ilmu Hukum
-  utter_teknik:
+  utter_ask/teknik:
   - text: |
       Sistem Pengkodean NIM pada Fakultas Teknik Universitas Sriwijaya adalah sebagai berikut : 
       Kode Fakultas adalah 03, dan kode jurusan untuk Sarjana adalah 01-07
       Magister adalah 01-04, dan untuk Doktor juga hanya satu yaitu 01
       Anda ingin di listkan nomor kode jurusan untuk tingkat mana?
-  utter_teknik_sarjana:
+  utter_ask/teknik_sarjana:
   - text: |
       List Kode Jurusan Fakultas Teknik Universitas Sriwijaya untuk tingkat S1 : 
       01 - Teknik Sipil
@@ -506,7 +634,7 @@ responses:
       05 - Teknik Mesin
       06 - Arsitektur
       07 - Teknik Geologi
-  utter_teknik_magister:
+  utter_ask/teknik_magister:
   - text: |
       List Kode Jurusan Fakultas Teknik Universitas Sriwijaya untuk tingkat Magister/Doktor : 
       Magister
@@ -516,13 +644,13 @@ responses:
       04 - Teknik Pertambangan
       Doktor
       01 - Doktor Ilmu Teknik
-  utter_kedokteran:
+  utter_ask/kedokteran:
   - text: |
       Sistem Perkodean NIM pada Fakultas Kedokteran Universitas Sriwijaya adalah sebagai berikut:
       Kode fakultas adalah 04, dan kode jurusan untuk Sarjana/Profesi adalah 01-04, 
       Spesialis-1/Magister adalah 01-12, dan untuk Spesialis-2 hanya ada 01.
       Anda ingin melihat list nomor kode jurusan untuk tingkat mana?
-  utter_kedokteran_sarjana:
+  utter_ask/kedokteran_sarjana:
   - text: |
       List Kode Jurusan Fakultas Kedokteran Universitas Sriwijaya untuk tingkat Sarjana/Profesi :
       Sarjana
@@ -535,7 +663,7 @@ responses:
       06 - Keperawatan
       07 - Kedokteran Gigi
       08 - Kedokteran Umum(Asal Kampus Palembang)
-  utter_kedokteran_magister:
+  utter_ask/kedokteran_magister:
   - text: |
       List Kode Jurusan Fakultas Kedokteran Universitas Sriwijaya untuk tingkat Spesialis/Magister :
       Spesialis-1
@@ -554,13 +682,13 @@ responses:
       12 - Ilmu Biomedik
       Spesialis-2
       01 - Ilmu Penyakit Dalam
-  utter_pertanian:
+  utter_ask/pertanian:
   - text: |
       Sistem Perkodean NIM pada Fakultas Pertanian Universitas Sriwijaya adalah sebagai berikut:
       Kode fakultas adalah 05, dan kode jurusan untuk Sarjana adalah 01-07, 
       Magister adalah 01-02, dan untuk Doktor hanya ada 01.
       Apakah anda ingin melihat list nomor kode jurusan?
-  utter_pertanian_list:
+  utter_ask/pertanian_list:
   - text: |
       List Kode Jurusan Fakultas Pertanian Universitas Sriwijaya :
       Sarjana
@@ -576,13 +704,13 @@ responses:
       02 - Agribisnis
       Doktor
       01 - Ilmu Pertanian
-  utter_keguruan:
+  utter_ask/keguruan:
   - text: |
       Sistem Perkodean NIM pada Fakultas Keguruan dan Ilmu Pendidikan Universitas Sriwijaya adalah sebagai berikut:
       Kode fakultas adalah 06, dan kode jurusan untuk Sarjana/Profesi adalah 01-30, 
       Magister adalah 01-05, dan untuk Doktor hanya ada 01.
       Anda ingin melihat list nomor kode jurusan untuk tingkat mana?
-  utter_keguruan_sarjana:
+  utter_ask/keguruan_sarjana:
   - text: |
       List Kode Jurusan Fakultas Keguruan Universitas Sriwijaya tingkat Sarjana :
       Sarjana
@@ -601,7 +729,7 @@ responses:
       13 - Pendidikan Guru Sekolah Dasar
       14 - Pendidikan Guru PAUD
       15 - Pendidikan Luar Sekolah
-  utter_keguruan_profesi:
+  utter_ask/keguruan_profesi:
   - text: |
       List Kode Jurusan Fakultas Keguruan Universitas Sriwijaya tingkat Profesi :
       Profesi
@@ -620,7 +748,7 @@ responses:
       28 - Pendidikan Guru Sekolah Dasar
       29 - Pendidikan Guru PAUD
       30 - Pendidikan Luar Sekolah
-  utter_keguruan_magister:
+  utter_ask/keguruan_magister:
   - text: |
       List Kode Jurusan Fakultas Keguruan Universitas Sriwijaya tingkat Magister/Doktor :
       Magister
@@ -645,7 +773,7 @@ responses:
   utter_iamabot:
   - text: I am a bot, powered by Rasa.
   utter_introduction:
-  - text: Hai, Saya adalah bot pribadi Farras menggunakan Rasa
+  - text: Hai, Saya adalah bot pribadi Kelompok 9 menggunakan Rasa
 actions:
 - utter_salam
 - uttter_salam
