@@ -51,6 +51,7 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+    
 - intent : formulir
   examples: |
     - apa saja formulir yang perlu di lengkapi ya kak ?
