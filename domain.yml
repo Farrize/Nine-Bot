@@ -70,6 +70,7 @@ intents:
   - begin_kodeprogrampendidikan
 
 responses:
+
   utter_salam:
   - text: |
       Sistem Form-Reg:03 Fakultas Universitas Sriwijaya Formulir Pernyataan perjanjian Mahasiswa
