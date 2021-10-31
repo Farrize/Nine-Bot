@@ -1,20 +1,56 @@
 version: "2.0"
 
 nlu:
-
 - intent: salam
-  examples : |
-    - selamat siang
-    - pagi kak
-    - misi min
-    - mau tanya dong kak    
-    - assalammualaikum
-    - permisi 
-    - tes
-    - malam 
-    - sore
+  examples: |
+    - hai
     - halo
-    
+    - selamat pagi
+    - selamat siangs
+    - selamat sore
+    - selamat malam
+    - assalamualaikum
+    - hi
+    - hello
+    - halo bung
+
+- intent: penutup
+  examples: |
+    - waalaikumussalam
+    - dadah
+    - selamat tingal
+    - sampai jumpa
+    - terima kasih
+
+- intent: setuju
+  examples: |
+    - iya
+    - y
+    - memang
+    - betul
+    - boleh
+    - boleh juga
+    - tentu
+    - tentu saja
+
+- intent: menolak
+  examples: |
+    - tidak
+    - g
+    - ga
+    - ngga
+    - tidak pernah
+    - tidak mungkin
+    - tidak juga
+    - tidak seperti itu
+    - jangan
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
 - intent : formulir
   examples: |
     - apa saja formulir yang perlu di lengkapi ya kak ?
@@ -53,7 +89,7 @@ nlu:
     - isi konten surat pernyataan
     
 - intent : organisasi_sekolah
-examples : 
+  examples : |
     - Organisasi sekolah
     - Organisasi sekolah adalah 
     - Organisasi apa yang ada di sekolah
@@ -77,7 +113,7 @@ examples :
     - Jenis organisasi di sekolah
 
 - intent : organisasi_intra_sekolah
-examples :
+  examples : |
     - Organisasi intra sekolah
     - Organisasi intra sekolah adalah
     - Organisasi intra sekolah apa
@@ -91,7 +127,7 @@ examples :
     - Lihat organisasi intra sekolah
 
 - intent : organisasi_ekstra_sekolah
-examples :
+  examples : |
     - Organisasi ekstra sekolah
     - Organisasi ekstra sekolah adalah
     - Organisasi ekstra sekolah apa
@@ -108,7 +144,7 @@ examples :
     - Lihat berbagai macam organisasi ekstra sekolah
 
 - intent : prestasi_sekolah
-examples :
+  examples : |
     - Prestasi di sekolah
     - Prestasi di sekolah apa saja
     - Prestasi sekolah
@@ -121,7 +157,7 @@ examples :
     - Prestasi sekolah yang bisa diraih
 
 - intent : hobi
-examples :
+  examples : |
     - Hobi
     - Hobi apa saja yang bisa dilakukan
     - Hobi yang bisa dilakukan
@@ -139,7 +175,7 @@ examples :
     - Macam-macam hobi
 
 - intent : data_keluarga
-examples : 
+  examples : |
     - Data keluarga
     - Data keluarga ada dimana
     - Dimana bisa lihat data keluarga
