@@ -389,6 +389,15 @@ nlu:
     - Plihan gaji orang tua
     - tampilkan pendapatan orang tua
     
+- intent: ask/begin_pengkodean
+  examples: |
+    - Halo apakah saya bisa bertanya tentang sistem pengkodean NIM di Universitas Sriwijaya ?
+    - apa saja sistem pengkodean NIM di Universitas Sriwijaya ?
+    - Saya ingin bertanya sistem pengkodean NIM di Universitas Sriwijaya ?
+    - Assalammualaikum mau nanya sistem pengkodean NIM di Universitas Sriwijaya gimana ya?
+    - Tolong jelaskan sistem pengkodean NIM di Universitas Sriwijaya ?
+    - Mau tau dong sistem pengkodean NIM di Universitas Sriwijaya ?
+    
 - intent: ask/begin_fakultas
   examples: |
     - Halo apakah saya bisa bertanya tentang sistem pengkodean NIM Fakultas di Universitas Sriwijaya ?
@@ -397,6 +406,15 @@ nlu:
     - Assalammualaikum mau nanya sistem pengkodean NIM Fakultas di Universitas Sriwijaya gimana ya?
     - Tolong jelaskan sistem pengkodean NIM Fakultas di Universitas Sriwijaya ?
     - Mau tau dong sistem pengkodean NIM Fakultas di Universitas Sriwijaya ?
+    
+- intent: ask/begin_prodi
+  examples: |
+    - Halo apakah saya bisa bertanya tentang sistem pengkodean NIM Program Studi di Universitas Sriwijaya ?
+    - apa saja sistem pengkodean NIM Program Studi di Universitas Sriwijaya ?
+    - Saya ingin bertanya sistem pengkodean NIM Program Studi di Universitas Sriwijaya ?
+    - Assalammualaikum mau nanya sistem pengkodean NIM Program Studi di Universitas Sriwijaya gimana ya?
+    - Tolong jelaskan sistem pengkodean NIM Program Studi di Universitas Sriwijaya ?
+    - Mau tau dong sistem pengkodean NIM Program Studi di Universitas Sriwijaya ?
     
 - intent: ask/begin_ekonomi
   examples: |
@@ -451,18 +469,81 @@ nlu:
     - kak pengen tahu dong soal penjelasan nim yang ada di pertanian
     - boleh diberitahu soal sistem nim yang ada di pertanian?
     
-- intent : ask/begin_keguruan
+- intent: ask/begin_keguruandanilmupendidikan
   examples: |
-    - Halo, apakah saya bisa bertanya tentang sistem perkodean NIM fakultas keguruan?
-    - apa saja ya sistem perkodean NIM yang ada di fakultas keguruan?
-    - Hai kak apakah bisa dijelaskan tentang sistem perkodean NIM keguruan unsri?
-    - Saya ingin bertanya tentang sistem perkodean NIM keguruan unsri apakah bisa?
-    - Assalamualaikum ingin bertanya dong soal sistem perkodean NIM keguruan unsri
-    - apa bisa dijelaskan tentang sistem perkodean NIM fkip?
-    - apa saja sih nim-nim yang ada di fakultas fkip?
-    - bagaimana sistem perkodean nim yang ada di fkip?
-    - kak pengen tahu dong soal penjelasan nim yang ada di fkip
-    - boleh diberitahu soal sistem nim yang ada di fkip?
+    - Halo apakah saya bisa bertanya tentang sistem pengkodean NIM Fakultas Keguruan dan Ilmu Pendidikan?
+    - Apa saja sistem pengkodean NIM Fakultas Keguruan dan Ilmu Pendidikan?
+    - Saya ingin bertanya sistem pengkodean NIM Fakultas Keguruan dan Ilmu Pendidikan?
+    - Assalammualaikum mau nanya sistem pengkodean NIM Fakultas Keguruan dan Ilmu Pendidikan gimana ya?
+    - Tolong jelaskan sistem pengkodean NIM Fakultas Keguruan dan Ilmu Pendidikan?
+    - Mau tau dong sistem pengkodean NIM Fakultas Keguruan dan Ilmu Pendidikan?
+    - Izin bertanya siapa yang bisa menjelaskan kepada saya tentang sistem pengkodean NIM Fakultas Keguruan dan Ilmu Pendidikan?
+    - Bagaimana cara sistem pengkodean NIM Fakultas Keguruan dan Ilmu Pendidikan?
+
+- intent: ask/begin_ilmusosialdanilmupolitik
+  examples: |
+    - Halo apakah saya bisa bertanya tentang sistem pengkodean NIM Fakultas Ilmu Sosial dan Ilmu Politik?
+    - Apa saja sistem pengkodean NIM Fakultas Ilmu Sosial dan Ilmu Politik?
+    - Saya ingin bertanya sistem pengkodean NIM Fakultas Ilmu Sosial dan Ilmu Politik?
+    - Assalammualaikum mau nanya sistem pengkodean NIM Fakultas Ilmu Sosial dan Ilmu Politik gimana ya?
+    - Tolong jelaskan sistem pengkodean NIM Fakultas Ilmu Sosial dan Ilmu Politik?
+    - Mau tau dong sistem pengkodean NIM Fakultas Ilmu Sosial dan Ilmu Politik?
+    - Izin bertanya siapa yang bisa menjelaskan kepada saya tentang sistem pengkodean NIM Fakultas Ilmu Sosial dan Ilmu Politik?
+    - Bagaimana cara sistem pengkodean NIM Fakultas Ilmu Sosial dan Ilmu Politik?
+
+- intent: ask/begin_matematikadanilmupengetahuanalam
+  examples: |
+    - Halo apakah saya bisa bertanya tentang sistem pengkodean NIM Fakultas Matematika dan Ilmu Pengetahuan Alam?
+    - Apa saja sistem pengkodean NIM Fakultas Matematika dan Ilmu Pengetahuan Alam?
+    - Saya ingin bertanya sistem pengkodean NIM Fakultas Matematika dan Ilmu Pengetahuan Alam?
+    - Assalammualaikum mau nanya sistem pengkodean NIM Fakultas Matematika dan Ilmu Pengetahuan Alam gimana ya?
+    - Tolong jelaskan sistem pengkodean NIM Fakultas Matematika dan Ilmu Pengetahuan Alam?
+    - Mau tau dong sistem pengkodean NIM Fakultas Matematika dan Ilmu Pengetahuan Alam?
+    - Izin bertanya siapa yang bisa menjelaskan kepada saya tentang sistem pengkodean NIM Fakultas Matematika dan Ilmu Pengetahuan Alam?
+    - Bagaimana cara sistem pengkodean NIM Fakultas Matematika dan Ilmu Pengetahuan Alam?
+
+- intent: ask/begin_ilmukomputer
+  examples: |
+    - Halo apakah saya bisa bertanya tentang sistem pengkodean NIM Fakultas Ilmu Komputer?
+    - Apa saja sistem pengkodean NIM Fakultas Ilmu Komputer?
+    - Saya ingin bertanya sistem pengkodean NIM Fakultas Ilmu Komputer?
+    - Assalammualaikum mau nanya sistem pengkodean NIM Fakultas Ilmu Komputer gimana ya?
+    - Tolong jelaskan sistem pengkodean NIM Fakultas Ilmu Komputer?
+    - Mau tau dong sistem pengkodean NIM Fakultas Ilmu Komputer?
+    - Izin bertanya siapa yang bisa menjelaskan kepada saya tentang sistem pengkodean NIM Fakultas Ilmu Komputer?
+    - Bagaimana cara sistem pengkodean NIM Fakultas Ilmu Komputer?
+
+- intent: ask/begin_kesehatanmasyarakat
+  examples: |
+    - Halo apakah saya bisa bertanya tentang sistem pengkodean NIM Fakultas Kesehatan Masyarakat?
+    - Apa saja sistem pengkodean NIM Fakultas Kesehatan Masyarakat?
+    - Saya ingin bertanya sistem pengkodean NIM Fakultas Kesehatan Masyarakat?
+    - Assalammualaikum mau nanya sistem pengkodean NIM Fakultas Kesehatan Masyarakat gimana ya?
+    - Tolong jelaskan sistem pengkodean NIM Fakultas Kesehatan Masyarakat?
+    - Mau tau dong sistem pengkodean NIM Fakultas Kesehatan Masyarakat?
+    - Izin bertanya siapa yang bisa menjelaskan kepada saya tentang sistem pengkodean NIM Fakultas Kesehatan Masyarakat?
+    - Bagaimana cara sistem pengkodean NIM Fakultas Kesehatan Masyarakat?
+
+- intent: ask/begin_pascasarjana
+  examples: |
+    - Halo apakah saya bisa bertanya tentang sistem pengkodean NIM Program Pascasarjana?
+    - Apa saja sistem pengkodean NIM Program Pascasarjana?
+    - Saya ingin bertanya sistem pengkodean NIM Program Pascasarjana?
+    - Assalammualaikum mau nanya sistem pengkodean NIM Program Pascasarjana gimana ya?
+    - Tolong jelaskan sistem pengkodean NIM Program Pascasarjana?
+    - Mau tau dong sistem pengkodean NIM Program Pascasarjana?
+    - Izin bertanya siapa yang bisa menjelaskan kepada saya tentang sistem pengkodean NIM Program Pascasarjana?
+    - Bagaimana cara sistem pengkodean NIM Program Pascasarjana?
+
+- intent: ask/begin_kodeprogrampendidikan
+  examples: |
+    - Halo apakah saya bisa bertanya tentang sistem pengkodean NIM Program Pendidikan di Universitas Sriwijaya?
+    - Apa saja sistem pengkodean NIM Program Pendidikan di Universitas Sriwijaya?
+    - Saya ingin bertanya sistem pengkodean NIM Program Pendidikan di Universitas Sriwijaya?
+    - Assalammualaikum mau nanya sistem pengkodean NIM Program Pendidikan di Universitas Sriwijaya gimana ya?
+    - Tolong jelaskan sistem pengkodean NIM Program Pendidikan di Universitas Sriwijaya?
+    - Mau tau dong sistem pengkodean NIM Program Pendidikan di Universitas Sriwijaya?
+    - Bagaimana ya cara mengkodekan NIM Program Pendidikan di Universitas Sriwijaya?
     
 - intent: ask/diploma
   examples: |
@@ -488,34 +569,6 @@ nlu:
     - boleh kasihtahu yang untuk s1
     - untuk yang s1 kak?
     
-- intent : ask/magister
-  examples : |
-    - spesialis 
-    - spesialis kak
-    - yang spesialis tolong
-    - boleh kasihtahu yang spesialis kak?
-    - spesialis aja ya
-    - s2
-    - s2 kak
-    - yang s2 tolong
-    - boleh kasihtahu yang s2 kak?
-    - s2 aja ya
-    - hmmm, yang magister aja
-    - magister
-    - yang magister kak
-    - boleh kasihtahu yang untuk magister
-    - untuk yang magister kak?
-    - s3
-    - s3 kak
-    - yang s3 tolong
-    - boleh kasihtahu yang s3 kak?
-    - s3 aja ya
-    - hmmm, yang doktor aja
-    - doktor
-    - yang doktor kak
-    - boleh kasihtahu yang untuk doktor
-    - untuk yang doktor kak?
-     
 - intent : ask/profesi
   examples: |
     - profesi
@@ -529,274 +582,38 @@ nlu:
     - boleh kasihtahu yang untuk profesi
     - untuk yang profesi kak?
     
-- intent: ask/begin_keguruandanilmupendidikan
-  examples: |
-    - Halo apakah saya bisa bertanya tentang sistem pengkodean NIM Fakultas Keguruan dan Ilmu Pendidikan?
-    - Apa saja sistem pengkodean NIM Fakultas Keguruan dan Ilmu Pendidikan?
-    - Saya ingin bertanya sistem pengkodean NIM Fakultas Keguruan dan Ilmu Pendidikan?
-    - Assalammualaikum mau nanya sistem pengkodean NIM Fakultas Keguruan dan Ilmu Pendidikan gimana ya?
-    - Tolong jelaskan sistem pengkodean NIM Fakultas Keguruan dan Ilmu Pendidikan?
-    - Mau tau dong sistem pengkodean NIM Fakultas Keguruan dan Ilmu Pendidikan?
-    - Izin bertanya siapa yang bisa menjelaskan kepada saya tentang sistem pengkodean NIM Fakultas Keguruan dan Ilmu Pendidikan?
-    - Bagaimana cara sistem pengkodean NIM Fakultas Keguruan dan Ilmu Pendidikan?
-    
-- intent: ask/keguruandanilmupendidikan_profesi
-  examples: |
-    - sarjana
-    - sarjana kak
-    - sarjana saja
-    - tolong lihat yang sarjana
-    - tolong yang sarjana
-    - s1
-    - untuk yang s1?
-    - boleh lihat yang s1
-    - bagian s1
-    - izin melihat yang s1 dong
-    
-- intent: ask/keguruandanilmupendidikan_magister
-  examples: |
-    - magister
-    - magister kak
-    - magister saja
-    - tolong lihat yang magister
-    - tolong yang magister
+- intent : ask/magister_spesialis1
+  examples : |
+    - spesialis 1 
+    - spesialis 1 kak
+    - yang spesialis 1 tolong
+    - boleh kasihtahu yang spesialis1 kak?
+    - spesialis1 aja ya
     - s2
-    - untuk yang s2?
-    - boleh lihat yang s2
-    - bagian s2
-    - izin melihat yang s2 dong
+    - s2 kak
+    - yang s2 tolong
+    - boleh kasihtahu yang s2 kak?
+    - s2 aja ya
+    - hmmm, yang magister aja
+    - magister
+    - yang magister kak
+    - boleh kasihtahu yang untuk magister
+    - untuk yang magister kak?
     
-- intent: ask/keguruandanilmupendidikan_doktor
-  examples: |
-    - doktor
-    - doktor kak
-    - doktor saja
-    - tolong lihat yang doktor
-    - tolong yang doktor
+- intent : ask/doktor_spesialis2
+  examples : |
+    - spesialis 2 
+    - spesialis 2 kak
+    - yang spesialis 2 tolong
+    - boleh kasihtahu yang spesialis 2 kak?
+    - spesialis 2 aja ya
     - s3
-    - untuk yang s3?
-    - boleh lihat yang s3
-    - bagian s3
-    - izin melihat yang s3 dong
-    
-- intent: ask/begin_ilmusosialdanilmupolitik
-  examples: |
-    - Halo apakah saya bisa bertanya tentang sistem pengkodean NIM Fakultas Ilmu Sosial dan Ilmu Politik?
-    - Apa saja sistem pengkodean NIM Fakultas Ilmu Sosial dan Ilmu Politik?
-    - Saya ingin bertanya sistem pengkodean NIM Fakultas Ilmu Sosial dan Ilmu Politik?
-    - Assalammualaikum mau nanya sistem pengkodean NIM Fakultas Ilmu Sosial dan Ilmu Politik gimana ya?
-    - Tolong jelaskan sistem pengkodean NIM Fakultas Ilmu Sosial dan Ilmu Politik?
-    - Mau tau dong sistem pengkodean NIM Fakultas Ilmu Sosial dan Ilmu Politik?
-    - Izin bertanya siapa yang bisa menjelaskan kepada saya tentang sistem pengkodean NIM Fakultas Ilmu Sosial dan Ilmu Politik?
-    - Bagaimana cara sistem pengkodean NIM Fakultas Ilmu Sosial dan Ilmu Politik?
-    
-- intent: ask/ilmusosialdanilmupolitik_sarjana
-  examples: |
-    - sarjana
-    - sarjana kak
-    - sarjana saja
-    - tolong lihat yang sarjana
-    - tolong yang sarjana
-    - s1
-    - untuk yang s1?
-    - boleh lihat yang s1
-    - bagian s1
-    - izin melihat yang s1 dong
-    
-- intent: ask/ilmusosialdanilmupolitik_magister
-  examples: |
-    - magister
-    - magister kak
-    - magister saja
-    - tolong lihat yang magister
-    - tolong yang magister
-    - s2
-    - untuk yang s2?
-    - boleh lihat yang s2
-    - bagian s2
-    - izin melihat yang s2 dong
-    
-- intent: ask/begin_matematikadanilmupengetahuanalam
-  examples: |
-    - Halo apakah saya bisa bertanya tentang sistem pengkodean NIM Fakultas Matematika dan Ilmu Pengetahuan Alam?
-    - Apa saja sistem pengkodean NIM Fakultas Matematika dan Ilmu Pengetahuan Alam?
-    - Saya ingin bertanya sistem pengkodean NIM Fakultas Matematika dan Ilmu Pengetahuan Alam?
-    - Assalammualaikum mau nanya sistem pengkodean NIM Fakultas Matematika dan Ilmu Pengetahuan Alam gimana ya?
-    - Tolong jelaskan sistem pengkodean NIM Fakultas Matematika dan Ilmu Pengetahuan Alam?
-    - Mau tau dong sistem pengkodean NIM Fakultas Matematika dan Ilmu Pengetahuan Alam?
-    - Izin bertanya siapa yang bisa menjelaskan kepada saya tentang sistem pengkodean NIM Fakultas Matematika dan Ilmu Pengetahuan Alam?
-    - Bagaimana cara sistem pengkodean NIM Fakultas Matematika dan Ilmu Pengetahuan Alam?
-    
-- intent: ask/matematikadanilmupengetahuanalam_sarjana
-  examples: |
-    - sarjana
-    - sarjana kak
-    - sarjana saja
-    - tolong lihat yang sarjana
-    - tolong yang sarjana
-    - s1
-    - untuk yang s1?
-    - boleh lihat yang s1
-    - bagian s1
-    - izin melihat yang s1 dong
-    
-- intent: ask/matematikadanilmupengetahuanalam_magister
-  examples: |
-    - magister
-    - magister kak
-    - magister saja
-    - tolong lihat yang magister
-    - tolong yang magister
-    - s2
-    - untuk yang s2?
-    - boleh lihat yang s2
-    - bagian s2
-    - izin melihat yang s2 dong
-    
-- intent: ask/matematikadanilmupengetahuanalam_doktor
-  examples: |
+    - s3 kak
+    - yang s3 tolong
+    - boleh kasihtahu yang s3 kak?
+    - s3 aja ya
+    - hmmm, yang doktor aja
     - doktor
-    - doktor kak
-    - doktor saja
-    - tolong lihat yang doktor
-    - tolong yang doktor
-    - s3
-    - untuk yang s3?
-    - boleh lihat yang s3
-    - bagian s3
-    - izin melihat yang s3 dong
-    
-- intent: ask/begin_ilmukomputer
-  examples: |
-    - Halo apakah saya bisa bertanya tentang sistem pengkodean NIM Fakultas Ilmu Komputer?
-    - Apa saja sistem pengkodean NIM Fakultas Ilmu Komputer?
-    - Saya ingin bertanya sistem pengkodean NIM Fakultas Ilmu Komputer?
-    - Assalammualaikum mau nanya sistem pengkodean NIM Fakultas Ilmu Komputer gimana ya?
-    - Tolong jelaskan sistem pengkodean NIM Fakultas Ilmu Komputer?
-    - Mau tau dong sistem pengkodean NIM Fakultas Ilmu Komputer?
-    - Izin bertanya siapa yang bisa menjelaskan kepada saya tentang sistem pengkodean NIM Fakultas Ilmu Komputer?
-    - Bagaimana cara sistem pengkodean NIM Fakultas Ilmu Komputer?
-    
-- intent: ask/ilmukomputer_diplomatiga
-  examples: |
-    - diploma
-    - diploma kak
-    - diploma saja
-    - tolong lihat yang diploma
-    - tolong yang diploma
-    - d3
-    - untuk yang d3?
-    - boleh lihat yang d3
-    - bagian d3
-    - izin melihat yang d3 dong
-    
-- intent: ask/ilmukomputer_sarjana
-  examples: |
-    - sarjana
-    - sarjana kak
-    - sarjana saja
-    - tolong lihat yang sarjana
-    - tolong yang sarjana
-    - s1
-    - untuk yang s1?
-    - boleh lihat yang s1
-    - bagian s1
-    - izin melihat yang s1 dong
-    
-- intent: ask/ilmukomputer_magister
-  examples: |
-    - magister
-    - magister kak
-    - magister saja
-    - tolong lihat yang magister
-    - tolong yang magister
-    - s2
-    - untuk yang s2?
-    - boleh lihat yang s2
-    - bagian s2
-    - izin melihat yang s2 dong
-    
-- intent: ask/begin_kesehatanmasyarakat
-  examples: |
-    - Halo apakah saya bisa bertanya tentang sistem pengkodean NIM Fakultas Kesehatan Masyarakat?
-    - Apa saja sistem pengkodean NIM Fakultas Kesehatan Masyarakat?
-    - Saya ingin bertanya sistem pengkodean NIM Fakultas Kesehatan Masyarakat?
-    - Assalammualaikum mau nanya sistem pengkodean NIM Fakultas Kesehatan Masyarakat gimana ya?
-    - Tolong jelaskan sistem pengkodean NIM Fakultas Kesehatan Masyarakat?
-    - Mau tau dong sistem pengkodean NIM Fakultas Kesehatan Masyarakat?
-    - Izin bertanya siapa yang bisa menjelaskan kepada saya tentang sistem pengkodean NIM Fakultas Kesehatan Masyarakat?
-    - Bagaimana cara sistem pengkodean NIM Fakultas Kesehatan Masyarakat?
-    
-- intent: ask/kesehatanmasyarakat_sarjana
-  examples: |
-    - sarjana
-    - sarjana kak
-    - sarjana saja
-    - tolong lihat yang sarjana
-    - tolong yang sarjana
-    - s1
-    - untuk yang s1?
-    - boleh lihat yang s1
-    - bagian s1
-    - izin melihat yang s1 dong
-    
-- intent: ask/kesehatanmasyarakat_magister
-  examples: |
-    - magister
-    - magister kak
-    - magister saja
-    - tolong lihat yang magister
-    - tolong yang magister
-    - s2
-    - untuk yang s2?
-    - boleh lihat yang s2
-    - bagian s2
-    - izin melihat yang s2 dong
-    
-- intent: ask/begin_pascasarjana
-  examples: |
-    - Halo apakah saya bisa bertanya tentang sistem pengkodean NIM Program Pascasarjana?
-    - Apa saja sistem pengkodean NIM Program Pascasarjana?
-    - Saya ingin bertanya sistem pengkodean NIM Program Pascasarjana?
-    - Assalammualaikum mau nanya sistem pengkodean NIM Program Pascasarjana gimana ya?
-    - Tolong jelaskan sistem pengkodean NIM Program Pascasarjana?
-    - Mau tau dong sistem pengkodean NIM Program Pascasarjana?
-    - Izin bertanya siapa yang bisa menjelaskan kepada saya tentang sistem pengkodean NIM Program Pascasarjana?
-    - Bagaimana cara sistem pengkodean NIM Program Pascasarjana?
-    
-- intent: ask/pascasarjana_magister
-  examples: |
-    - magister
-    - magister kak
-    - magister saja
-    - tolong lihat yang magister
-    - tolong yang magister
-    - s2
-    - untuk yang s2?
-    - boleh lihat yang s2
-    - bagian s2
-    - izin melihat yang s2 dong
-    
-- intent: ask/pascasarjana_doktor
-  examples: |
-    - doktor
-    - doktor kak
-    - doktor saja
-    - tolong lihat yang doktor
-    - tolong yang doktor
-    - s3
-    - untuk yang s3?
-    - boleh lihat yang s3
-    - bagian s3
-    - izin melihat yang s3 dong
-    
-- intent: ask/begin_kodeprogrampendidikan
-  examples: |
-    - Halo apakah saya bisa bertanya tentang sistem pengkodean NIM Program Pendidikan di Universitas Sriwijaya?
-    - Apa saja sistem pengkodean NIM Program Pendidikan di Universitas Sriwijaya?
-    - Saya ingin bertanya sistem pengkodean NIM Program Pendidikan di Universitas Sriwijaya?
-    - Assalammualaikum mau nanya sistem pengkodean NIM Program Pendidikan di Universitas Sriwijaya gimana ya?
-    - Tolong jelaskan sistem pengkodean NIM Program Pendidikan di Universitas Sriwijaya?
-    - Mau tau dong sistem pengkodean NIM Program Pendidikan di Universitas Sriwijaya?
-    - Bagaimana ya cara mengkodekan NIM Program Pendidikan di Universitas Sriwijaya?
-   
+    - yang doktor kak
+    - boleh kasihtahu yang untuk doktor
+    - untuk yang doktor kak?
