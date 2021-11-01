@@ -77,7 +77,11 @@ intents:
     use_entities: true
 - ask/questioner_calonmaba_gajiortu:
     use_entities: true
+- ask/begin_pengkodean:
+    use_entities: true
 - ask/begin_fakultas:
+    use_entities: true
+- ask/begin_prodi:
     use_entities: true
 - ask/begin_ekonomi:
     use_entities: true
@@ -89,199 +93,41 @@ intents:
     use_entities: true
 - ask/begin_pertanian:
     use_entities: true
-- ask/begin_keguruan:
-    use_entities: true
 - ask/diploma:
     use_entities: true
 - ask/sarjana:
     use_entities: true
 - ask/profesi:
     use_entities: true
-- ask/magister:
+- ask/magister_spesialis1:
+    use_entities: true
+- ask/doktor_spesialis2:
     use_entities: true
 - ask/begin_keguruandanilmupendidikan:
     use_entities: true
-- ask/keguruandanilmupendidikan_profesi:
-    use_entities: true
-- ask/keguruandanilmupendidikan_magister:
-    use_entities: true
-- ask/keguruandanilmupendidikan_doktor:
-    use_entities: true
 - ask/begin_ilmusosialdanilmupolitik:
-    use_entities: true
-- ask/ilmusosialdanilmupolitik_sarjana:
-    use_entities: true
-- ask/ilmusosialdanilmupolitik_magister:
     use_entities: true
 - ask/begin_matematikadanilmupengetahuanalam:
     use_entities: true
-- ask/matematikadanilmupengetahuanalam_sarjana:
-    use_entities: true
-- ask/matematikadanilmupengetahuanalam_magister:
-    use_entities: true
-- ask/matematikadanilmupengetahuanalam_doktor:
-    use_entities: true
 - ask/begin_ilmukomputer:
-    use_entities: true
-- ask/ilmukomputer_diplomatiga:
-    use_entities: true
-- ask/ilmukomputer_sarjana:
-    use_entities: true
-- ask/ilmukomputer_magister:
     use_entities: true
 - ask/begin_kesehatanmasyarakat:
     use_entities: true
-- ask/kesehatanmasyarakat_sarjana:
-    use_entities: true
-- ask/kesehatanmasyarakat_magister:
-    use_entities: true
 - ask/begin_pascasarjana:
-    use_entities: true
-- ask/pascasarjana_magister:
-    use_entities: true
-- ask/pascasarjana_doktor:
     use_entities: true
 - ask/begin_kodeprogrampendidikan:
     use_entities: true
-- tanyajk:
-    use_entities: true
-- begin_kedokteran:
-    use_entities: true
-- magister:
-    use_entities: true
-- keguruandanilmupendidikan_doktor:
-    use_entities: true
-- tanyaalamat:
-    use_entities: true
-- ilmusosialdanilmupolitik_magister:
-    use_entities: true
-- begin_ilmusosialdanilmupolitik:
-    use_entities: true
-- tanyanim:
-    use_entities: true
-- diploma:
-    use_entities: true
-- tanyaprogram:
-    use_entities: true
-- ilmukomputer_diplomatiga:
-    use_entities: true
-- matematikadanilmupengetahuanalam_sarjana:
-    use_entities: true
-- organisasi_ekstra_sekolah:
-    use_entities: true
-- begin_pascasarjana:
-    use_entities: true
-- questioner_calonmaba_5:
-    use_entities: true
-- questioner_calonmaba_alasan:
-    use_entities: true
-- begin_hukum:
-    use_entities: true
-- tanyanama:
-    use_entities: true
-- questioner_calonmaba_identitasdiri:
-    use_entities: true
-- questioner_calonmaba_gajiortu:
-    use_entities: true
-- sarjana:
-    use_entities: true
-- keguruandanilmupendidikan_profesi:
-    use_entities: true
-- perjanjian_maba:
-    use_entities: true
-- hobi:
-    use_entities: true
-- begin_pertanian:
-    use_entities: true
-- tanyafakultas:
-    use_entities: true
-- begin_fakultas:
-    use_entities: true
-- tanyattd:
-    use_entities: true
-- tanyaform:
-    use_entities: true
-- ilmukomputer_sarjana:
-    use_entities: true
-- tanyahuruf:
-    use_entities: true
-- data_keluarga:
-    use_entities: true
-- begin_matematikadanilmupengetahuanalam:
-    use_entities: true
-- pascasarjana_magister:
-    use_entities: true
-- keguruandanilmupendidikan_magister:
-    use_entities: true
-- ilmukomputer_magister:
-    use_entities: true
-- formulir:
-    use_entities: true
-- organisasi_intra_sekolah:
-    use_entities: true
-- prestasi_sekolah:
-    use_entities: true
-- begin_ekonomi:
-    use_entities: true
-- begin_kesehatanmasyarakat:
-    use_entities: true
-- tanyatanggallahir:
-    use_entities: true
-- begin_keguruan:
-    use_entities: true
-- begin_teknik:
-    use_entities: true
-- surat_pernyataan:
-    use_entities: true
-- matematikadanilmupengetahuanalam_doktor:
-    use_entities: true
-- kesehatanmasyarakat_sarjana:
-    use_entities: true
-- begin_keguruandanilmupendidikan:
-    use_entities: true
-- begin_kodeprogrampendidikan:
-    use_entities: true
-- matematikadanilmupengetahuanalam_magister:
-    use_entities: true
-- pascasarjana_doktor:
-    use_entities: true
-- ilmusosialdanilmupolitik_sarjana:
-    use_entities: true
-- cariform:
-    use_entities: true
-- tanyafoto:
-    use_entities: true
-- kesehatanmasyarakat_magister:
-    use_entities: true
-- organisasi_sekolah:
-    use_entities: true
-- begin_ilmukomputer:
-    use_entities: true
-- tanyajurusan:
-    use_entities: true
-- tanyatempatlahir:
-    use_entities: true
-- profesi:
-    use_entities: true
-- greet:
-    use_entities: true
-- questioner_calonmaba_2:
-    use_entities: true
 - mood_unhappy:
     use_entities: true
-- questioner_calonmaba_1:
-    use_entities: true
-- questioner_calonmaba_3:
-    use_entities: true
 - affirm:
-    use_entities: true
-- questioner_calonmaba_4:
     use_entities: true
 - mood_great:
     use_entities: true
 - goodbye:
     use_entities: true
 - deny:
+    use_entities: true
+- ask:
     use_entities: true
 entities: []
 slots: {}
@@ -293,7 +139,7 @@ responses:
       -Mengisi Formulir data Mahasiswa yang harus di lengkapi.
       -Patuh dan menaati janji mahasiswa Universitas Sriwijaya.
       -Menyalin Surat Pernyataan yang telah di siapkan. 
-  utter_ask/Formulir:
+  utter_ask/formulir:
   - text: |
       List Formulir yang harus di isi
       -Tahun Ajaran Yang akan di mulai :....../........
@@ -550,7 +396,7 @@ responses:
       k. Saran dari sekolah/guru
       l. Saran teman/kakak kelas
       m. Terpaksa
-  utter_ask/questioner_calonmaba_gajiirtu:
+  utter_ask/questioner_calonmaba_gajiortu:
   - text: |
       Ada beberapa ilihan penghasilan orang tua yaitu : 
       a. < 1 juta rupiah /bulan
@@ -558,9 +404,21 @@ responses:
       c. 2 – 4 juta rupiah /bulan
       d. 4 – 6 juta rupiah /bulan
       e. > 6 juta rupiah /bulan "
+  utter_ask/pengkodean:
+  - text: |
+      Sistem Pengkodean NIM Universitas Sriwijaya terbagi menjadi beberapa bagian yaitu : 
+      A - Kode Fakultas/Program
+      B - Kode Program Studi/Jurusan
+      C - Kode Program Pendidikan
+      D - Kode Jalur Masuk Program
+      E - Kode Bulan Masuk
+      F - Kode Tahun Masuk
+      G - Kode Tahun Keluar
+      H - Nomor Urut Pendaftaran (Registrasi)
+      Anda ingin melihat bagian mana?    
   utter_ask/fakultas:
   - text: |
-      Sistem Pengkodean NIM pada Fakultas-Fakultas di Universitas Sriwijaya adalah sebagai berikut : 
+      Sistem Pengkodean NIM Universitas Sriwijaya bagian Fakultas/Program sebagai berikut: 
       01 - Fakultas Ekonomi
       02 - Fakultas Hukum
       03 - Fakultas Teknik
@@ -571,16 +429,16 @@ responses:
       08 - Fakultas Matematika dan Ilmu Pengetahuan Alam
       09 - Fakultas Ilmu Komputer
       10 - Fakultas Kesehatan Masyarakat
+      dst................................................
       20 - Pascasarjana
-      Anda ingin di listkan Fakultas mana?
             
   utter_ask/ekonomi:
   - text: |
       Sistem Pengkodean NIM pada Fakultas Ekonomi Universitas Sriwijaya adalah sebagai berikut : 
       Kode Fakultas adalah 01, dan kode jurusan untuk Diploma Tiga adalah 01-02 
       Sarjana/Profesi adalah 01-04, Magister adalah 01-03, dan untuk Doktor adalah 01-02
-      Anda ingin di listkan nomor kode jurusan untuk tingkat mana?
-  utter_ask/ekonomi_sarjana:
+      Apakah anda ingin melihat list nomor kode jurusan?
+  utter_ask/ekonomi_dasar:
   - text: |
       List Kode Jurusan Fakultas Ekonomi Universitas Sriwijaya untuk tingkat D3/S1/Profesi : 
       Diploma Tiga
@@ -592,7 +450,7 @@ responses:
       03 - Akutansi
       Profesi
       04 - Pendidikan Profesi Akutansi
-  utter_ask/ekonomi_magister:
+  utter_ask/ekonomi_lanjut:
   - text: |
       List Kode Jurusan Fakultas Ekonomi Universitas Sriwijaya untuk tingkat Magister/Doktor : 
       Magister
@@ -623,8 +481,8 @@ responses:
       Sistem Pengkodean NIM pada Fakultas Teknik Universitas Sriwijaya adalah sebagai berikut : 
       Kode Fakultas adalah 03, dan kode jurusan untuk Sarjana adalah 01-07
       Magister adalah 01-04, dan untuk Doktor juga hanya satu yaitu 01
-      Anda ingin di listkan nomor kode jurusan untuk tingkat mana?
-  utter_ask/teknik_sarjana:
+      Apakah anda ingin melihat list nomor kode jurusan?
+  utter_ask/teknik_dasar:
   - text: |
       List Kode Jurusan Fakultas Teknik Universitas Sriwijaya untuk tingkat S1 : 
       01 - Teknik Sipil
@@ -634,7 +492,7 @@ responses:
       05 - Teknik Mesin
       06 - Arsitektur
       07 - Teknik Geologi
-  utter_ask/teknik_magister:
+  utter_ask/teknik_lanjut:
   - text: |
       List Kode Jurusan Fakultas Teknik Universitas Sriwijaya untuk tingkat Magister/Doktor : 
       Magister
@@ -649,8 +507,8 @@ responses:
       Sistem Perkodean NIM pada Fakultas Kedokteran Universitas Sriwijaya adalah sebagai berikut:
       Kode fakultas adalah 04, dan kode jurusan untuk Sarjana/Profesi adalah 01-04, 
       Spesialis-1/Magister adalah 01-12, dan untuk Spesialis-2 hanya ada 01.
-      Anda ingin melihat list nomor kode jurusan untuk tingkat mana?
-  utter_ask/kedokteran_sarjana:
+      Apakah anda ingin melihat list nomor kode jurusan?
+  utter_ask/kedokteran_dasar:
   - text: |
       List Kode Jurusan Fakultas Kedokteran Universitas Sriwijaya untuk tingkat Sarjana/Profesi :
       Sarjana
@@ -663,7 +521,7 @@ responses:
       06 - Keperawatan
       07 - Kedokteran Gigi
       08 - Kedokteran Umum(Asal Kampus Palembang)
-  utter_ask/kedokteran_magister:
+  utter_ask/kedokteran_lanjut:
   - text: |
       List Kode Jurusan Fakultas Kedokteran Universitas Sriwijaya untuk tingkat Spesialis/Magister :
       Spesialis-1
@@ -709,8 +567,8 @@ responses:
       Sistem Perkodean NIM pada Fakultas Keguruan dan Ilmu Pendidikan Universitas Sriwijaya adalah sebagai berikut:
       Kode fakultas adalah 06, dan kode jurusan untuk Sarjana/Profesi adalah 01-30, 
       Magister adalah 01-05, dan untuk Doktor hanya ada 01.
-      Anda ingin melihat list nomor kode jurusan untuk tingkat mana?
-  utter_ask/keguruan_sarjana:
+      Apakah anda ingin melihat list nomor kode jurusan??
+  utter_ask/keguruan_dasar1:
   - text: |
       List Kode Jurusan Fakultas Keguruan Universitas Sriwijaya tingkat Sarjana :
       Sarjana
@@ -729,7 +587,7 @@ responses:
       13 - Pendidikan Guru Sekolah Dasar
       14 - Pendidikan Guru PAUD
       15 - Pendidikan Luar Sekolah
-  utter_ask/keguruan_profesi:
+  utter_ask/keguruan_dasar2:
   - text: |
       List Kode Jurusan Fakultas Keguruan Universitas Sriwijaya tingkat Profesi :
       Profesi
@@ -748,7 +606,7 @@ responses:
       28 - Pendidikan Guru Sekolah Dasar
       29 - Pendidikan Guru PAUD
       30 - Pendidikan Luar Sekolah
-  utter_ask/keguruan_magister:
+  utter_ask/keguruan_lanjut:
   - text: |
       List Kode Jurusan Fakultas Keguruan Universitas Sriwijaya tingkat Magister/Doktor :
       Magister
@@ -759,6 +617,107 @@ responses:
       05 - Pendidikan Fisika
       Doktor
       01 - Pendidikan Matematika
+  utter_ask/ispol:
+  - text: |
+      Sistem Perkodean NIM pada Fakultas Ilmu Sosial dan Ilmu Politik Universitas Sriwijaya adalah sebagai berikut:
+      Kode fakultas adalah 07, dan kode program studi untuk Sarjana adalah 01-04, Magister adalah 01-02.
+      Apakah anda ingin melihat list nomor kode program studi?
+  utter_ask/ispol_list:
+  - text: |
+      List Kode Jurusan Fakultas Ilmu Sosial dan Ilmu Politik Universitas Sriwijaya:
+      Sarjana
+      01 - Ilmu Administrasi Negara
+      02 - Sosiologi
+      03 - Ilmu Komunikasi
+      04 - Ilmu Hubungan Internasional
+      Magister
+      01 - Administrasi Publik
+      02 - Sosiologi
+  utter_ask/mipa:
+  - text: |
+      Sistem Perkodean NIM pada Fakultas Matematika dan Ilmu Pengetahuan Alam Universitas Sriwijaya adalah sebagai berikut:
+      Kode fakultas adalah 08, dan kode program studi untuk Sarjana adalah 01-06, 
+      Magister adalah 01-03 dan untuk Doktor hanya ada 01.
+      Apakah anda ingin melihat list nomor kode program studi?
+  utter_ask/mipa_list:
+  - text: |
+      List Kode Jurusan Fakultas Matematika dan Ilmu Pengetahuan Alam Universitas Sriwijaya untuk tingkat Sarjana :
+      Sarjana
+      01 - Matematika
+      02 - Fisika
+      03 - Kimia
+      04 - Biologi
+      05 - Ilmu Kelautan
+      06 - Farmasi
+      Magister
+      01 - Fisika
+      02 - Biologi
+      03 - Kimia
+      Doktor
+      01 - MIPA
+  utter_ask/ilkom:
+  - text: |
+      Sistem Perkodean NIM pada Fakultas Ilmu Komputer Universitas Sriwijaya adalah sebagai berikut:
+      Kode fakultas adalah 09, dan kode program studi untuk Diploma Tiga adalah 01-03, 
+      Sarjana adalah 01-03 dan Magister hanya ada 01.
+      Apakah anda ingin melihat list nomor kode program studi?
+  utter_ask/ilkom_list:
+  - text: |
+      List Kode Jurusan Fakultas Ilmu Komputer Universitas Sriwijaya :
+      Diploma Tiga 
+      01 - Manajemen Informatika
+      02 - Komputerisasi Akutansi
+      03 - Teknik Komputer
+      Sarjana
+      01 - Sistem Komputer
+      02 - Teknik Komputer
+      03 - Sistem Informasi
+      Magister
+      01 - Teknik Informatika
+  utter_ask/kesehatanmasyarakat:
+  - text: |
+      Sistem Perkodean NIM pada Fakultas Kesehatan Masyarakat Universitas Sriwijaya adalah sebagai berikut:
+      Kode fakultas adalah 10, dan kode program studi untuk Sarjana adalah 01-03 dan Magister hanya ada 01.
+      Apakah anda ingin melihat list nomor kode program studi?
+  utter_ask/kesehatanmasyarakat_list:
+  - text: |
+      List Kode Jurusan Fakultas Kesehatan Masyarakat Universitas Sriwijaya :
+      Sarjana
+      01 - Ilmu Kesehatan Masyarakat
+      02 - Ilmu Gizi
+      03 - Kesehatan Lingkungan
+      Magister
+      01 - Ilmu Kesehatan Masyarakat
+  utter_ask/pascasarjana:
+  - text: |
+      Sistem Perkodean NIM pada Fakultas Kesehatan Masyarakat Universitas Sriwijaya adalah sebagai berikut:
+      Kode fakultas adalah 10, dan kode program studi untuk Sarjana adalah 01-03 dan Magister hanya ada 01.
+      Apakah anda ingin melihat list nomor kode program studi?
+  utter_ask/pascasarjana_list:
+  - text: |
+      List Kode Jurusan Pascasarjana Universitas Sriwijaya :
+      Magister 
+      01 - Pengelolaan Lingkungan
+      02 - Kependudukan
+      Doktor
+      01 - Ilmu Lingkungan
+  utter_ask/programpendidikan:
+  - text: |
+      Sistem Pengkodean NIM Universitas Sriwijaya bagian program pendidikan sebagai berikut: 
+      0 - Program Diploma Tiga
+      1 - Program Sarjana
+      2 - Program Magister/Spesialis 1
+      3 - Program Doktor/Spesialis 2
+      4 - Program Profesi
+      5 - Program Sertifikasi
+      6 - Darmasiswa
+      7 - Program Adaptasi
+  utter_ask/tanya_prodi:
+  - text: |
+      List Jurusan/Program Studi dari fakultas mana yang ingin dilihat?
+  utter_ask/tingkat_prodi:
+  - text: |
+      List tingkat apa yang ingin dilihat?
   utter_greet:
   - text: Hey! How are you?
   utter_cheer_up:
@@ -774,8 +733,6 @@ responses:
   - text: I am a bot, powered by Rasa.
   utter_introduction:
   - text: Hai, Saya adalah bot pribadi Kelompok 9 menggunakan Rasa
-actions:
-- utter_salam
-- uttter_salam
+actions: []
 forms: {}
 e2e_actions: []
