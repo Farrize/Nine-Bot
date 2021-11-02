@@ -1,11 +1,11 @@
 version: "2.0"
 
 rules:
-#  - rule : respond to question
-#    steps :
-#    - intent : ask
-#    - action : utter_ask
 
+- rule: testing retrieval intent
+  steps:
+  - intent: ask
+  - action: utter_ask
 
 
   
