@@ -15,107 +15,7 @@ intents:
     use_entities: true
 - bot_challenge:
     use_entities: true
-- ask/formulir:
-    use_entities: true
-- ask/perjanjian_maba:
-    use_entities: true
-- ask/surat_pernyataan:
-    use_entities: true
-- ask/organisasi_sekolah:
-    use_entities: true
-- ask/organisasi_intra_sekolah:
-    use_entities: true
-- ask/organisasi_ekstra_sekolah:
-    use_entities: true
-- ask/prestasi_sekolah:
-    use_entities: true
-- ask/hobi:
-    use_entities: true
-- ask/data_keluarga:
-    use_entities: true
-- ask/cariform:
-    use_entities: true
-- ask/tanyaform:
-    use_entities: true
-- ask/tanyahuruf:
-    use_entities: true
-- ask/tanyanama:
-    use_entities: true
-- ask/tanyanim:
-    use_entities: true
-- ask/tanyafakultas:
-    use_entities: true
-- ask/tanyajurusan:
-    use_entities: true
-- ask/tanyajk:
-    use_entities: true
-- ask/tanyaprogram:
-    use_entities: true
-- ask/tanyatempatlahir:
-    use_entities: true
-- ask/tanyatanggallahir:
-    use_entities: true
-- ask/tanyaalamat:
-    use_entities: true
-- ask/tanyattd:
-    use_entities: true
-- ask/tanyafoto:
-    use_entities: true
-- ask/questioner_calonmaba_1:
-    use_entities: true
-- ask/questioner_calonmaba_2:
-    use_entities: true
-- ask/questioner_calonmaba_3:
-    use_entities: true
-- ask/questioner_calonmaba_4:
-    use_entities: true
-- ask/questioner_calonmaba_5:
-    use_entities: true
-- ask/questioner_calonmaba_identitasdiri:
-    use_entities: true
-- ask/questioner_calonmaba_alasan:
-    use_entities: true
-- ask/questioner_calonmaba_gajiortu:
-    use_entities: true
-- ask/begin_pengkodean:
-    use_entities: true
-- ask/begin_fakultas:
-    use_entities: true
-- ask/begin_prodi:
-    use_entities: true
-- ask/begin_ekonomi:
-    use_entities: true
-- ask/begin_hukum:
-    use_entities: true
-- ask/begin_teknik:
-    use_entities: true
-- ask/begin_kedokteran:
-    use_entities: true
-- ask/begin_pertanian:
-    use_entities: true
-- ask/diploma:
-    use_entities: true
-- ask/sarjana:
-    use_entities: true
-- ask/profesi:
-    use_entities: true
-- ask/magister_spesialis1:
-    use_entities: true
-- ask/doktor_spesialis2:
-    use_entities: true
-- ask/begin_keguruandanilmupendidikan:
-    use_entities: true
-- ask/begin_ilmusosialdanilmupolitik:
-    use_entities: true
-- ask/begin_matematikadanilmupengetahuanalam:
-    use_entities: true
-- ask/begin_ilmukomputer:
-    use_entities: true
-- ask/begin_kesehatanmasyarakat:
-    use_entities: true
-- ask/begin_pascasarjana:
-    use_entities: true
-- ask/begin_kodeprogrampendidikan:
+- ask:
     use_entities: true
 - mood_unhappy:
     use_entities: true
@@ -127,18 +27,13 @@ intents:
     use_entities: true
 - deny:
     use_entities: true
-- ask:
-    use_entities: true
 entities: []
 slots: {}
 responses:
+  utter_ask:
+  - text: testing
   utter_salam:
-  - text: |
-      Sistem Form-Reg:03 Fakultas Universitas Sriwijaya Formulir Pernyataan perjanjian Mahasiswa
-      baru adalah sebagai berikut:
-      -Mengisi Formulir data Mahasiswa yang harus di lengkapi.
-      -Patuh dan menaati janji mahasiswa Universitas Sriwijaya.
-      -Menyalin Surat Pernyataan yang telah di siapkan. 
+  - text: Hai, Saya adalah bot pribadi Kelompok 9 menggunakan Rasa. Silahkan bertanya tentang Buku Pedoman Mahasiswa Unsri Hal 65-77
   utter_ask/formulir:
   - text: |
       List Formulir yang harus di isi
@@ -416,7 +311,7 @@ responses:
       G - Kode Tahun Keluar
       H - Nomor Urut Pendaftaran (Registrasi)
       Anda ingin melihat bagian mana?    
-  utter_ask/fakultas:
+  utter_ask/pengkodeanfakultas:
   - text: |
       Sistem Pengkodean NIM Universitas Sriwijaya bagian Fakultas/Program sebagai berikut: 
       01 - Fakultas Ekonomi
@@ -432,7 +327,7 @@ responses:
       dst................................................
       20 - Pascasarjana
             
-  utter_ask/ekonomi:
+  utter_ask/pengkodeanekonomi:
   - text: |
       Sistem Pengkodean NIM pada Fakultas Ekonomi Universitas Sriwijaya adalah sebagai berikut : 
       Kode Fakultas adalah 01, dan kode jurusan untuk Diploma Tiga adalah 01-02 
@@ -460,7 +355,7 @@ responses:
       Doktor
       01 - Ilmu Ekonomi
       02 - Ilmu Manajemen
-  utter_ask/hukum:
+  utter_ask/pengkodeanhukum:
   - text: |
       Sistem Pengkodean NIM pada Fakultas Hukum Universitas Sriwijaya adalah sebagai berikut : 
       Kode Fakultas adalah 02, dan kode jurusan untuk Sarjana hanya satu yaitu 01
@@ -476,7 +371,7 @@ responses:
       02 - Kenotariatan
       Doktor
       01 - Ilmu Hukum
-  utter_ask/teknik:
+  utter_ask/pengkodeanteknik:
   - text: |
       Sistem Pengkodean NIM pada Fakultas Teknik Universitas Sriwijaya adalah sebagai berikut : 
       Kode Fakultas adalah 03, dan kode jurusan untuk Sarjana adalah 01-07
@@ -502,7 +397,7 @@ responses:
       04 - Teknik Pertambangan
       Doktor
       01 - Doktor Ilmu Teknik
-  utter_ask/kedokteran:
+  utter_ask/pengkodeankedokteran:
   - text: |
       Sistem Perkodean NIM pada Fakultas Kedokteran Universitas Sriwijaya adalah sebagai berikut:
       Kode fakultas adalah 04, dan kode jurusan untuk Sarjana/Profesi adalah 01-04, 
@@ -540,7 +435,7 @@ responses:
       12 - Ilmu Biomedik
       Spesialis-2
       01 - Ilmu Penyakit Dalam
-  utter_ask/pertanian:
+  utter_ask/pengkodeanpertanian:
   - text: |
       Sistem Perkodean NIM pada Fakultas Pertanian Universitas Sriwijaya adalah sebagai berikut:
       Kode fakultas adalah 05, dan kode jurusan untuk Sarjana adalah 01-07, 
@@ -562,7 +457,7 @@ responses:
       02 - Agribisnis
       Doktor
       01 - Ilmu Pertanian
-  utter_ask/keguruan:
+  utter_ask/pengkodeankeguruan:
   - text: |
       Sistem Perkodean NIM pada Fakultas Keguruan dan Ilmu Pendidikan Universitas Sriwijaya adalah sebagai berikut:
       Kode fakultas adalah 06, dan kode jurusan untuk Sarjana/Profesi adalah 01-30, 
@@ -617,7 +512,7 @@ responses:
       05 - Pendidikan Fisika
       Doktor
       01 - Pendidikan Matematika
-  utter_ask/ispol:
+  utter_ask/pengkodeanispol:
   - text: |
       Sistem Perkodean NIM pada Fakultas Ilmu Sosial dan Ilmu Politik Universitas Sriwijaya adalah sebagai berikut:
       Kode fakultas adalah 07, dan kode program studi untuk Sarjana adalah 01-04, Magister adalah 01-02.
@@ -633,7 +528,7 @@ responses:
       Magister
       01 - Administrasi Publik
       02 - Sosiologi
-  utter_ask/mipa:
+  utter_ask/pengkodeanmipa:
   - text: |
       Sistem Perkodean NIM pada Fakultas Matematika dan Ilmu Pengetahuan Alam Universitas Sriwijaya adalah sebagai berikut:
       Kode fakultas adalah 08, dan kode program studi untuk Sarjana adalah 01-06, 
@@ -655,7 +550,7 @@ responses:
       03 - Kimia
       Doktor
       01 - MIPA
-  utter_ask/ilkom:
+  utter_ask/pengkodeanilmukomputer:
   - text: |
       Sistem Perkodean NIM pada Fakultas Ilmu Komputer Universitas Sriwijaya adalah sebagai berikut:
       Kode fakultas adalah 09, dan kode program studi untuk Diploma Tiga adalah 01-03, 
@@ -674,7 +569,7 @@ responses:
       03 - Sistem Informasi
       Magister
       01 - Teknik Informatika
-  utter_ask/kesehatanmasyarakat:
+  utter_ask/pengkodeankesehatanmasyarakat:
   - text: |
       Sistem Perkodean NIM pada Fakultas Kesehatan Masyarakat Universitas Sriwijaya adalah sebagai berikut:
       Kode fakultas adalah 10, dan kode program studi untuk Sarjana adalah 01-03 dan Magister hanya ada 01.
@@ -688,7 +583,7 @@ responses:
       03 - Kesehatan Lingkungan
       Magister
       01 - Ilmu Kesehatan Masyarakat
-  utter_ask/pascasarjana:
+  utter_ask/pengkodeanpascasarjana:
   - text: |
       Sistem Perkodean NIM pada Fakultas Kesehatan Masyarakat Universitas Sriwijaya adalah sebagai berikut:
       Kode fakultas adalah 10, dan kode program studi untuk Sarjana adalah 01-03 dan Magister hanya ada 01.
@@ -701,7 +596,7 @@ responses:
       02 - Kependudukan
       Doktor
       01 - Ilmu Lingkungan
-  utter_ask/programpendidikan:
+  utter_ask/pengkodeanprogrampendidikan:
   - text: |
       Sistem Pengkodean NIM Universitas Sriwijaya bagian program pendidikan sebagai berikut: 
       0 - Program Diploma Tiga
