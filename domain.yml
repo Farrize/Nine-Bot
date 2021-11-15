@@ -27,8 +27,11 @@ intents:
     use_entities: true
 - deny:
     use_entities: true
-entities: []
-slots: {}
+entities:
+- fakultas
+- kode
+- bagan_formKPM
+slots: {fakultas}
 responses:
   utter_ask:
   - text: testing

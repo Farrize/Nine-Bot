@@ -7,5 +7,9 @@ rules:
   - intent: ask
   - action: utter_ask
 
+- rule: fakultas ekonomi
+  steps:
+  - intent: ask
+
 
   
