@@ -1,4 +1,5 @@
 version: "2.0"
+
 nlu:
 - intent: salam
   examples: |
@@ -12,7 +13,7 @@ nlu:
     - hi
     - hello
     - halo bung
-    - hallo
+
 - intent: penutup
   examples: |
     - waalaikumussalam
@@ -20,8 +21,8 @@ nlu:
     - selamat tingal
     - sampai jumpa
     - terima kasih
-    - makasih
-- intent: setuju
+
+- intent : setuju
   examples: |
     - ya
     - oke
@@ -32,6 +33,7 @@ nlu:
     - yoi
     - iya
     - sip
+
 - intent: menolak
   examples: |
     - tidak
@@ -43,26 +45,29 @@ nlu:
     - tidak juga
     - tidak seperti itu
     - jangan
+
 - intent: bot_challenge
   examples: |
     - are you a bot?
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
-- intent: ask/formulir
+
+- intent : ask/formulir
   examples: |
     - apa saja formulir yang perlu di lengkapi ya kak ?
     - form yang di isi apa saja ya min
     - daftar formulir yang di isi tolong
     - minta formulirnya min
-    - formulir
+    - formulir 
     - bisa minta isian formulirnya
     - ada formulir yang harus di isikah
     - minta form yang perlu di isi dong min
     - ada formnya yang harus di isi
-    - isi formulirnya apa saja
-- intent: ask/perjanjian_maba
-  examples: |
+    - isi formulirnya apa saja 
+  
+- intent : ask/perjanjian_maba
+  examples : |
     - isi perjanjiannya apa saja ya min?
     - bunyi perjanjiannya apa saja kak?
     - bisa minta rincian perjanjiannya kak?
@@ -73,20 +78,22 @@ nlu:
     - bisa lihat janji mahasiswa nya
     - apa saja isi janji mahasiswa nya?
     - perincian janji mahasiswanya apa?
-- intent: ask/surat_pernyataan
-  examples: |
-    - apa isi surat pernyataanya
+
+- intent : ask/surat_pernyataan
+  examples : |
+    - apa isi surat pernyataanya 
     - peryataan nya isinya apa ya
     - pernyataan apa yang harus saya salin
     - apa saja yang harus di salin pada surat pernyataanya
-    - bisa minta surat pernyataannya
+    - bisa minta surat pernyataannya 
     - surat pernyataan
     - isi surat pernyataan
     - isi konten surat pernyataan
-- intent: ask/organisasi_sekolah
-  examples: |
+    
+- intent : ask/organisasi_sekolah
+  examples : |
     - Organisasi sekolah
-    - Organisasi sekolah adalah
+    - Organisasi sekolah adalah 
     - Organisasi apa yang ada di sekolah
     - Organisasi apa yang ada di lingkungan sekolah
     - Organisasi sekolah apa saja
@@ -101,13 +108,14 @@ nlu:
     - Apa organisasi yang bisa diikuti di sekolah
     - Lihat organisasi sekolah
     - Lihat berbagai macam organisasi sekolah
-    - Berbagai macam organisasi di sekolah
+    - Berbagai macam organisasi di sekolah 
     - Macam-macam organisasi sekolah
     - Perlihatkan organisasi sekolah
     - Sebutkan organisasi di sekolah
     - Jenis organisasi di sekolah
-- intent: ask/organisasi_intra_sekolah
-  examples: |
+
+- intent : ask/organisasi_intra_sekolah
+  examples : |
     - Organisasi intra sekolah
     - Organisasi intra sekolah adalah
     - Organisasi intra sekolah apa
@@ -119,8 +127,9 @@ nlu:
     - Sebutkan organisasi intra sekolah
     - Sebutkan tujuan organisasi intra sekolah
     - Lihat organisasi intra sekolah
-- intent: ask/organisasi_ekstra_sekolah
-  examples: |
+
+- intent : ask/organisasi_ekstra_sekolah
+  examples : |
     - Organisasi ekstra sekolah
     - Organisasi ekstra sekolah adalah
     - Organisasi ekstra sekolah apa
@@ -135,8 +144,9 @@ nlu:
     - Berbagai macam organisasi ekstra sekolah
     - Lihat organisasi ekstra sekolah
     - Lihat berbagai macam organisasi ekstra sekolah
-- intent: ask/prestasi_sekolah
-  examples: |
+
+- intent : ask/prestasi_sekolah
+  examples : |
     - Prestasi di sekolah
     - Prestasi di sekolah apa saja
     - Prestasi sekolah
@@ -147,8 +157,9 @@ nlu:
     - Apa saja prestasi yang bisa diraih di sekolah
     - Apa saja tingkatan prestasi di sekolah
     - Prestasi sekolah yang bisa diraih
-- intent: ask/hobi
-  examples: |
+
+- intent : ask/hobi
+  examples : |
     - Hobi
     - Hobi apa saja yang bisa dilakukan
     - Hobi yang bisa dilakukan
@@ -164,8 +175,9 @@ nlu:
     - Jenis-jenis hobi
     - Bebagai macam hobi
     - Macam-macam hobi
-- intent: ask/data_keluarga
-  examples: |
+
+- intent : ask/data_keluarga
+  examples : |
     - Data keluarga
     - Data keluarga ada dimana
     - Dimana bisa lihat data keluarga
@@ -173,6 +185,7 @@ nlu:
     - Informasi data keluarga
     - Isi data keluarga
     - Lihat data keluarga
+    
 - intent: ask/cariform
   examples: |
     - Dimana saya bisa mendapatkan form pembuatan KPM?
@@ -181,7 +194,7 @@ nlu:
     - Bagaimana ya cara dapetin form pembuatan KPM?
     - Saya ingin bertanya mengenai cara mendapatkan form pembuatan KPM
     - Agar bisa dapetin form pembuatan KPM gimana ya?
-    - dimana saya bisa mendapatkan form pengisian KPM?
+
 - intent: ask/tanyaform
   examples: |
     - Apa saja isi dari form tersebut?
@@ -191,6 +204,7 @@ nlu:
     - Isi dari form pembuatan KPM apa saja?
     - Bisa dikasih tau apa saja isi formnya?
     - Form pembuatan KPM isinya apa aja ya?
+
 - intent: ask/tanyahuruf
   examples: |
     - Cara ngisi formnya gimana?
@@ -200,102 +214,141 @@ nlu:
     - Ada aturan ngga untuk ngisi formnya?
     - Untuk pengisian form ada caranya ngga?
     - Apakah ada aturan untuk cara pengisian form?
-- intent: ask/tanyaformKPM
-  examples: |
-    - Untuk bagian [nama](bagan_formKPM) pada form ditulis apa?
-    - [Nama](bagan_formKPM) pada formnya diisi apa ya?
-    - [Nama](bagan_formKPM) pada form diapain ya?
-    - Isi untuk [nama](bagan_formKPM) pada form apa?
-    - Ada aturannya ngga untuk pengisian [nama](bagan_formKPM) pada form tersebut?
-    - Apakah ada aturan untuk penulisan [nama](bagan_formKPM) pada form?
-    - Pada form terdapat [nama](bagan_formKPM), itu diisi apa ya?
-    - Untuk bagian [NIM](bagan_formKPM) pada form ditulis apa?
-    - [NIM](bagan_formKPM) pada formnya diisi apa ya?
-    - [NIM](bagan_formKPM) pada form diapain ya?
-    - Isi untuk [NIM](bagan_formKPM) pada form apa?
-    - Ada aturannya ngga untuk pengisian [NIM](bagan_formKPM) pada form tersebut?
-    - Apakah ada aturan untuk penulisan [NIM](bagan_formKPM) pada form?
-    - Pada form terdapat [NIM](bagan_formKPM), itu diisi apa ya?
-    - Untuk bagian [fakultas/program](bagan_formKPM) pada form ditulis apa?
-    - [Fakultas/program](bagan_formKPM) pada formnya diisi apa ya?
-    - [Fakultas/program](bagan_formKPM) pada form diapain ya?
-    - Isi untuk [fakultas/program](bagan_formKPM) pada form apa?
-    - Ada aturannya ngga untuk pengisian [fakultas/program](bagan_formKPM) pada form tersebut?
-    - Apakah ada aturan untuk penulisan [fakultas/program](bagan_formKPM) pada form?
-    - Pada form terdapat [fakultas/program](bagan_formKPM), itu diisi apa ya?
-    - Untuk bagian [jurusan/program studi](bagan_formKPM) pada form ditulis apa?
-    - [Jurusan/program studi](bagan_formKPM) pada formnya diisi apa ya?
-    - [Jurusan/program studi](bagan_formKPM) pada form diapain ya?
-    - Isi untuk [jurusan/program studi](bagan_formKPM) pada form apa?
-    - Ada aturannya ngga untuk pengisian [jurusan/program studi](bagan_formKPM) pada form tersebut?
-    - Apakah ada aturan untuk penulisan [jurusan/program studi](bagan_formKPM) pada form?
-    - Pada form terdapat [jurusan/program studi](bagan_formKPM), itu diisi apa ya?
-    - Untuk bagian [jenis kelamin](bagan_formKPM) pada form ditulis apa?
-    - [Jenis kelamin](bagan_formKPM) pada formnya diisi apa ya?
-    - [Jenis kelamin](bagan_formKPM) pada form diapain ya?
-    - Isi untuk [jenis kelamin](bagan_formKPM) pada form apa?
-    - Ada aturannya ngga untuk pengisian [jenis kelamin](bagan_formKPM) pada form tersebut?
-    - Apakah ada aturan untuk penulisan [jenis kelamin](bagan_formKPM) pada form?
-    - Pada form terdapat [jenis kelamin](bagan_formKPM), itu diisi apa ya?
-    - Untuk bagian [program pendidikan](bagan_formKPM) pada form ditulis apa?
-    - [Program pendidikan](bagan_formKPM) pada formnya diisi apa ya?
-    - [Program pendidikan](bagan_formKPM) pada form diapain ya?
-    - Isi untuk [program pendidikan](bagan_formKPM) pada form apa?
-    - Ada aturannya ngga untuk pengisian [program pendidikan](bagan_formKPM) pada form tersebut?
-    - Apakah ada aturan untuk penulisan [program pendidikan](bagan_formKPM) pada form?
-    - Pada form terdapat [program pendidikan](bagan_formKPM), itu diisi apa ya?
-    - Untuk bagian [tempat lahir](bagan_formKPM) pada form ditulis apa?
-    - [Tempat lahir](bagan_formKPM) pada formnya diisi apa ya?
-    - [Tempat lahir](bagan_formKPM) pada form diapain ya?
-    - Isi untuk [tempat lahir](bagan_formKPM) pada form apa?
-    - Ada aturannya ngga untuk pengisian [tempat lahir](bagan_formKPM) pada form tersebut?
-    - Apakah ada aturan untuk penulisan [tempat lahir](bagan_formKPM) pada form?
-    - Pada form terdapat [tempat lahir](bagan_formKPM), itu diisi apa ya?
-    - Untuk bagian [tanggal lahir](bagan_formKPM) pada form ditulis apa?
-    - [Tanggal lahir](bagan_formKPM) pada formnya diisi apa ya?
-    - [Tanggal lahir](bagan_formKPM) pada form diapain ya?
-    - Isi untuk [tanggal lahir](bagan_formKPM) pada form apa?
-    - Ada aturannya ngga untuk pengisian [tanggal lahir](bagan_formKPM) pada form tersebut?
-    - Apakah ada aturan untuk penulisan [tanggal lahir](bagan_formKPM) pada form?
-    - Pada form terdapat [tanggal lahir](bagan_formKPM), itu diisi apa ya?
-    - Untuk bagian [alamat tinggal](bagan_formKPM) pada form ditulis apa?
-    - [Alamat tinggal](bagan_formKPM) pada formnya diisi apa ya?
-    - [Alamat tinggal](bagan_formKPM) pada form diapain ya?
-    - Isi untuk [alamat tinggal](bagan_formKPM) pada form apa?
-    - Ada aturannya ngga untuk pengisian [alamat tinggal](bagan_formKPM) pada form tersebut?
-    - Apakah ada aturan untuk penulisan [alamat tinggal](bagan_formKPM) pada form?
-    - Pada form terdapat [alamat tinggal](bagan_formKPM), itu diisi apa ya?
-    - Apakah [foto](bagan_formKPM) yang digunakan pada form tersebut harus [foto](bagan_formKPM) kemeja putih?
-    - Berapa ukuran [foto](bagan_formKPM) yang digunakan pada form tersebut?
-    - Pada form tersebut [foto](bagan_formKPM) yang digunakan harus berwarna atau hitam putih?
-    - Ada aturan tertentu ngga untuk [foto](bagan_formKPM) pada form tersebut?
-    - Untuk [foto](bagan_formKPM) pada form tersebut bagaimana ya?
-    - Apakah [tanda tangan](bagan_formKPM) pada form tersebut harus diisi oleh [tanda tangan](bagan_formKPM) sendiri?
-    - [tanda tangan](bagan_formKPM) pada form tersebut harus diisi siapa?
-    - Untuk [tanda tangan](bagan_formKPM) pada form tersebut bagaimana ya?
-    - Apakah ada aturan pada form tersebut untuk [tanda tangan](bagan_formKPM)?
+
+- intent: ask/tanyanama
+  examples : |
+    - Untuk bagian nama pada form ditulis apa?
+    - Kalo misal isi namanya lebih dari 30 huruf gimana?
+    - Bisa ngga isi namanya pake nama orangtua saya?
+    - Apakah ada aturan untuk penulisan nama pada form?
+    - Boleh ngga namanya pakai nama samaran?
+    - Pada form terdapat nama, itu diisi apa ya?
+    - Nama ditulis pakai nama kita sendiri ya?
+    - Apakah nama pada form tersebut menggunakan nama kita sendiri?
+
+- intent: ask/tanyanim
+  examples : | 
+    - Untuk bagian NIM pada form ditulis apa?
+    - NIM pada formnya diisi apa ya?
+    - Kalo NIMnya mau saya isi sendiri gimana?
+    - Apakah NIM pada form dikosongkan?
+    - NIM pada form diapain ya?
+    - Isi untuk NIM apa?
+    - Boleh ngga kalo NIMnya dikosongkan?
+    - Ada aturannya ngga untuk pengisian NIM pada form tersebut?
+
+- intent: ask/tanyafakultas
+  examples : |
+    - Untuk bagian fakultas/program pada form ditulis apa?
+    - Kalo ngisinya pakai fakultas lain bisa ngga?
+    - Fakultas atau program itu diisi apa ya?
+    - Boleh ngga fakultas/programnya dikosongin?
+    - Fakultas/program pada form ditulis apa ya?
+    - Apakah fakultas/program diisi sesuai dengan fakultas saya?
+
+- intent: ask/tanyajurusan
+  examples : |
+    - Untuk bagian jurusan/program studi pada form ditulis apa?
+    - Bisa ngga kalo ngisi jurusannya ngga sesuai sama jurusan saya?
+    - Jurusan/program studi itu diisi apa?
+    - Apakah bagian jurusan pada form dikosongkan?
+    - Jurusan pada form diisi sesuai jurusan saya ya?
+    - Untuk jurusan/program studi diisi apa?
+
+- intent: ask/tanyajk
+  examples : |
+    - Untuk bagian jenis kelamin pada form ditulis apa?
+    - Kalo memalsukan jenis kelamin gimana?
+    - Boleh tidak jika jenis kelamin ditulis laki-laki atau perempuan?
+    - Cara penulisan jenis kelamin gimana?
+    - Apakah ada aturan untuk pengisian jenis kelamin pada form?
+    - Jenis kelamin diisi apa ya?
+    - Boleh tau apakah ada cara penulisan jenis kelamin?
+
+- intent: ask/tanyaprogram
+  examples : |
+    - Untuk bagian program pendidikan pada form ditulis apa?
+    - Jika saya mengisi program pendidikan tidak sesuai dengan milik saya bisa ngga?
+    - Program pendidikan diisi apa ya?
+    - Apa saja pilihan untuk program pendidikan?
+    - Maksud dari program pendidikan apa ya?
+    - Apakah program pendidikan harus diisi sesuai dengan program pendidikan saya?
+
+- intent: ask/tanyatempatlahir
+  examples : |
+    - Untuk bagian Tempat lahir pada form ditulis apa?
+    - Bisa tidak saya mengisi dengan tempat lahir palsu?
+    - Apakah ada aturan untuk penulisan tempat lahir pada form?
+    - Tanggal lahirnya juga dimasukin ngga?
+    - Kalo tempat lahirnya lebih dari 17 huruf gimana?
+    - Ada ngga aturan untuk penulisan tempat lahir?
+    - Tempat lahir pada form diisi apa ya?
+
+- intent: ask/tanyatanggallahir
+  examples : |
+    - Untuk bagian Tanggal lahir pada form ditulis apa?
+    - Apakah ada aturan untuk penulisan tanggal lahir pada form?
+    - Jika saya mengisi hanya dengan tanggal dan bulan saja gimana?
+    - Boleh ngga untuk bagian tanggal lahir cuma diisi tahunnya saja?
+    - Tanggal lahir harus diisi dengan tanggal lahir saya ya?
+    - Apakah tempat lahir juga ditulis untuk bagian tanggal lahir?
+    - Untuk penulisan tanggal lahir gimana?
+    - Ada format penulisan untuk tanggal lahir kah?
+
+- intent: ask/tanyaalamat
+  examples : |
+    - Untuk bagian Alamat tinggal pada form ditulis apa?
+    - Apakah ada aturan untuk penulisan alamat tinggal pada form?
+    - Kalo alamatnya lebih dari 50 huruf gimana?
+    - Boleh tidak alamatnya diisi dengan alamat keluarga saya yang lain?
+    - Jika saya pindah rumah, alamat mana yang harus diisi?
+    - Alamat tinggal harus diisi dengan alamat yang saya tinggali sekarang ya?
+
+- intent: ask/tanyafoto
+  examples : |
+    - Apakah foto yang digunakan harus foto kemeja putih?
+    - Berapa ukuran foto yang digunakan?
+    - Apakah boleh ukuran foto tidak sesuai dengan yang diminta?
+    - Boleh ngga kalo pake foto selfie?
+    - Foto yang digunakan harus berwarna atau hitam putih?
+    - Ada aturan tertentu ngga untuk foto?
+    - Untuk foto bagaimana ya?
+
+- intent: ask/tanyattd
+  examples : |
+    - Apakah tanda tangan harus diisi oleh tanda tangan sendiri?
+    - Bagaimana kalo tanda tangannya saya palsukan?
+    - Apakah tanda tangan bisa dikosongkan?
+    - Tanda tangannya harus diisi siapa?
+    - Untuk tanda tangan bagaimana ya?
+    - Apakah ada aturan untuk tanda tangan?
+    
 - intent: ask/questioner_calonmaba_1
-  examples: |
+  examples : |
     - siapa yang akan mengisi questioner calon mahasiswa baru?
     - Kepada siapa questioner calon mahasiswa baru ditujukan?
     - questioner calon mahasiswa baru diisi oleh siapa?
+
 - intent: ask/questioner_calonmaba_2
-  examples: |
+  examples : |
     - Apa tujuan dari mengisi questioner calon mahasiswa baru?
     - Untuk apa questioner itu diisi?
     - Berfungsi untuk apa questioner calon mahasiswa baru?
+
 - intent: ask/questioner_calonmaba_3
-  examples: |
+  examples : |
     - data apa yang boleh tidak kita isi pada questioner calon mahasiswa baru?
     - Apa saja data yang boleh tidak idak kita isi pada questioner calon mahasiswa baru?
     - tampilkan data yang boleh tidak kita isi di questioner calon mahasiswa baru?
+
 - intent: ask/questioner_calonmaba_4
-  examples: |
+  examples : |
     - apakah kita boleh memilih lebih dari satu jawaban untuk menjawab alasan mengikuti pendidikan pada Universitas Sriwijaya?
     - Benarkah kita bisa memilih lebih dari satu jawaban untuk menjawab alasan mengikuti pendidikan pada Universitas Sriwijaya?
     - Jawaban untuk alasan mengikuti pendidikan pada Universitas Sriwijaya boleh diisi lebih dari satu jawaban, apakah benar?
+
 - intent: ask/questioner_calonmaba_5
-  examples: |
+  examples : |
     - Data apa saja yang perlu kita isi di questioner calon mahasiswa baru?
     - Macam-macam data untuk questioner calon mahasiswa baru?
     - Yang diisi apa saja untuk questioner calon mahasiswa baru?
@@ -304,18 +357,20 @@ nlu:
     - Beritahu saya data apa yang ada pada questioner calon mahasiswa baru?
     - ada data apa saja yang dibutuhkan untuk questioner calon mahasiswa baru?
     - tampilkan data apa saja untuk mengisi questioner calon mahasiswa baru?
+
 - intent: ask/questioner_calonmaba_identitasdiri
-  examples: |
+  examples : |
     - Yang identitas diri saja
     - Tentang identitas diri
     - Identitas diri
-    - Bagian identitas diri
+    - Bagian identitas diri 
     - Tampilkan bagian identitas diri
     - Tunjukkan data bagian identitas diri
     - yang termasuk identitas diri apa saja
     - Data identitas diri
+
 - intent: ask/questioner_calonmaba_alasan
-  examples: |
+  examples : |
     - Yang alasan saja
     - Tentang alasan masuk unsri
     - alasan masuk unsri
@@ -324,64 +379,79 @@ nlu:
     - Tunjukkan data bagian alasan masuk unsri
     - alasan masuk universitas sriwijaya
     - yang termasuk alasan masuk unsri apa saja
-    - Data alasan masuk unsri
+    - Data alasan masuk unsri 
+
 - intent: ask/questioner_calonmaba_gajiortu
-  examples: |
+  examples : |
     - pilihan pendapatan orang tua
     - range pendapatan orang tua
     - Gaji orang tua
     - Plihan gaji orang tua
     - tampilkan pendapatan orang tua
-- intent: ask/pengkodean
+
+- intent: ask/begin_nim
   examples: |
-    - Halo apakah saya bisa bertanya tentang sistem pengkodean [NIM](kode) di Universitas Sriwijaya ?
-    - apa saja sistem pengkodean [NIM](kode) di Universitas Sriwijaya ?
-    - Saya ingin bertanya sistem pengkodean [NIM](kode) di Universitas Sriwijaya ?
-    - Assalammualaikum mau nanya sistem pengkodean [NIM](kode) di Universitas Sriwijaya gimana ya?
-    - Tolong jelaskan sistem pengkodean [NIM](kode) di Universitas Sriwijaya ?
-    - Mau tau dong sistem pengkodean [NIM](kode) di Universitas Sriwijaya ?
-    - numpang nanya soal pengkodean [NIM](kode)
-    - numpang nanya soal sistem pengkodean [NIM](kode)
-    - Halo apakah saya bisa bertanya tentang sistem pengkodean [NIM Fakultas](kode) di Universitas Sriwijaya ?
-    - apa saja sistem pengkodean [NIM Fakultas](kode) di Universitas Sriwijaya ?
-    - Saya ingin bertanya sistem pengkodean [NIM Fakultas](kode) di Universitas Sriwijaya ?
-    - Assalammualaikum mau nanya sistem pengkodean [NIM Fakultas](kode) di Universitas Sriwijaya gimana ya?
-    - Tolong jelaskan sistem pengkodean [NIM Fakultas](kode) di Universitas Sriwijaya ?
-    - Mau tau dong sistem pengkodean [NIM Fakultas](kode) di Universitas Sriwijaya ?
-    - numpang nanya soal pengkodean [NIM Fakultas](kode)
-    - numpang nanya soal sistem pengkodean [NIM Fakultas](kode)
-    - Halo apakah saya bisa bertanya tentang sistem pengkodean [NIM Program Studi](kode) di Universitas Sriwijaya ?
-    - apa saja sistem pengkodean [NIM Program Studi](kode) di Universitas Sriwijaya ?
-    - Saya ingin bertanya sistem pengkodean [NIM Program Studi](kode) di Universitas Sriwijaya ?
-    - Assalammualaikum mau nanya sistem pengkodean [NIM Program Studi](kode) di Universitas Sriwijaya gimana ya?
-    - Tolong jelaskan sistem pengkodean [NIM Program Studi](kode) di Universitas Sriwijaya ?
-    - Mau tau dong sistem pengkodean [NIM Program Studi](kode) di Universitas Sriwijaya ?
-    - numpang nanya soal pengkodean [NIM Program Studi](kode)
-    - numpang nanya soal sistem pengkodean [NIM Program Studi](kode)
-    - Halo apakah saya bisa bertanya tentang sistem pengkodean [NIM Program Pascasarjana](kode) di Universitas Sriwijaya ?
-    - apa saja sistem pengkodean [NIM Program Pascasarjana](kode) di Universitas Sriwijaya ?
-    - Saya ingin bertanya sistem pengkodean [NIM Program Pascasarjana](kode) di Universitas Sriwijaya ?
-    - Assalammualaikum mau nanya sistem pengkodean [NIM Program Pascasarjana](kode) di Universitas Sriwijaya gimana ya?
-    - Tolong jelaskan sistem pengkodean [NIM Program Pascasarjana](kode) di Universitas Sriwijaya ?
-    - Mau tau dong sistem pengkodean [NIM Program Pascasarjana](kode) di Universitas Sriwijaya ?
-    - numpang nanya soal pengkodean [NIM Program Pascasarjana](kode)
-    - numpang nanya soal sistem pengkodean [NIM Program Pascasarjana](kode)
-    - Halo apakah saya bisa bertanya tentang sistem pengkodean [NIM Program Pendidikan](kode) di Universitas Sriwijaya ?
-    - apa saja sistem pengkodean [NIM Program Pendidikan](kode) di Universitas Sriwijaya ?
-    - Saya ingin bertanya sistem pengkodean [NIM Program Pendidikan](kode) di Universitas Sriwijaya ?
-    - Assalammualaikum mau nanya sistem pengkodean [NIM Program Pendidikan](kode) di Universitas Sriwijaya gimana ya?
-    - Tolong jelaskan sistem pengkodean [NIM Program Pendidikan](kode) di Universitas Sriwijaya ?
-    - Mau tau dong sistem pengkodean [NIM Program Pendidikan](kode) di Universitas Sriwijaya ?
-    - numpang nanya soal pengkodean [NIM Program Pendidikan](kode)
-    - numpang nanya soal sistem pengkodean [NIM Program Pendidikan](kode)
-- intent: ask/pengkodeanfakultas
+    - Halo apakah saya bisa bertanya tentang sistem pengkodean NIM di Universitas Sriwijaya ?
+    - apa saja sistem pengkodean NIM di Universitas Sriwijaya ?
+    - Saya ingin bertanya sistem pengkodean NIM di Universitas Sriwijaya ?
+    - Assalammualaikum mau nanya sistem pengkodean NIM di Universitas Sriwijaya gimana ya?
+    - Tolong jelaskan sistem pengkodean NIM di Universitas Sriwijaya ?
+    - Mau tau dong sistem pengkodean NIM di Universitas Sriwijaya ?  
+    - Izin bertanya siapa yang bisa menjelaskan kepada saya tentang sistem pengkodean NIM ?
+    - Bagaimana cara sistem pengkodean NIM?
+
+- intent: ask/begin_fakultas
   examples: |
-    - Halo apakah saya bisa bertanya tentang sistem pengkodean NIM Fakultas [ekonomi](fakultas) ?
-    - apa saja sistem pengkodean NIM Fakultas [ekonomi](fakultas) ?
-    - Saya ingin bertanya sistem pengkodean NIM Fakultas [ekonomi](fakultas) ?
-    - Assalammualaikum mau nanya sistem pengkodean NIM Fakultas [ekonomi](fakultas) gimana ya?
-    - Tolong jelaskan sistem pengkodean NIM Fakultas [ekonomi](fakultas) ?
-    - Mau tau dong sistem pengkodean NIM Fakultas [ekonomi](fakultas)?
+    - Halo apakah saya bisa bertanya tentang sistem pengkodean NIM Fakultas di Universitas Sriwijaya ?
+    - apa saja sistem pengkodean NIM Fakultas di Universitas Sriwijaya ?
+    - Saya ingin bertanya sistem pengkodean NIM Fakultas di Universitas Sriwijaya ?
+    - Assalammualaikum mau nanya sistem pengkodean NIM Fakultas di Universitas Sriwijaya gimana ya?
+    - Tolong jelaskan sistem pengkodean NIM Fakultas di Universitas Sriwijaya ?
+    - Mau tau dong sistem pengkodean NIM Fakultas di Universitas Sriwijaya ?
+    - Izin bertanya siapa yang bisa menjelaskan kepada saya tentang sistem pengkodean NIM Fakultas?
+    - Bagaimana cara sistem pengkodean NIM Fakultas?
+
+- intent: ask/begin_programstudi
+  examples: |
+    - Halo apakah saya bisa bertanya tentang sistem pengkodean NIM Program Studi di Universitas Sriwijaya ?
+    - apa saja sistem pengkodean NIM Program Studi di Universitas Sriwijaya ?
+    - Saya ingin bertanya sistem pengkodean NIM Program Studi di Universitas Sriwijaya ?
+    - Assalammualaikum mau nanya sistem pengkodean NIM Program Studi di Universitas Sriwijaya gimana ya?
+    - Tolong jelaskan sistem pengkodean NIM Program Studi di Universitas Sriwijaya ?
+    - Mau tau dong sistem pengkodean NIM Program Studi di Universitas Sriwijaya ?
+    - Izin bertanya siapa yang bisa menjelaskan kepada saya tentang sistem pengkodean NIM Program Studi?
+    - Bagaimana cara sistem pengkodean NIM Program Studi?
+
+- intent: ask/begin_pascasarjana
+  examples: |
+    - Halo apakah saya bisa bertanya tentang sistem pengkodean NIM Program Pascasarjana?
+    - Apa saja sistem pengkodean NIM Program Pascasarjana?
+    - Saya ingin bertanya sistem pengkodean NIM Program Pascasarjana?
+    - Assalammualaikum mau nanya sistem pengkodean NIM Program Pascasarjana gimana ya?
+    - Tolong jelaskan sistem pengkodean NIM Program Pascasarjana?
+    - Mau tau dong sistem pengkodean NIM Program Pascasarjana?
+    - Izin bertanya siapa yang bisa menjelaskan kepada saya tentang sistem pengkodean NIM Program Pascasarjana?
+    - Bagaimana cara sistem pengkodean NIM Program Pascasarjana?
+
+- intent: ask/begin_programpendidikan
+  examples: |
+    - Halo apakah saya bisa bertanya tentang sistem pengkodean NIM Program Pendidikan di Universitas Sriwijaya?
+    - Apa saja sistem pengkodean NIM Program Pendidikan di Universitas Sriwijaya?
+    - Saya ingin bertanya sistem pengkodean NIM Program Pendidikan di Universitas Sriwijaya?
+    - Assalammualaikum mau nanya sistem pengkodean NIM Program Pendidikan di Universitas Sriwijaya gimana ya?
+    - Tolong jelaskan sistem pengkodean NIM Program Pendidikan di Universitas Sriwijaya?
+    - Mau tau dong sistem pengkodean NIM Program Pendidikan di Universitas Sriwijaya?
+    - Izin bertanya siapa yang bisa menjelaskan kepada saya tentang sistem pengkodean NIM Program Pendidikan?
+    - Bagaimana ya cara mengkodekan NIM Program Pendidikan di Universitas Sriwijaya?    
+    
+- intent: ask/begin_fakultas_detail
+  examples: |
+    - Halo apakah saya bisa bertanya tentang sistem pengkodean NIM Fakultas [Ekonomi](fakultas) ?
+    - apa saja sistem pengkodean NIM Fakultas [Ekonomi](fakultas) ?
+    - Saya ingin bertanya sistem pengkodean NIM Fakultas [Ekonomi](fakultas) ?
+    - Assalammualaikum mau nanya sistem pengkodean NIM Fakultas [Ekonomi](fakultas) gimana ya?
+    - Tolong jelaskan sistem pengkodean NIM Fakultas [Ekonomi](fakultas) ?
+    - Mau tau dong sistem pengkodean NIM Fakultas [Ekonomi](fakultas)?
     - Halo apakah saya bisa bertanya tentang sistem pengkodean NIM Fakultas [Hukum](fakultas) ?
     - apa saja sistem pengkodean NIM Fakultas [Hukum](fakultas) ?
     - Saya ingin bertanya sistem pengkodean NIM Fakultas [Hukum](fakultas) ?
@@ -394,6 +464,12 @@ nlu:
     - Assalammualaikum mau nanya sistem pengkodean NIM Fakultas [Teknik](fakultas) gimana ya?
     - Tolong jelaskan sistem pengkodean NIM Fakultas [Teknik](fakultas) ?
     - Mau tau dong sistem pengkodean NIM Fakultas [Teknik](fakultas)?
+    - Halo apakah saya bisa bertanya tentang sistem pengkodean NIM Fakultas [Kedokteran](fakultas) ?
+    - apa saja sistem pengkodean NIM Fakultas [Kedokteran](fakultas) ?
+    - Saya ingin bertanya sistem pengkodean NIM Fakultas [Kedokteran](fakultas) ?
+    - Assalammualaikum mau nanya sistem pengkodean NIM Fakultas [Kedokteran](fakultas) gimana ya?
+    - Tolong jelaskan sistem pengkodean NIM Fakultas [Kedokteran](fakultas) ?
+    - Mau tau dong sistem pengkodean NIM Fakultas [Kedokteran](fakultas)?
     - Halo apakah saya bisa bertanya tentang sistem pengkodean NIM Fakultas [Pertanian](fakultas) ?
     - apa saja sistem pengkodean NIM Fakultas [Pertanian](fakultas) ?
     - Saya ingin bertanya sistem pengkodean NIM Fakultas [Pertanian](fakultas) ?
@@ -424,81 +500,22 @@ nlu:
     - Assalammualaikum mau nanya sistem pengkodean NIM Fakultas [Ilmu komputer](fakultas) gimana ya?
     - Tolong jelaskan sistem pengkodean NIM Fakultas [Ilmu komputer](fakultas) ?
     - Mau tau dong sistem pengkodean NIM Fakultas [Ilmu komputer](fakultas)?
-    - Halo apakah saya bisa bertanya tentang sistem pengkodean NIM Fakultas [kesehatan masyarakat](fakultas) ?
-    - apa saja sistem pengkodean NIM Fakultas [kesehatan masyarakat](fakultas) ?
-    - Saya ingin bertanya sistem pengkodean NIM Fakultas [kesehatan masyarakat](fakultas) ?
-    - Assalammualaikum mau nanya sistem pengkodean NIM Fakultas [kesehatan masyarakat](fakultas) gimana ya?
-    - Tolong jelaskan sistem pengkodean NIM Fakultas [kesehatan masyarakat](fakultas) ?
-    - Mau tau dong sistem pengkodean NIM Fakultas [kesehatan masyarakat](fakultas)?
-- intent: ask/diploma
+    - Halo apakah saya bisa bertanya tentang sistem pengkodean NIM Fakultas [Kesehatan Masyarakat](fakultas) ?
+    - apa saja sistem pengkodean NIM Fakultas [Kesehatan Masyarakat](fakultas) ?
+    - Saya ingin bertanya sistem pengkodean NIM Fakultas [Kesehatan Masyarakat](fakultas) ?
+    - Assalammualaikum mau nanya sistem pengkodean NIM Fakultas [Kesehatan Masyarakat](fakultas) gimana ya?
+    - Tolong jelaskan sistem pengkodean NIM Fakultas [Kesehatan Masyarakat](fakultas) ?
+    - Mau tau dong sistem pengkodean NIM Fakultas [Kesehatan Masyarakat](fakultas)?
+
+- intent: ask/angka
   examples: |
-    - diploma
-    - diploma saja saja
-    - tolong lihat yang diploma
-    - tolong yang diploma
-    - d3
-    - untuk yang d3?
-    - boleh lihat yang d3
-    - bagian d3
-- intent: ask/sarjana
-  examples: |
-    - sarjana
-    - sarjana kak
-    - yang sarjana tolong
-    - boleh kasihtahu yang sarjana kak?
-    - sarjana aja ya
-    - hmmm, yang sarjana aja
-    - s1
-    - yang s1 kak
-    - boleh kasihtahu yang untuk s1
-    - untuk yang s1 kak?
-- intent: ask/profesi
-  examples: |
-    - profesi
-    - profesi kak
-    - yang profesi tolong
-    - boleh kasihtahu yang profesi kak?
-    - profesi aja ya
-    - hmmm, yang profesi aja
-    - profesi ada?
-    - yang profesi kak
-    - boleh kasihtahu yang untuk profesi
-    - untuk yang profesi kak?
-- intent: ask/magister_spesialis1
-  examples: |
-    - spesialis 1
-    - spesialis 1 kak
-    - yang spesialis 1 tolong
-    - boleh kasihtahu yang spesialis1 kak?
-    - spesialis1 aja ya
-    - s2
-    - s2 kak
-    - yang s2 tolong
-    - boleh kasihtahu yang s2 kak?
-    - s2 aja ya
-    - hmmm, yang magister aja
-    - magister
-    - yang magister kak
-    - boleh kasihtahu yang untuk magister
-    - untuk yang magister kak?
-- intent: ask/doktor_spesialis2
-  examples: |
-    - spesialis 2
-    - spesialis 2 kak
-    - yang spesialis 2 tolong
-    - boleh kasihtahu yang spesialis 2 kak?
-    - spesialis 2 aja ya
-    - s3
-    - s3 kak
-    - yang s3 tolong
-    - boleh kasihtahu yang s3 kak?
-    - s3 aja ya
-    - hmmm, yang doktor aja
-    - doktor
-    - yang doktor kak
-    - boleh kasihtahu yang untuk doktor
-    - untuk yang doktor kak?
-- intent: ask
-  examples: |
-    - boleh bertanya tentang sistem pengkodean nim
-    - numpang nanya soal form gaji ortu
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
