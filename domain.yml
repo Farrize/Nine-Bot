@@ -8,6 +8,10 @@ session_config:
 intents:
 - ask:
     use_entities: true
+- begin_programstudi:
+    use_entities: true
+- angka:
+    use_entities: true
 - salam:
     use_entities: true
 - penutup:
@@ -34,15 +38,17 @@ entities:
 slots: 
   fakultas:
     type: text
-forms:
-    fakultas_form:
-      required_slots:
-        - fakultas
+    
 responses:
   utter_salam:
   - text: Hai, Saya adalah bot pribadi Kelompok 9 menggunakan Rasa. Silahkan bertanya tentang Buku Pedoman Mahasiswa Unsri Hal 65-77
   utter_ask/formulir:
   - text: |
+      Sistem Form-Reg:03 Fakultas Universitas Sriwijaya Formulir Pernyataan perjanjian Mahasiswa
+      baru adalah sebagai berikut:
+      -Mengisi Formulir data Mahasiswa yang harus di lengkapi.
+      -Patuh dan menaati janji mahasiswa Universitas Sriwijaya.
+      -Menyalin Surat Pernyataan yang telah di siapkan.
       List Formulir yang harus di isi
       -Tahun Ajaran Yang akan di mulai :....../........
       -Nama                            :
@@ -329,7 +335,7 @@ responses:
       dst................................................
       20 - Pascasarjana
   
-  utter_ask/begin_programstudi:
+  utter_begin_programstudi:
   - text: |
       Sistem Pengkodean NIM Universitas Sriwijaya bagian Program Studi terbagi sesuai dengan Fakultas/Program masing-masing.
       Berikut Fakultas/Program yang memiliki list Program Studi :
@@ -574,4 +580,11 @@ responses:
   - text: Hai, Saya adalah bot pribadi Kelompok 9 menggunakan Rasa
 actions: 
     - action_pengkodean_fakultas
+forms:
+    fakultas_form:
+      required_slots:
+        fakultas:
+        - entity: fakultas
+          intent: angka
+          type: from_entity
 e2e_actions: []

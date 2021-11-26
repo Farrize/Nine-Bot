@@ -2,7 +2,12 @@ version: "2.0"
 
 stories:
 
-- story: perkenalan
+- story: dummy
   steps:
+  - action: fakultas_form
+  - slot_was_set:
+    - fakultas: 0
+  - action: action_pengkodean_fakultas
   - intent: salam
   - action: utter_salam
+

@@ -10,6 +10,7 @@
 from sqlite3.dbapi2 import Cursor
 from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker
+from rasa_sdk.events import SlotSet
 from rasa_sdk.executor import CollectingDispatcher
 import sqlite3
 
@@ -36,7 +37,7 @@ class ActionUtterFakultas(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
-        slot_value = tracker.get_slot('fakultas')
+        slot_value = int(tracker.get_slot('fakultas'))
         def one():
             dispatcher.utter_message(response = "utter_ask/pengkodeanekonomi")
 
@@ -83,7 +84,7 @@ class ActionUtterFakultas(Action):
             10 : ten,
             11 : eleven
         }
-
-        options[slot_value]()
-
+        if(slot_value in options):
+            options[slot_value]()
+        
         return []

@@ -411,7 +411,7 @@ nlu:
     - Izin bertanya siapa yang bisa menjelaskan kepada saya tentang sistem pengkodean NIM Fakultas?
     - Bagaimana cara sistem pengkodean NIM Fakultas?
 
-- intent: ask/begin_programstudi
+- intent: begin_programstudi
   examples: |
     - Halo apakah saya bisa bertanya tentang sistem pengkodean NIM Program Studi di Universitas Sriwijaya ?
     - apa saja sistem pengkodean NIM Program Studi di Universitas Sriwijaya ?
@@ -507,15 +507,16 @@ nlu:
     - Tolong jelaskan sistem pengkodean NIM Fakultas [Kesehatan Masyarakat](fakultas) ?
     - Mau tau dong sistem pengkodean NIM Fakultas [Kesehatan Masyarakat](fakultas)?
 
-- intent: ask/angka
+- intent: angka
   examples: |
-    - 1
-    - 2
-    - 3
-    - 4
-    - 5
-    - 6
-    - 7
-    - 8
-    - 9
-    - 10
+    - [1](fakultas)
+    - [2](fakultas)
+    - [3](fakultas)
+    - [4](fakultas)
+    - [5](fakultas)
+    - [6](fakultas)
+    - [7](fakultas)
+    - [8](fakultas)
+    - [9](fakultas)
+    - [10](fakultas)
+    - [11](fakultas)
