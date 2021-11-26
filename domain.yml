@@ -1,10 +1,13 @@
 version: '2.0'
+
 config:
   store_entities_as_slots: true
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
+- ask:
+    use_entities: true
 - salam:
     use_entities: true
 - penutup:
@@ -14,8 +17,6 @@ intents:
 - menolak:
     use_entities: true
 - bot_challenge:
-    use_entities: true
-- ask:
     use_entities: true
 - mood_unhappy:
     use_entities: true
@@ -27,11 +28,17 @@ intents:
     use_entities: true
 - deny:
     use_entities: true
-entities: []
-slots: {}
+
+entities:
+- fakultas
+slots: 
+  fakultas:
+    type: text
+forms:
+    fakultas_form:
+      required_slots:
+        - fakultas
 responses:
-  utter_ask:
-  - text: testing
   utter_salam:
   - text: Hai, Saya adalah bot pribadi Kelompok 9 menggunakan Rasa. Silahkan bertanya tentang Buku Pedoman Mahasiswa Unsri Hal 65-77
   utter_ask/formulir:
@@ -98,7 +105,7 @@ responses:
       7. Meningkatkan kesehatan jasmani dan rohani memantapkan kehidupan bermasyarakat,berbangsa dan bernegara.
   utter_ask/organisasi_ekstra_sekolah:
   - text: |
-      Organisasi ekstra sekolahmerupakan organisasi yang bersumber dari luar sekolah yang memiliki koneksi 
+      Organisasi ekstra sekolah merupakan organisasi yang bersumber dari luar sekolah yang memiliki koneksi 
       dengan luar sekolah dan bersifat mengembangkan softskill para siswa. 
       Organisasi ekstra sekolah atau kegiatan ekstrakurikuler menunjukan segala macam aktivitas di sekolah atau 
       lembaga pendidikan yang dilaksanakan diluar jam pelajaran. 
@@ -299,19 +306,14 @@ responses:
       c. 2 – 4 juta rupiah /bulan
       d. 4 – 6 juta rupiah /bulan
       e. > 6 juta rupiah /bulan "
-  utter_ask/pengkodean:
+  utter_ask/begin_nim:
   - text: |
       Sistem Pengkodean NIM Universitas Sriwijaya terbagi menjadi beberapa bagian yaitu : 
       A - Kode Fakultas/Program
       B - Kode Program Studi/Jurusan
       C - Kode Program Pendidikan
-      D - Kode Jalur Masuk Program
-      E - Kode Bulan Masuk
-      F - Kode Tahun Masuk
-      G - Kode Tahun Keluar
-      H - Nomor Urut Pendaftaran (Registrasi)
       Anda ingin melihat bagian mana?    
-  utter_ask/pengkodeanfakultas:
+  utter_ask/begin_fakultas:
   - text: |
       Sistem Pengkodean NIM Universitas Sriwijaya bagian Fakultas/Program sebagai berikut: 
       01 - Fakultas Ekonomi
@@ -326,16 +328,45 @@ responses:
       10 - Fakultas Kesehatan Masyarakat
       dst................................................
       20 - Pascasarjana
-            
+  
+  utter_ask/begin_programstudi:
+  - text: |
+      Sistem Pengkodean NIM Universitas Sriwijaya bagian Program Studi terbagi sesuai dengan Fakultas/Program masing-masing.
+      Berikut Fakultas/Program yang memiliki list Program Studi :
+      1. Fakultas Ekonomi
+      2. Fakultas Hukum
+      3. Fakultas Teknik
+      4. Fakultas Kedokteran
+      5. Fakultas Pertanian
+      6. Fakultas Keguruan dan Ilmu Pendidikan
+      7. Fakultas Ilmu Sosial dan Ilmu Politik
+      8. Fakultas Matematika dan Ilmu Pengetahuan Alam
+      9. Fakultas Ilmu Komputer
+      10. Fakultas Kesehatan Masyarakat
+      11. Program Pascasarjana
+      List Jurusan/Program Studi dari Fakultas/Program mana yang ingin dilihat? (Pilih dengan angka)
+
+  utter_ask/begin_pascasarjana:
+  - text: |
+      Sistem Perkodean NIM pada Fakultas Kesehatan Masyarakat Universitas Sriwijaya adalah sebagai berikut:
+      Magister 
+      01 - Pengelolaan Lingkungan
+      02 - Kependudukan
+      Doktor
+      01 - Ilmu Lingkungan
+      
+  utter_ask/begin_programpendidikan:
+  - text: |
+      Sistem Pengkodean NIM Universitas Sriwijaya bagian program pendidikan sebagai berikut: 
+      0 - Program Diploma Tiga
+      1 - Program Sarjana
+      2 - Program Magister/Spesialis 1
+      3 - Program Doktor/Spesialis 2
+      4 - Program Profesi
+
   utter_ask/pengkodeanekonomi:
   - text: |
       Sistem Pengkodean NIM pada Fakultas Ekonomi Universitas Sriwijaya adalah sebagai berikut : 
-      Kode Fakultas adalah 01, dan kode jurusan untuk Diploma Tiga adalah 01-02 
-      Sarjana/Profesi adalah 01-04, Magister adalah 01-03, dan untuk Doktor adalah 01-02
-      Apakah anda ingin melihat list nomor kode jurusan?
-  utter_ask/ekonomi_dasar:
-  - text: |
-      List Kode Jurusan Fakultas Ekonomi Universitas Sriwijaya untuk tingkat D3/S1/Profesi : 
       Diploma Tiga
       01 - Akutansi
       02 - Kesekretariatan
@@ -345,9 +376,6 @@ responses:
       03 - Akutansi
       Profesi
       04 - Pendidikan Profesi Akutansi
-  utter_ask/ekonomi_lanjut:
-  - text: |
-      List Kode Jurusan Fakultas Ekonomi Universitas Sriwijaya untuk tingkat Magister/Doktor : 
       Magister
       01 - Magister Manajemen
       02 - Ilmu Ekonomi
@@ -355,15 +383,10 @@ responses:
       Doktor
       01 - Ilmu Ekonomi
       02 - Ilmu Manajemen
+
   utter_ask/pengkodeanhukum:
   - text: |
       Sistem Pengkodean NIM pada Fakultas Hukum Universitas Sriwijaya adalah sebagai berikut : 
-      Kode Fakultas adalah 02, dan kode jurusan untuk Sarjana hanya satu yaitu 01
-      Magister adalah 01-02, dan untuk Doktor juga hanya satu yaitu 01
-      Apakah anda ingin melihat list nomor kode jurusan?
-  utter_ask/hukum_list:
-  - text: |
-      List Kode Jurusan Fakultas Hukum Universitas Sriwijaya:
       Sarjana
       01 - Ilmu Hukum
       Magister
@@ -371,15 +394,10 @@ responses:
       02 - Kenotariatan
       Doktor
       01 - Ilmu Hukum
+      
   utter_ask/pengkodeanteknik:
   - text: |
       Sistem Pengkodean NIM pada Fakultas Teknik Universitas Sriwijaya adalah sebagai berikut : 
-      Kode Fakultas adalah 03, dan kode jurusan untuk Sarjana adalah 01-07
-      Magister adalah 01-04, dan untuk Doktor juga hanya satu yaitu 01
-      Apakah anda ingin melihat list nomor kode jurusan?
-  utter_ask/teknik_dasar:
-  - text: |
-      List Kode Jurusan Fakultas Teknik Universitas Sriwijaya untuk tingkat S1 : 
       01 - Teknik Sipil
       02 - Teknik Pertambangan
       03 - Teknik Kimia
@@ -387,9 +405,6 @@ responses:
       05 - Teknik Mesin
       06 - Arsitektur
       07 - Teknik Geologi
-  utter_ask/teknik_lanjut:
-  - text: |
-      List Kode Jurusan Fakultas Teknik Universitas Sriwijaya untuk tingkat Magister/Doktor : 
       Magister
       01 - Teknik Kimia
       02 - Teknik Sipil
@@ -397,15 +412,10 @@ responses:
       04 - Teknik Pertambangan
       Doktor
       01 - Doktor Ilmu Teknik
+      
   utter_ask/pengkodeankedokteran:
   - text: |
       Sistem Perkodean NIM pada Fakultas Kedokteran Universitas Sriwijaya adalah sebagai berikut:
-      Kode fakultas adalah 04, dan kode jurusan untuk Sarjana/Profesi adalah 01-04, 
-      Spesialis-1/Magister adalah 01-12, dan untuk Spesialis-2 hanya ada 01.
-      Apakah anda ingin melihat list nomor kode jurusan?
-  utter_ask/kedokteran_dasar:
-  - text: |
-      List Kode Jurusan Fakultas Kedokteran Universitas Sriwijaya untuk tingkat Sarjana/Profesi :
       Sarjana
       01 - Pendidikan Dokter
       02 - Ilmu Keperawatan
@@ -416,9 +426,6 @@ responses:
       06 - Keperawatan
       07 - Kedokteran Gigi
       08 - Kedokteran Umum(Asal Kampus Palembang)
-  utter_ask/kedokteran_lanjut:
-  - text: |
-      List Kode Jurusan Fakultas Kedokteran Universitas Sriwijaya untuk tingkat Spesialis/Magister :
       Spesialis-1
       01 - Ilmu Bedah
       02 - Ilmu Kesehatan Anak
@@ -435,15 +442,10 @@ responses:
       12 - Ilmu Biomedik
       Spesialis-2
       01 - Ilmu Penyakit Dalam
+      
   utter_ask/pengkodeanpertanian:
   - text: |
       Sistem Perkodean NIM pada Fakultas Pertanian Universitas Sriwijaya adalah sebagai berikut:
-      Kode fakultas adalah 05, dan kode jurusan untuk Sarjana adalah 01-07, 
-      Magister adalah 01-02, dan untuk Doktor hanya ada 01.
-      Apakah anda ingin melihat list nomor kode jurusan?
-  utter_ask/pertanian_list:
-  - text: |
-      List Kode Jurusan Fakultas Pertanian Universitas Sriwijaya :
       Sarjana
       01 - Agribisnis
       02 - Teknik Pertanian
@@ -457,15 +459,10 @@ responses:
       02 - Agribisnis
       Doktor
       01 - Ilmu Pertanian
+      
   utter_ask/pengkodeankeguruan:
   - text: |
       Sistem Perkodean NIM pada Fakultas Keguruan dan Ilmu Pendidikan Universitas Sriwijaya adalah sebagai berikut:
-      Kode fakultas adalah 06, dan kode jurusan untuk Sarjana/Profesi adalah 01-30, 
-      Magister adalah 01-05, dan untuk Doktor hanya ada 01.
-      Apakah anda ingin melihat list nomor kode jurusan??
-  utter_ask/keguruan_dasar1:
-  - text: |
-      List Kode Jurusan Fakultas Keguruan Universitas Sriwijaya tingkat Sarjana :
       Sarjana
       01 - Pendidikan Bahasa Inggris
       02 - Pendidikan Bahasa Indonesia
@@ -482,9 +479,6 @@ responses:
       13 - Pendidikan Guru Sekolah Dasar
       14 - Pendidikan Guru PAUD
       15 - Pendidikan Luar Sekolah
-  utter_ask/keguruan_dasar2:
-  - text: |
-      List Kode Jurusan Fakultas Keguruan Universitas Sriwijaya tingkat Profesi :
       Profesi
       16 - Pendidikan Bahasa Inggris
       17 - Pendidikan Bahasa Indonesia
@@ -501,9 +495,6 @@ responses:
       28 - Pendidikan Guru Sekolah Dasar
       29 - Pendidikan Guru PAUD
       30 - Pendidikan Luar Sekolah
-  utter_ask/keguruan_lanjut:
-  - text: |
-      List Kode Jurusan Fakultas Keguruan Universitas Sriwijaya tingkat Magister/Doktor :
       Magister
       01 - Pendidikan Bahasa
       02 - Pendidikan Matematika
@@ -512,14 +503,10 @@ responses:
       05 - Pendidikan Fisika
       Doktor
       01 - Pendidikan Matematika
+      
   utter_ask/pengkodeanispol:
   - text: |
       Sistem Perkodean NIM pada Fakultas Ilmu Sosial dan Ilmu Politik Universitas Sriwijaya adalah sebagai berikut:
-      Kode fakultas adalah 07, dan kode program studi untuk Sarjana adalah 01-04, Magister adalah 01-02.
-      Apakah anda ingin melihat list nomor kode program studi?
-  utter_ask/ispol_list:
-  - text: |
-      List Kode Jurusan Fakultas Ilmu Sosial dan Ilmu Politik Universitas Sriwijaya:
       Sarjana
       01 - Ilmu Administrasi Negara
       02 - Sosiologi
@@ -528,15 +515,10 @@ responses:
       Magister
       01 - Administrasi Publik
       02 - Sosiologi
+      
   utter_ask/pengkodeanmipa:
   - text: |
       Sistem Perkodean NIM pada Fakultas Matematika dan Ilmu Pengetahuan Alam Universitas Sriwijaya adalah sebagai berikut:
-      Kode fakultas adalah 08, dan kode program studi untuk Sarjana adalah 01-06, 
-      Magister adalah 01-03 dan untuk Doktor hanya ada 01.
-      Apakah anda ingin melihat list nomor kode program studi?
-  utter_ask/mipa_list:
-  - text: |
-      List Kode Jurusan Fakultas Matematika dan Ilmu Pengetahuan Alam Universitas Sriwijaya untuk tingkat Sarjana :
       Sarjana
       01 - Matematika
       02 - Fisika
@@ -550,15 +532,10 @@ responses:
       03 - Kimia
       Doktor
       01 - MIPA
+      
   utter_ask/pengkodeanilmukomputer:
   - text: |
       Sistem Perkodean NIM pada Fakultas Ilmu Komputer Universitas Sriwijaya adalah sebagai berikut:
-      Kode fakultas adalah 09, dan kode program studi untuk Diploma Tiga adalah 01-03, 
-      Sarjana adalah 01-03 dan Magister hanya ada 01.
-      Apakah anda ingin melihat list nomor kode program studi?
-  utter_ask/ilkom_list:
-  - text: |
-      List Kode Jurusan Fakultas Ilmu Komputer Universitas Sriwijaya :
       Diploma Tiga 
       01 - Manajemen Informatika
       02 - Komputerisasi Akutansi
@@ -569,65 +546,32 @@ responses:
       03 - Sistem Informasi
       Magister
       01 - Teknik Informatika
+      
   utter_ask/pengkodeankesehatanmasyarakat:
   - text: |
       Sistem Perkodean NIM pada Fakultas Kesehatan Masyarakat Universitas Sriwijaya adalah sebagai berikut:
-      Kode fakultas adalah 10, dan kode program studi untuk Sarjana adalah 01-03 dan Magister hanya ada 01.
-      Apakah anda ingin melihat list nomor kode program studi?
-  utter_ask/kesehatanmasyarakat_list:
-  - text: |
-      List Kode Jurusan Fakultas Kesehatan Masyarakat Universitas Sriwijaya :
       Sarjana
       01 - Ilmu Kesehatan Masyarakat
       02 - Ilmu Gizi
       03 - Kesehatan Lingkungan
       Magister
       01 - Ilmu Kesehatan Masyarakat
-  utter_ask/pengkodeanpascasarjana:
-  - text: |
-      Sistem Perkodean NIM pada Fakultas Kesehatan Masyarakat Universitas Sriwijaya adalah sebagai berikut:
-      Kode fakultas adalah 10, dan kode program studi untuk Sarjana adalah 01-03 dan Magister hanya ada 01.
-      Apakah anda ingin melihat list nomor kode program studi?
-  utter_ask/pascasarjana_list:
-  - text: |
-      List Kode Jurusan Pascasarjana Universitas Sriwijaya :
-      Magister 
-      01 - Pengelolaan Lingkungan
-      02 - Kependudukan
-      Doktor
-      01 - Ilmu Lingkungan
-  utter_ask/pengkodeanprogrampendidikan:
-  - text: |
-      Sistem Pengkodean NIM Universitas Sriwijaya bagian program pendidikan sebagai berikut: 
-      0 - Program Diploma Tiga
-      1 - Program Sarjana
-      2 - Program Magister/Spesialis 1
-      3 - Program Doktor/Spesialis 2
-      4 - Program Profesi
-      5 - Program Sertifikasi
-      6 - Darmasiswa
-      7 - Program Adaptasi
-  utter_ask/tanya_prodi:
-  - text: |
-      List Jurusan/Program Studi dari fakultas mana yang ingin dilihat?
-  utter_ask/tingkat_prodi:
-  - text: |
-      List tingkat apa yang ingin dilihat?
+      
   utter_greet:
   - text: Hey! How are you?
-  utter_cheer_up:
+  uttercheer_up:
   - image: https://i.imgur.com/nGF1K8f.jpg
     text: 'Here is something to cheer you up:'
   utter_did_that_help:
   - text: Did that help you?
   utter_happy:
   - text: Great, carry on!
-  utter_goodbye:
+  utter_penutup:
   - text: Bye
   utter_iamabot:
   - text: I am a bot, powered by Rasa.
   utter_introduction:
   - text: Hai, Saya adalah bot pribadi Kelompok 9 menggunakan Rasa
-actions: []
-forms: {}
+actions: 
+    - action_pengkodean_fakultas
 e2e_actions: []

@@ -7,5 +7,22 @@ rules:
   - intent: ask
   - action: utter_ask
 
+- rule: aktivasi form
+  steps:
+  - intent: ask/begin_programstudi
+  - action: utter_ask/begin_programstudi
+  - action: fakultas_form
+  - active_loop: fakultas_form
+
+- rule: submit form
+  condition:
+  - active_loop: fakultas_form
+  steps:
+  - action: fakultas_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slots: null
+  - action: action_pengkodean_fakultas
+
 
   

@@ -6,5 +6,3 @@ stories:
   steps:
   - intent: salam
   - action: utter_salam
-  
-
