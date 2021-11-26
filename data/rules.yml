@@ -12,10 +12,10 @@ rules:
   - intent: ask
   - action: utter_ask
 
-- rule: program studi
+- rule: tampil gambar
   steps:
-  - intent: begin_programstudi
-  - action: utter_begin_programstudi
+  - intent: daftar_gambar
+  - action: action_gambar
 
 - rule: form fakultas
   steps:

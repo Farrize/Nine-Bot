@@ -14,19 +14,14 @@ from rasa_sdk.events import SlotSet
 from rasa_sdk.executor import CollectingDispatcher
 import sqlite3
 
-def sql_connection():
-    con = sqlite3.connect('rasaninebot.db')
-    Cursor = con.cursor()
-    Cursor.execute("")
-    con.commit()
-    con.close()
-
-def insert_data(data):
-    con = sqlite3.connect('rasaninebot.db')
-    Cursor = con.cursor()
-    Cursor.execute("INSERT INTO user_data(data) VALUES (?)",data)
-    con.commit()
-    con.close()
+def querySQL(query: Text):
+    conn = sqlite3.connect('rasaninebot.db')
+    cur = conn.execute(query)
+    result = cur.fetchall()
+    cur.close()
+    conn.close()
+    
+    return result
     
 class ActionUtterFakultas(Action):
 
@@ -38,53 +33,79 @@ class ActionUtterFakultas(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
         slot_value = int(tracker.get_slot('fakultas'))
-        def one():
-            dispatcher.utter_message(response = "utter_ask/pengkodeanekonomi")
+        def ekonomi():
+            dispatcher.utter_message(response = "utter_pengkodeanekonomi")
 
-        def two():
-            dispatcher.utter_message(response = "utter_ask/pengkodeanhukum")
+        def hukum():
+            dispatcher.utter_message(response = "utter_pengkodeanhukum")
 
-        def three():
-            dispatcher.utter_message(response = "utter_ask/pengkodeanteknik")
+        def teknik():
+            dispatcher.utter_message(response = "utter_pengkodeanteknik")
 
-        def four():
-            dispatcher.utter_message(response = "utter_ask/pengkodeankedokteran")
+        def kedokteran():
+            dispatcher.utter_message(response = "utter_pengkodeankedokteran")
 
-        def five():
-            dispatcher.utter_message(response = "utter_ask/pengkodeanpertanian")
+        def pertanian():
+            dispatcher.utter_message(response = "utter_pengkodeanpertanian")
 
-        def six():
-            dispatcher.utter_message(response = "utter_ask/pengkodeankeguruan")
+        def keguruan():
+            dispatcher.utter_message(response = "utter_pengkodeankeguruan")
 
-        def seven():   
-            dispatcher.utter_message(response = "utter_ask/pengkodeanispol")
+        def ispol():   
+            dispatcher.utter_message(response = "utter_pengkodeanispol")
 
-        def eight():
-            dispatcher.utter_message(response = "utter_ask/pengkodeanmipa")
+        def mipa():
+            dispatcher.utter_message(response = "utter_pengkodeanmipa")
 
-        def nine():
-            dispatcher.utter_message(response = "utter_ask/pengkodeanilmukomputer")
+        def komputer():
+            dispatcher.utter_message(response = "utter_pengkodeanilmukomputer")
 
-        def ten():
-            dispatcher.utter_message(response = "utter_ask/pengkodeankesehatanmasyarakat")
+        def kesmas():
+            dispatcher.utter_message(response = "utter_pengkodeankesehatanmasyarakat")
 
-        def eleven():
-            dispatcher.utter_message(response = "utter_ask/begin_pascasarjana")
+        def pascasarjana():
+            dispatcher.utter_message(response = "utter_pascasarjana")
+
+        def programpendidikan():
+            dispatcher.utter_message(response = "utter_programpendidikan")
 
         options = {
-            1 : one,
-            2 : two,
-            3 : three,
-            4 : four,
-            5 : five,
-            6 : six,
-            7 : seven,
-            8 : eight,
-            9 : nine,
-            10 : ten,
-            11 : eleven
+            1 : ekonomi,
+            2 : hukum,
+            3 : teknik,
+            4 : kedokteran,
+            5 : pertanian,
+            6 : keguruan,
+            7 : ispol,
+            8 : mipa,
+            9 : komputer,
+            10 : kesmas,
+            11 : pascasarjana,
+            12 : programpendidikan
         }
         if(slot_value in options):
             options[slot_value]()
         
         return []
+
+class ActionGambar(Action):
+        def name(self) -> Text:
+            return "action_gambar"
+
+        async def run(
+            self,
+            dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]
+        ) -> List[Dict[Text, Any]]:
+            
+            query = "SELECT link_gambar FROM gambar WHERE nama_gambar = 'formKPM'"
+
+            
+
+            queryResult = querySQL(query)
+            print(queryResult)
+            dispatcher.utter_message(text='form KPM', image=queryResult[0][0])
+
+            return []
+
