@@ -205,6 +205,11 @@ nlu:
     - Bisa dikasih tau apa saja isi formnya?
     - Form pembuatan KPM isinya apa aja ya?
 
+- intent: daftar_gambar
+  examples: |
+    - tampilkan gambar form pembuatan KPM
+    - lihat gambar form pembuatan KPM
+
 - intent: ask/tanyahuruf
   examples: |
     - Cara ngisi formnya gimana?
@@ -411,111 +416,17 @@ nlu:
     - Izin bertanya siapa yang bisa menjelaskan kepada saya tentang sistem pengkodean NIM Fakultas?
     - Bagaimana cara sistem pengkodean NIM Fakultas?
 
-- intent: ask/begin_programstudi
-  examples: |
-    - Halo apakah saya bisa bertanya tentang sistem pengkodean NIM Program Studi di Universitas Sriwijaya ?
-    - apa saja sistem pengkodean NIM Program Studi di Universitas Sriwijaya ?
-    - Saya ingin bertanya sistem pengkodean NIM Program Studi di Universitas Sriwijaya ?
-    - Assalammualaikum mau nanya sistem pengkodean NIM Program Studi di Universitas Sriwijaya gimana ya?
-    - Tolong jelaskan sistem pengkodean NIM Program Studi di Universitas Sriwijaya ?
-    - Mau tau dong sistem pengkodean NIM Program Studi di Universitas Sriwijaya ?
-    - Izin bertanya siapa yang bisa menjelaskan kepada saya tentang sistem pengkodean NIM Program Studi?
-    - Bagaimana cara sistem pengkodean NIM Program Studi?
 
-- intent: ask/begin_pascasarjana
+- intent: angka
   examples: |
-    - Halo apakah saya bisa bertanya tentang sistem pengkodean NIM Program Pascasarjana?
-    - Apa saja sistem pengkodean NIM Program Pascasarjana?
-    - Saya ingin bertanya sistem pengkodean NIM Program Pascasarjana?
-    - Assalammualaikum mau nanya sistem pengkodean NIM Program Pascasarjana gimana ya?
-    - Tolong jelaskan sistem pengkodean NIM Program Pascasarjana?
-    - Mau tau dong sistem pengkodean NIM Program Pascasarjana?
-    - Izin bertanya siapa yang bisa menjelaskan kepada saya tentang sistem pengkodean NIM Program Pascasarjana?
-    - Bagaimana cara sistem pengkodean NIM Program Pascasarjana?
-
-- intent: ask/begin_programpendidikan
-  examples: |
-    - Halo apakah saya bisa bertanya tentang sistem pengkodean NIM Program Pendidikan di Universitas Sriwijaya?
-    - Apa saja sistem pengkodean NIM Program Pendidikan di Universitas Sriwijaya?
-    - Saya ingin bertanya sistem pengkodean NIM Program Pendidikan di Universitas Sriwijaya?
-    - Assalammualaikum mau nanya sistem pengkodean NIM Program Pendidikan di Universitas Sriwijaya gimana ya?
-    - Tolong jelaskan sistem pengkodean NIM Program Pendidikan di Universitas Sriwijaya?
-    - Mau tau dong sistem pengkodean NIM Program Pendidikan di Universitas Sriwijaya?
-    - Izin bertanya siapa yang bisa menjelaskan kepada saya tentang sistem pengkodean NIM Program Pendidikan?
-    - Bagaimana ya cara mengkodekan NIM Program Pendidikan di Universitas Sriwijaya?    
-    
-- intent: ask/begin_fakultas_detail
-  examples: |
-    - Halo apakah saya bisa bertanya tentang sistem pengkodean NIM Fakultas [Ekonomi](fakultas) ?
-    - apa saja sistem pengkodean NIM Fakultas [Ekonomi](fakultas) ?
-    - Saya ingin bertanya sistem pengkodean NIM Fakultas [Ekonomi](fakultas) ?
-    - Assalammualaikum mau nanya sistem pengkodean NIM Fakultas [Ekonomi](fakultas) gimana ya?
-    - Tolong jelaskan sistem pengkodean NIM Fakultas [Ekonomi](fakultas) ?
-    - Mau tau dong sistem pengkodean NIM Fakultas [Ekonomi](fakultas)?
-    - Halo apakah saya bisa bertanya tentang sistem pengkodean NIM Fakultas [Hukum](fakultas) ?
-    - apa saja sistem pengkodean NIM Fakultas [Hukum](fakultas) ?
-    - Saya ingin bertanya sistem pengkodean NIM Fakultas [Hukum](fakultas) ?
-    - Assalammualaikum mau nanya sistem pengkodean NIM Fakultas [Hukum](fakultas) gimana ya?
-    - Tolong jelaskan sistem pengkodean NIM Fakultas [Hukum](fakultas) ?
-    - Mau tau dong sistem pengkodean NIM Fakultas [Hukum](fakultas)?
-    - Halo apakah saya bisa bertanya tentang sistem pengkodean NIM Fakultas [Teknik](fakultas) ?
-    - apa saja sistem pengkodean NIM Fakultas [Teknik](fakultas) ?
-    - Saya ingin bertanya sistem pengkodean NIM Fakultas [Teknik](fakultas) ?
-    - Assalammualaikum mau nanya sistem pengkodean NIM Fakultas [Teknik](fakultas) gimana ya?
-    - Tolong jelaskan sistem pengkodean NIM Fakultas [Teknik](fakultas) ?
-    - Mau tau dong sistem pengkodean NIM Fakultas [Teknik](fakultas)?
-    - Halo apakah saya bisa bertanya tentang sistem pengkodean NIM Fakultas [Kedokteran](fakultas) ?
-    - apa saja sistem pengkodean NIM Fakultas [Kedokteran](fakultas) ?
-    - Saya ingin bertanya sistem pengkodean NIM Fakultas [Kedokteran](fakultas) ?
-    - Assalammualaikum mau nanya sistem pengkodean NIM Fakultas [Kedokteran](fakultas) gimana ya?
-    - Tolong jelaskan sistem pengkodean NIM Fakultas [Kedokteran](fakultas) ?
-    - Mau tau dong sistem pengkodean NIM Fakultas [Kedokteran](fakultas)?
-    - Halo apakah saya bisa bertanya tentang sistem pengkodean NIM Fakultas [Pertanian](fakultas) ?
-    - apa saja sistem pengkodean NIM Fakultas [Pertanian](fakultas) ?
-    - Saya ingin bertanya sistem pengkodean NIM Fakultas [Pertanian](fakultas) ?
-    - Assalammualaikum mau nanya sistem pengkodean NIM Fakultas [Pertanian](fakultas) gimana ya?
-    - Tolong jelaskan sistem pengkodean NIM Fakultas [Pertanian](fakultas) ?
-    - Mau tau dong sistem pengkodean NIM Fakultas [Pertanian](fakultas)?
-    - Halo apakah saya bisa bertanya tentang sistem pengkodean NIM Fakultas [Keguruan dan Ilmu Pendidikan](fakultas) ?
-    - apa saja sistem pengkodean NIM Fakultas [Keguruan dan Ilmu Pendidikan](fakultas) ?
-    - Saya ingin bertanya sistem pengkodean NIM Fakultas [Keguruan dan Ilmu Pendidikan](fakultas) ?
-    - Assalammualaikum mau nanya sistem pengkodean NIM Fakultas [Keguruan dan Ilmu Pendidikan](fakultas) gimana ya?
-    - Tolong jelaskan sistem pengkodean NIM Fakultas [Keguruan dan Ilmu Pendidikan](fakultas) ?
-    - Mau tau dong sistem pengkodean NIM Fakultas [Keguruan dan Ilmu Pendidikan](fakultas)?
-    - Halo apakah saya bisa bertanya tentang sistem pengkodean NIM Fakultas [Ilmu Sosial dan Ilmu Politik](fakultas) ?
-    - apa saja sistem pengkodean NIM Fakultas [Ilmu Sosial dan Ilmu Politik](fakultas) ?
-    - Saya ingin bertanya sistem pengkodean NIM Fakultas [Ilmu Sosial dan Ilmu Politik](fakultas) ?
-    - Assalammualaikum mau nanya sistem pengkodean NIM Fakultas [Ilmu Sosial dan Ilmu Politik](fakultas) gimana ya?
-    - Tolong jelaskan sistem pengkodean NIM Fakultas [Ilmu Sosial dan Ilmu Politik](fakultas) ?
-    - Mau tau dong sistem pengkodean NIM Fakultas [Ilmu Sosial dan Ilmu Politik](fakultas)?
-    - Halo apakah saya bisa bertanya tentang sistem pengkodean NIM Fakultas [Matematika dan Ilmu Pengetahuan Alam](fakultas) ?
-    - apa saja sistem pengkodean NIM Fakultas [Matematika dan Ilmu Pengetahuan Alam](fakultas) ?
-    - Saya ingin bertanya sistem pengkodean NIM Fakultas [Matematika dan Ilmu Pengetahuan Alam](fakultas) ?
-    - Assalammualaikum mau nanya sistem pengkodean NIM Fakultas [Matematika dan Ilmu Pengetahuan Alam](fakultas) gimana ya?
-    - Tolong jelaskan sistem pengkodean NIM Fakultas [Matematika dan Ilmu Pengetahuan Alam](fakultas) ?
-    - Mau tau dong sistem pengkodean NIM Fakultas [Matematika dan Ilmu Pengetahuan Alam](fakultas)?
-    - Halo apakah saya bisa bertanya tentang sistem pengkodean NIM Fakultas [Ilmu komputer](fakultas) ?
-    - apa saja sistem pengkodean NIM Fakultas [Ilmu komputer](fakultas) ?
-    - Saya ingin bertanya sistem pengkodean NIM Fakultas [Ilmu komputer](fakultas) ?
-    - Assalammualaikum mau nanya sistem pengkodean NIM Fakultas [Ilmu komputer](fakultas) gimana ya?
-    - Tolong jelaskan sistem pengkodean NIM Fakultas [Ilmu komputer](fakultas) ?
-    - Mau tau dong sistem pengkodean NIM Fakultas [Ilmu komputer](fakultas)?
-    - Halo apakah saya bisa bertanya tentang sistem pengkodean NIM Fakultas [Kesehatan Masyarakat](fakultas) ?
-    - apa saja sistem pengkodean NIM Fakultas [Kesehatan Masyarakat](fakultas) ?
-    - Saya ingin bertanya sistem pengkodean NIM Fakultas [Kesehatan Masyarakat](fakultas) ?
-    - Assalammualaikum mau nanya sistem pengkodean NIM Fakultas [Kesehatan Masyarakat](fakultas) gimana ya?
-    - Tolong jelaskan sistem pengkodean NIM Fakultas [Kesehatan Masyarakat](fakultas) ?
-    - Mau tau dong sistem pengkodean NIM Fakultas [Kesehatan Masyarakat](fakultas)?
-
-- intent: ask/angka
-  examples: |
-    - 1
-    - 2
-    - 3
-    - 4
-    - 5
-    - 6
-    - 7
-    - 8
-    - 9
-    - 10
+    - [1](fakultas)
+    - [2](fakultas)
+    - [3](fakultas)
+    - [4](fakultas)
+    - [5](fakultas)
+    - [6](fakultas)
+    - [7](fakultas)
+    - [8](fakultas)
+    - [9](fakultas)
+    - [10](fakultas)
+    - [11](fakultas)

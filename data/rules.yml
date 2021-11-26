@@ -2,27 +2,33 @@ version: "2.0"
 
 rules:
 
-- rule: testing retrieval intent
+- rule: perkenalan
+  steps:
+  - intent: salam
+  - action: utter_salam
+
+- rule: pertanyaan
   steps:
   - intent: ask
   - action: utter_ask
 
-- rule: aktivasi form
+- rule: tampil gambar
   steps:
-  - intent: ask/begin_programstudi
-  - action: utter_ask/begin_programstudi
+  - intent: daftar_gambar
+  - action: action_gambar
+
+- rule: form fakultas
+  steps:
+  - intent: angka
   - action: fakultas_form
   - active_loop: fakultas_form
 
-- rule: submit form
+- rule: submit form fakultas
   condition:
   - active_loop: fakultas_form
   steps:
   - action: fakultas_form
   - active_loop: null
   - slot_was_set:
-    - requested_slots: null
+     - requested_slot: null
   - action: action_pengkodean_fakultas
-
-
-  

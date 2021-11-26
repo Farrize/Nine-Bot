@@ -1,5 +1,4 @@
 version: '2.0'
-
 config:
   store_entities_as_slots: true
 session_config:
@@ -7,6 +6,12 @@ session_config:
   carry_over_slots_to_new_session: true
 intents:
 - ask:
+    use_entities: true
+- daftar_gambar:
+    use_entities: true
+- begin_programstudi:
+    use_entities: true
+- angka:
     use_entities: true
 - salam:
     use_entities: true
@@ -28,21 +33,29 @@ intents:
     use_entities: true
 - deny:
     use_entities: true
-
 entities:
 - fakultas
-slots: 
+slots:
   fakultas:
-    type: text
-forms:
-    fakultas_form:
-      required_slots:
-        - fakultas
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+  requested_slot:
+    type: rasa.shared.core.slots.UnfeaturizedSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
 responses:
   utter_salam:
   - text: Hai, Saya adalah bot pribadi Kelompok 9 menggunakan Rasa. Silahkan bertanya tentang Buku Pedoman Mahasiswa Unsri Hal 65-77
   utter_ask/formulir:
   - text: |
+      Sistem Form-Reg:03 Fakultas Universitas Sriwijaya Formulir Pernyataan perjanjian Mahasiswa
+      baru adalah sebagai berikut:
+      -Mengisi Formulir data Mahasiswa yang harus di lengkapi.
+      -Patuh dan menaati janji mahasiswa Universitas Sriwijaya.
+      -Menyalin Surat Pernyataan yang telah di siapkan.
       List Formulir yang harus di isi
       -Tahun Ajaran Yang akan di mulai :....../........
       -Nama                            :
@@ -312,24 +325,8 @@ responses:
       A - Kode Fakultas/Program
       B - Kode Program Studi/Jurusan
       C - Kode Program Pendidikan
-      Anda ingin melihat bagian mana?    
+      Anda ingin melihat bagian mana?  
   utter_ask/begin_fakultas:
-  - text: |
-      Sistem Pengkodean NIM Universitas Sriwijaya bagian Fakultas/Program sebagai berikut: 
-      01 - Fakultas Ekonomi
-      02 - Fakultas Hukum
-      03 - Fakultas Teknik
-      04 - Fakultas Kedokteran
-      05 - Fakultas Pertanian
-      06 - Fakultas Keguruan dan Ilmu Pendidikan
-      07 - Fakultas Ilmu Sosial dan Ilmu Politik
-      08 - Fakultas Matematika dan Ilmu Pengetahuan Alam
-      09 - Fakultas Ilmu Komputer
-      10 - Fakultas Kesehatan Masyarakat
-      dst................................................
-      20 - Pascasarjana
-  
-  utter_ask/begin_programstudi:
   - text: |
       Sistem Pengkodean NIM Universitas Sriwijaya bagian Program Studi terbagi sesuai dengan Fakultas/Program masing-masing.
       Berikut Fakultas/Program yang memiliki list Program Studi :
@@ -344,9 +341,9 @@ responses:
       9. Fakultas Ilmu Komputer
       10. Fakultas Kesehatan Masyarakat
       11. Program Pascasarjana
+      12. Program Pendidikan
       List Jurusan/Program Studi dari Fakultas/Program mana yang ingin dilihat? (Pilih dengan angka)
-
-  utter_ask/begin_pascasarjana:
+  utter_pascasarjana:
   - text: |
       Sistem Perkodean NIM pada Fakultas Kesehatan Masyarakat Universitas Sriwijaya adalah sebagai berikut:
       Magister 
@@ -354,8 +351,7 @@ responses:
       02 - Kependudukan
       Doktor
       01 - Ilmu Lingkungan
-      
-  utter_ask/begin_programpendidikan:
+  utter_programpendidikan:
   - text: |
       Sistem Pengkodean NIM Universitas Sriwijaya bagian program pendidikan sebagai berikut: 
       0 - Program Diploma Tiga
@@ -363,8 +359,7 @@ responses:
       2 - Program Magister/Spesialis 1
       3 - Program Doktor/Spesialis 2
       4 - Program Profesi
-
-  utter_ask/pengkodeanekonomi:
+  utter_pengkodeanekonomi:
   - text: |
       Sistem Pengkodean NIM pada Fakultas Ekonomi Universitas Sriwijaya adalah sebagai berikut : 
       Diploma Tiga
@@ -383,8 +378,7 @@ responses:
       Doktor
       01 - Ilmu Ekonomi
       02 - Ilmu Manajemen
-
-  utter_ask/pengkodeanhukum:
+  utter_pengkodeanhukum:
   - text: |
       Sistem Pengkodean NIM pada Fakultas Hukum Universitas Sriwijaya adalah sebagai berikut : 
       Sarjana
@@ -394,8 +388,7 @@ responses:
       02 - Kenotariatan
       Doktor
       01 - Ilmu Hukum
-      
-  utter_ask/pengkodeanteknik:
+  utter_pengkodeanteknik:
   - text: |
       Sistem Pengkodean NIM pada Fakultas Teknik Universitas Sriwijaya adalah sebagai berikut : 
       01 - Teknik Sipil
@@ -412,8 +405,7 @@ responses:
       04 - Teknik Pertambangan
       Doktor
       01 - Doktor Ilmu Teknik
-      
-  utter_ask/pengkodeankedokteran:
+  utter_pengkodeankedokteran:
   - text: |
       Sistem Perkodean NIM pada Fakultas Kedokteran Universitas Sriwijaya adalah sebagai berikut:
       Sarjana
@@ -442,8 +434,7 @@ responses:
       12 - Ilmu Biomedik
       Spesialis-2
       01 - Ilmu Penyakit Dalam
-      
-  utter_ask/pengkodeanpertanian:
+  utter_pengkodeanpertanian:
   - text: |
       Sistem Perkodean NIM pada Fakultas Pertanian Universitas Sriwijaya adalah sebagai berikut:
       Sarjana
@@ -459,8 +450,7 @@ responses:
       02 - Agribisnis
       Doktor
       01 - Ilmu Pertanian
-      
-  utter_ask/pengkodeankeguruan:
+  utter_pengkodeankeguruan:
   - text: |
       Sistem Perkodean NIM pada Fakultas Keguruan dan Ilmu Pendidikan Universitas Sriwijaya adalah sebagai berikut:
       Sarjana
@@ -503,8 +493,7 @@ responses:
       05 - Pendidikan Fisika
       Doktor
       01 - Pendidikan Matematika
-      
-  utter_ask/pengkodeanispol:
+  utter_pengkodeanispol:
   - text: |
       Sistem Perkodean NIM pada Fakultas Ilmu Sosial dan Ilmu Politik Universitas Sriwijaya adalah sebagai berikut:
       Sarjana
@@ -515,8 +504,7 @@ responses:
       Magister
       01 - Administrasi Publik
       02 - Sosiologi
-      
-  utter_ask/pengkodeanmipa:
+  utter_pengkodeanmipa:
   - text: |
       Sistem Perkodean NIM pada Fakultas Matematika dan Ilmu Pengetahuan Alam Universitas Sriwijaya adalah sebagai berikut:
       Sarjana
@@ -532,8 +520,7 @@ responses:
       03 - Kimia
       Doktor
       01 - MIPA
-      
-  utter_ask/pengkodeanilmukomputer:
+  utter_pengkodeanilmukomputer:
   - text: |
       Sistem Perkodean NIM pada Fakultas Ilmu Komputer Universitas Sriwijaya adalah sebagai berikut:
       Diploma Tiga 
@@ -546,8 +533,7 @@ responses:
       03 - Sistem Informasi
       Magister
       01 - Teknik Informatika
-      
-  utter_ask/pengkodeankesehatanmasyarakat:
+  utter_pengkodeankesehatanmasyarakat:
   - text: |
       Sistem Perkodean NIM pada Fakultas Kesehatan Masyarakat Universitas Sriwijaya adalah sebagai berikut:
       Sarjana
@@ -556,7 +542,6 @@ responses:
       03 - Kesehatan Lingkungan
       Magister
       01 - Ilmu Kesehatan Masyarakat
-      
   utter_greet:
   - text: Hey! How are you?
   uttercheer_up:
@@ -572,6 +557,14 @@ responses:
   - text: I am a bot, powered by Rasa.
   utter_introduction:
   - text: Hai, Saya adalah bot pribadi Kelompok 9 menggunakan Rasa
-actions: 
-    - action_pengkodean_fakultas
+actions:
+- action_pengkodean_fakultas
+- action_gambar
+forms:
+  fakultas_form:
+    required_slots:
+      fakultas:
+      - entity: fakultas
+        intent: angka
+        type: from_entity
 e2e_actions: []
